@@ -13,7 +13,7 @@
       <pubDate>Sat, 22 Jul 2023 12:16:26 +0200</pubDate>
       
       <guid>https://gerundium.github.io/posts/mypost/</guid>
-      <description></description>
+      <description>Mermaid example  Link to heading   sequenceDiagram participant dotcom participant iframe participant viewscreen dotcom-&amp;gt;&amp;gt;iframe: loads html w/ iframe url iframe-&amp;gt;&amp;gt;viewscreen: request template viewscreen-&amp;gt;&amp;gt;iframe: html &amp;amp; javascript iframe-&amp;gt;&amp;gt;dotcom: iframe ready dotcom-&amp;gt;&amp;gt;iframe: set mermaid data on iframe iframe-&amp;gt;&amp;gt;iframe: render mermaid </description>
     </item>
     
   </channel>
