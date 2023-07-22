@@ -6,14 +6,15 @@
     <description>Recent content on Gerundium</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Jul 2023 12:16:26 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://gerundium.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://gerundium.github.io/posts/mypost/</link>
-      <pubDate>Sat, 22 Jul 2023 12:16:26 +0200</pubDate>
+      <title>Mermaid JS support</title>
+      <link>https://gerundium.github.io/posts/mermaid/</link>
+      <pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://gerundium.github.io/posts/mypost/</guid>
-      <description>Mermaid example  Link to heading   sequenceDiagram participant dotcom participant iframe participant viewscreen dotcom-&amp;gt;&amp;gt;iframe: loads html w/ iframe url iframe-&amp;gt;&amp;gt;viewscreen: request template viewscreen-&amp;gt;&amp;gt;iframe: html &amp;amp; javascript iframe-&amp;gt;&amp;gt;dotcom: iframe ready dotcom-&amp;gt;&amp;gt;iframe: set mermaid data on iframe iframe-&amp;gt;&amp;gt;iframe: render mermaid </description>
+      <guid>https://gerundium.github.io/posts/mermaid/</guid>
+      <description>If you want to use Mermaid-JS on your website. Provide mermaid as Shortcode in your markdown file.
+flowchart LR A -- B B -- C C -- D D -- B  sequenceDiagram participant Alice participant Bob Alice-Bob: Hi Bob Bob-Alice: Hi Alice  Find more example on Mermaid-JS website.</description>
     </item>
     
   </channel>
