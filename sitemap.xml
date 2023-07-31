@@ -2,49 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gerundium.github.io/authors/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/categories/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/css/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
+    <loc>https://gerundium.github.io/introduction/</loc>
+    <lastmod>2023-07-27T22:18:23+02:00</lastmod>
   </url><url>
     <loc>https://gerundium.github.io/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-27T22:18:23+02:00</lastmod>
   </url><url>
-    <loc>https://gerundium.github.io/tags/html/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
+    <loc>https://gerundium.github.io/homelab-setup/</loc>
+    <lastmod>2023-07-27T22:18:23+02:00</lastmod>
   </url><url>
-    <loc>https://gerundium.github.io/tags/hugo/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
+    <loc>https://gerundium.github.io/tags/home/</loc>
+    <lastmod>2023-07-27T22:18:23+02:00</lastmod>
   </url><url>
-    <loc>https://gerundium.github.io/authors/lone-coder/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
+    <loc>https://gerundium.github.io/tags/homelab-setup/</loc>
+    <lastmod>2023-07-27T22:18:23+02:00</lastmod>
   </url><url>
-    <loc>https://gerundium.github.io/tags/markdown/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/posts/mermaid/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/posts/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/series/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/categories/syntax/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
+    <loc>https://gerundium.github.io/tags/introduction/</loc>
+    <lastmod>2023-07-27T22:18:23+02:00</lastmod>
   </url><url>
     <loc>https://gerundium.github.io/tags/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-27T22:18:23+02:00</lastmod>
   </url><url>
-    <loc>https://gerundium.github.io/series/theme-demo/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
+    <loc>https://gerundium.github.io/introduction/documentation/</loc>
+    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
   </url><url>
-    <loc>https://gerundium.github.io/categories/theme-demo/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
+    <loc>https://gerundium.github.io/homelab-setup/network/</loc>
+    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/documentation/</loc>
+    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
+  </url><url>
+    <loc>https://gerundium.github.io/categories/</loc>
   </url>
 </urlset>

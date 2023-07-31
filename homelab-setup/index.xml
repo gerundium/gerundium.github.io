@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homelab Setup on Gerundium</title>
+    <link>https://gerundium.github.io/homelab-setup/</link>
+    <description>Recent content in Homelab Setup on Gerundium</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Jul 2023 22:18:23 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/homelab-setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.1 Network</title>
+      <link>https://gerundium.github.io/homelab-setup/network/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/homelab-setup/network/</guid>
+      <description>State/Version: Draft
+ 2.1 High level view   2.1 High level view   Hardware, that belongs to the &amp;ldquo;Management&amp;rdquo; network, knows routes into the other networks and provide internet connectivity. Hardware grouped in IoT (Internet of Things/Trash) segment is considered as untrusted and therefore cannot connect to other network members. It still can be controled via internet.  </description>
+    </item>
+    
+  </channel>
+</rss>

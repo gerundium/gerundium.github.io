@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>documentation on Gerundium</title>
+    <link>https://gerundium.github.io/tags/documentation/</link>
+    <description>Recent content in documentation on Gerundium</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Jul 2023 22:00:14 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.1 Documentation</title>
+      <link>https://gerundium.github.io/introduction/documentation/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/introduction/documentation/</guid>
+      <description>State/Version: Draft
+Table of contents  Table of contents  1.1 About the author  1.2 About this blog   1.2.1 CI / CD Pipeline   1.2.1.1 Sequencediagram   1.2.2 Github setup 1.2.3 Step-by-step deployment      1.1 About the author   Senor Linux system administrator and DevOps enthusiast Daily business: #kubernetes #openshift #rancher #gitops #ansible Current place of residence: Berlin (Germany)  1.</description>
+    </item>
+    
+  </channel>
+</rss>
