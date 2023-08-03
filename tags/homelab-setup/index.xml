@@ -13,17 +13,58 @@
       <pubDate>Thu, 27 Jul 2023 22:18:23 +0200</pubDate>
       
       <guid>https://gerundium.github.io/homelab-setup/</guid>
-      <description>Topics Homelab Setup  Network Hardware Kubernetes Ansible GitOps    </description>
+      <description>Topics Homelab Setup  High level view Hardware Virtualization Ansible DNS DHCP GitOps    </description>
     </item>
     
     <item>
-      <title>2.1 Network</title>
-      <link>https://gerundium.github.io/homelab-setup/network/</link>
+      <title>2.1 High level view</title>
+      <link>https://gerundium.github.io/homelab-setup/highlevel/</link>
       <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
       
-      <guid>https://gerundium.github.io/homelab-setup/network/</guid>
+      <guid>https://gerundium.github.io/homelab-setup/highlevel/</guid>
       <description>State/Version: Draft
- 2.1 High level view   2.1 High level view   Hardware, that belongs to the &amp;ldquo;Management&amp;rdquo; network, knows routes into the other networks and provide internet connectivity. Hardware grouped in IoT (Internet of Things/Trash) segment is considered as untrusted and therefore cannot connect to other network members. It still can be controled via internet.  </description>
+ 2.1 High level view   2.1 High level view   Hardware, that belongs to the &amp;ldquo;Management&amp;rdquo; segment, knows routes into the other network segments and provides internet connectivity. Hardware grouped in IoT (Internet of Things/Trash) segment is considered as untrusted and therefore cannot connect to other network devices. It still can be controled via internet.  </description>
+    </item>
+    
+    <item>
+      <title>2.2 Hardware</title>
+      <link>https://gerundium.github.io/homelab-setup/hardware/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/homelab-setup/hardware/</guid>
+      <description>State/Version: Draft
+ 2.2 Hardware   2.2.1 Computing node 2.2.2 Managed Switch 2.2.3 Router    2.2 Hardware  2.2.1 Computing node  Kiebel Micro X12  2x Kingston FURY Beast 32GB, DDR4-3200 MHz Intel Core i7-12700, 12x2.1 GHz Kingston 1TB NV2 M.2 SSD PCIe 4.0    2.2.2 Managed Switch  TP-Link TL-SG116E  2.2.3 Router  Mikrotik RB951Ui  </description>
+    </item>
+    
+    <item>
+      <title>2.3 Virtualization</title>
+      <link>https://gerundium.github.io/homelab-setup/virtualization/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/homelab-setup/virtualization/</guid>
+      <description>State/Version: Draft
+ 2.3 Proxmox   2.3.1 Setup  2.3.2 Maintenance     2.3 Proxmox   Proxmox Virtual Environment  Compute, network, and storage in a single solution    2.3.1 Setup   Current setup uses single proxmox-node  2.3.2 Maintenance   manual patching: weekly-monday  </description>
+    </item>
+    
+    <item>
+      <title>2.4 Ansible</title>
+      <link>https://gerundium.github.io/homelab-setup/ansible/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/homelab-setup/ansible/</guid>
+      <description>State/Version: Draft
+ 2.4 Ansible   2.4.1 Setup 2.4.2 Maintenance    2.4 Ansible  2.4.1 Setup  Ansible Semaphore https://www.turnkeylinux.org/ansible  2.4.2 Maintenance  manual patching: weekly-monday  </description>
+    </item>
+    
+    <item>
+      <title>2.5 DNS</title>
+      <link>https://gerundium.github.io/homelab-setup/dns/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/homelab-setup/dns/</guid>
+      <description>State/Version: Draft
+ 2.5 DNS   2.5.1 Deploy and configure bind9    2.5 DNS   This lab uses it&amp;rsquo;s own name servers. Provision the containers via Proxmox template. Install and configure bind9 using Ansible playbook.  2.5.1 Deploy and configure bind9 Deploy via Ansible (Semaphore) playbook
+ https://github.com/gerundium/ansible/blob/main/bind9.yml  </description>
     </item>
     
   </channel>

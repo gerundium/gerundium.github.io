@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuration Management on Gerundium</title>
+    <link>https://gerundium.github.io/tags/configuration-management/</link>
+    <description>Recent content in Configuration Management on Gerundium</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Jul 2023 22:00:14 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/configuration-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.4 Ansible</title>
+      <link>https://gerundium.github.io/homelab-setup/ansible/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/homelab-setup/ansible/</guid>
+      <description>State/Version: Draft
+ 2.4 Ansible   2.4.1 Setup 2.4.2 Maintenance    2.4 Ansible  2.4.1 Setup  Ansible Semaphore https://www.turnkeylinux.org/ansible  2.4.2 Maintenance  manual patching: weekly-monday  </description>
+    </item>
+    
+  </channel>
+</rss>
