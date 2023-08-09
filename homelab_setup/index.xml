@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome on Gerundium</title>
-    <link>https://gerundium.github.io/</link>
-    <description>Recent content in Welcome on Gerundium</description>
+    <title>Homelab Setup on Gerundium</title>
+    <link>https://gerundium.github.io/homelab_setup/</link>
+    <description>Recent content in Homelab Setup on Gerundium</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Jul 2023 22:18:23 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>1.1 Documentation</title>
-      <link>https://gerundium.github.io/introduction/documentation/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
-      
-      <guid>https://gerundium.github.io/introduction/documentation/</guid>
-      <description>State/Version: Draft
-Table of contents  Table of contents  1.1 About the author 1.2 About this blog  1.2.1 Creation process  1.2.1.1 Creation workflow   1.2.2 Github setup 1.2.3 Step-by-step deployment      1.1 About the author  Senor Linux system administrator and DevOps enthusiast Daily business: #kubernetes #openshift #rancher #gitops #ansible Current place of residence: Berlin (Germany)  1.2 About this blog  This blog was built with hugo.</description>
-    </item>
-    
+    <lastBuildDate>Thu, 27 Jul 2023 22:18:23 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/homelab_setup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2.1 High level view</title>
       <link>https://gerundium.github.io/homelab_setup/highlevel/</link>

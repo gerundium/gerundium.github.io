@@ -14,7 +14,7 @@
       
       <guid>https://gerundium.github.io/introduction/documentation/</guid>
       <description>State/Version: Draft
-Table of contents  Table of contents  1.1 About the author  1.2 About this blog   1.2.1 CI / CD Pipeline   1.2.1.1 Sequencediagram   1.2.2 Github setup 1.2.3 Step-by-step deployment      1.1 About the author   Senor Linux system administrator and DevOps enthusiast Daily business: #kubernetes #openshift #rancher #gitops #ansible Current place of residence: Berlin (Germany)  1.</description>
+Table of contents  Table of contents  1.1 About the author 1.2 About this blog  1.2.1 Creation process  1.2.1.1 Creation workflow   1.2.2 Github setup 1.2.3 Step-by-step deployment      1.1 About the author  Senor Linux system administrator and DevOps enthusiast Daily business: #kubernetes #openshift #rancher #gitops #ansible Current place of residence: Berlin (Germany)  1.2 About this blog  This blog was built with hugo.</description>
     </item>
     
   </channel>

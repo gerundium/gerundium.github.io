@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Categories :: Gerundium</title>
+    <title>2.3 Network :: Gerundium</title>
 
     
     <link href="/css/nucleus.css?1691599365" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/categories/">
+  <body class="" data-url="/homelab_setup/network/">
     <nav id="sidebar" class="">
 
 
@@ -143,7 +143,7 @@
   
     
     <li data-nav-id="/homelab_setup/" title="Homelab Setup" class="dd-item
-        
+        parent
         
         
         ">
@@ -211,7 +211,7 @@
  
   
     
-      <li data-nav-id="/homelab_setup/network/" title="2.3 Network" class="dd-item ">
+      <li data-nav-id="/homelab_setup/network/" title="2.3 Network" class="dd-item active">
         <a href="/homelab_setup/network/">
         2.3 Network
         
@@ -331,14 +331,22 @@
                   <span class="links">
                  
                  
-                   Categories
+                   2.3 Network
                  
                   </span>
                 </div>
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#23-network-topology">2.3 Network topology</a>
+      <ul>
+        <li><a href="#231-overview">2.3.1 Overview</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -348,30 +356,62 @@
             
         <div id="head-tags">
         
+<div class="tags">
+
+  <a class="tag-link" href="/tags/network">Network</a>
+
+</div>
+
         </div>
         
         <div id="body-inner">
           
             <h1>
               
-                category ::
-              
-              Categories
+              2.3 Network
             </h1>
           
 
         
 
 
-
-
-
+<p>State/Version: <strong>Draft</strong></p>
 <ul>
-	
+<li><a href="#23-network-topology">2.3 Network topology</a>
+<ul>
+<li><a href="#231-overview">2.3.1 Overview</a></li>
 </ul>
+</li>
+</ul>
+<h2 id="23-network-topology">2.3 Network topology</h2>
+<h3 id="231-overview">2.3.1 Overview</h3>
+<p>See also: <a href="/homelab_setup/highlevel/">High level view</a></p>
+<p><img src="/gerundium-network.png" alt="Gerundium Network"></p>
+<table>
+<thead>
+<tr>
+<th>Network CIDR</th>
+<th style="text-align:left">Project</th>
+<th style="text-align:left">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>192.168.2.0/24</td>
+<td style="text-align:left">Homelab / compute</td>
+<td style="text-align:left">static</td>
+</tr>
+<tr>
+<td>192.168.3.0/24</td>
+<td style="text-align:left">Homelab / storage</td>
+<td style="text-align:left">static</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/2023-08-09_09-38.png" alt="Network1"></p>
 
 
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -441,6 +481,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -453,6 +494,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -486,6 +530,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -501,6 +546,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -557,8 +605,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/homelab_setup/hardware/" title="2.2 Hardware"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/introduction/" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/homelab_setup/storage/" title="2.4 Storage" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -590,3 +640,4 @@
 
   </body>
 </html>
+

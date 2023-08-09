@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Categories :: Gerundium</title>
+    <title>2.6 Configuration Management :: Gerundium</title>
 
     
     <link href="/css/nucleus.css?1691599365" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/categories/">
+  <body class="" data-url="/homelab_setup/configurationmanagement/">
     <nav id="sidebar" class="">
 
 
@@ -143,7 +143,7 @@
   
     
     <li data-nav-id="/homelab_setup/" title="Homelab Setup" class="dd-item
-        
+        parent
         
         
         ">
@@ -274,7 +274,7 @@
  
   
     
-      <li data-nav-id="/homelab_setup/configurationmanagement/" title="2.6 Configuration Management" class="dd-item ">
+      <li data-nav-id="/homelab_setup/configurationmanagement/" title="2.6 Configuration Management" class="dd-item active">
         <a href="/homelab_setup/configurationmanagement/">
         2.6 Configuration Management
         
@@ -331,14 +331,18 @@
                   <span class="links">
                  
                  
-                   Categories
+                   2.6 Configuration Management
                  
                   </span>
                 </div>
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#26-configuration-management">2.6 Configuration Management</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -348,30 +352,63 @@
             
         <div id="head-tags">
         
+<div class="tags">
+
+  <a class="tag-link" href="/tags/ansible">Ansible</a>
+
+</div>
+
         </div>
         
         <div id="body-inner">
           
             <h1>
               
-                category ::
-              
-              Categories
+              2.6 Configuration Management
             </h1>
           
 
         
 
 
-
-
-
+<p>State/Version: <strong>Draft</strong></p>
 <ul>
-	
+<li><a href="#26-configuration-management">2.6 Configuration Management</a></li>
 </ul>
+<h2 id="26-configuration-management">2.6 Configuration Management</h2>
+<ul>
+<li>My &ldquo;Configuration Management&rdquo; tool of choise is <a href="https://www.ansible-semaphore.com/">Ansible</a></li>
+<li>The HomeLab uses currently the following playbooks to automate common administration tasks:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Playbook</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>apt-upgrade</td>
+<td>Keep the infrastructure containers (Ansible, bind9) up to date.</td>
+</tr>
+<tr>
+<td>bind9</td>
+<td>Install and manage bind9.</td>
+</tr>
+<tr>
+<td>nfs-server</td>
+<td>Install and manage nfs-server.</td>
+</tr>
+<tr>
+<td>pagerduty-alerts</td>
+<td>Trigger alerts for specific actions (e.g. Server needs reboot&hellip;)</td>
+</tr>
+</tbody>
+</table>
 
 
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -441,6 +478,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -453,6 +491,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -533,6 +574,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -557,8 +599,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/homelab_setup/virtualization/" title="2.5 Virtualization"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/introduction/" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/homelab_setup/highlevel/" title="2.1 High level view" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -590,3 +634,4 @@
 
   </body>
 </html>
+
