@@ -6,15 +6,26 @@
     <description>Recent content in documentation on Gerundium</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Jul 2023 22:00:14 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Aug 2023 22:00:14 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1.1 Documentation</title>
       <link>https://gerundium.github.io/introduction/documentation/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      <pubDate>Tue, 29 Aug 2023 22:00:14 +0200</pubDate>
       
       <guid>https://gerundium.github.io/introduction/documentation/</guid>
-      <description>State/Version: Draft
-Table of contents  Table of contents  1.1 About the author 1.2 About this blog  1.2.1 Creation process  1.2.1.1 Creation workflow   1.2.2 Github setup 1.2.3 Step-by-step deployment      1.1 About the author  Senor Linux system administrator and DevOps enthusiast Daily business: #kubernetes #openshift #rancher #gitops #ansible Current place of residence: Berlin (Germany)  1.2 About this blog  This blog was built with hugo.</description>
+      <description>State/Version: 20230829p1
+Table of contents  Table of contents  1.1 About the author 1.2 About this blog  1.2.1 Creation process  1.2.1.1 Creation workflow        Skip the &amp;ldquo;Deep Dive&amp;rdquo; sections for a brief fly over.
+ 1.1 About the author  Senor Linux system administrator, junior devOps administrator and HomeLab enthusiast Daily business: #devops #kubernetes #openshift #gitops #ansible Current place of residence: Berlin (Germany)  1.</description>
+    </item>
+    
+    <item>
+      <title>1.2 Deep Dive</title>
+      <link>https://gerundium.github.io/introduction/documentationdeepdive/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/introduction/documentationdeepdive/</guid>
+      <description>State/Version: 20230829p1
+1.2.1.1 Creation workflow - Deep Dive Sequencediagram sequenceDiagram participant A as Laptop@local participant B as blog-source@github participant C as blog-rendered@github A-A: 1. Create content locally A-B: 2. Push code to blog-source@github Note over A, B: Commit action (push) will trigger &#34;Github Actions&#34; B-C: 3. Push static html from blog-source@github to blog-rendered@github (Github pages) via a &#34;Github Actions&#34;  1.2.2 Github setup    Alias Real world brief description     blog-source@github gerundium/gerundium.</description>
     </item>
     
   </channel>

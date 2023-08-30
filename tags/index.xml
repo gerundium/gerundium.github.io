@@ -6,13 +6,31 @@
     <description>Recent content in Tags on Gerundium</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Jul 2023 22:18:23 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Aug 2023 22:18:23 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>home</title>
       <link>https://gerundium.github.io/tags/home/</link>
-      <pubDate>Thu, 27 Jul 2023 22:18:23 +0200</pubDate>
+      <pubDate>Tue, 29 Aug 2023 22:18:23 +0200</pubDate>
       
       <guid>https://gerundium.github.io/tags/home/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ansible</title>
+      <link>https://gerundium.github.io/tags/ansible/</link>
+      <pubDate>Tue, 29 Aug 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>documentation</title>
+      <link>https://gerundium.github.io/tags/documentation/</link>
+      <pubDate>Tue, 29 Aug 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/documentation/</guid>
       <description></description>
     </item>
     
@@ -35,20 +53,11 @@
     </item>
     
     <item>
-      <title>Ansible</title>
-      <link>https://gerundium.github.io/tags/ansible/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      <title>Vegan</title>
+      <link>https://gerundium.github.io/tags/vegan/</link>
+      <pubDate>Thu, 27 Jul 2023 22:18:23 +0200</pubDate>
       
-      <guid>https://gerundium.github.io/tags/ansible/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>documentation</title>
-      <link>https://gerundium.github.io/tags/documentation/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
-      
-      <guid>https://gerundium.github.io/tags/documentation/</guid>
+      <guid>https://gerundium.github.io/tags/vegan/</guid>
       <description></description>
     </item>
     
@@ -103,15 +112,6 @@
       <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
       
       <guid>https://gerundium.github.io/tags/storage/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>todo</title>
-      <link>https://gerundium.github.io/tags/todo/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
-      
-      <guid>https://gerundium.github.io/tags/todo/</guid>
       <description></description>
     </item>
     

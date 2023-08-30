@@ -13,7 +13,7 @@
       <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
       
       <guid>https://gerundium.github.io/homelab_setup/highlevel/</guid>
-      <description>State/Version: Draft
+      <description>State/Version: 20230829p1
  2.1 High level view   2.1 High level view   Hardware, that belongs to the &amp;ldquo;Management&amp;rdquo; segment, knows routes into the other network segments and provides internet connectivity. Hardware grouped in IoT (Internet of Things/Trash) segment is considered as untrusted and therefore cannot connect to other network devices. It still can be controled via internet.  </description>
     </item>
     

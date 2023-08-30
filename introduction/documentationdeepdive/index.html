@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Tags :: Gerundium</title>
+    <title>1.2 Deep Dive :: Gerundium</title>
 
     
     <link href="/css/nucleus.css?1693380514" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/tags/">
+  <body class="" data-url="/introduction/documentationdeepdive/">
     <nav id="sidebar" class="">
 
 
@@ -88,7 +88,7 @@
   
     
     <li data-nav-id="/introduction/" title="Introduction" class="dd-item
-        
+        parent
         
         
         ">
@@ -135,7 +135,7 @@
  
   
     
-      <li data-nav-id="/introduction/documentationdeepdive/" title="1.2 Deep Dive" class="dd-item ">
+      <li data-nav-id="/introduction/documentationdeepdive/" title="1.2 Deep Dive" class="dd-item active">
         <a href="/introduction/documentationdeepdive/">
         1.2 Deep Dive
         
@@ -376,14 +376,24 @@
                   <span class="links">
                  
                  
-                   Tags
+                   1.2 Deep Dive
                  
                   </span>
                 </div>
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#122-github-setup">1.2.2 Github setup</a></li>
+        <li><a href="#123-step-by-step-deployment">1.2.3 Step-by-step deployment</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -393,56 +403,107 @@
             
         <div id="head-tags">
         
+<div class="tags">
+
+  <a class="tag-link" href="/tags/home">home</a>
+
+  <a class="tag-link" href="/tags/documentation">documentation</a>
+
+</div>
+
         </div>
         
         <div id="body-inner">
           
             <h1>
               
-                tag ::
-              
-              Tags
+              1.2 Deep Dive
             </h1>
           
 
         
 
 
+<p>State/Version: <em>20230829p1</em></p>
+<h4 id="1211-creation-workflow---deep-dive">1.2.1.1 Creation workflow - Deep Dive</h4>
+<p><strong>Sequencediagram</strong>
+
+<div class="mermaid" align="center">
+sequenceDiagram
+  participant A as Laptop@local
+  participant B as blog-source@github
+  participant C as blog-rendered@github
+  A->>A: 1. Create content locally
+  A->>B: 2. Push code to blog-source@github
+  Note over A, B: Commit action (push)</br> will trigger "Github Actions"
+  B->>C: 3. Push static html from blog-source@github to blog-rendered@github</br> (Github pages) via a "Github Actions"
+</div>
+</p>
+<h3 id="122-github-setup">1.2.2 Github setup</h3>
+<table>
+<thead>
+<tr>
+<th>Alias</th>
+<th>Real world</th>
+<th>brief description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>blog-source@github</td>
+<td>gerundium/gerundium.github.io-source</td>
+<td>This repository contains the full monty. Use it to create / render new content for your blog.</td>
+</tr>
+<tr>
+<td>blog-rendered@github</td>
+<td>gerundium/gerundium.github.io</td>
+<td>This repository is linked as git submodule inside blog-source@github. It contains the rendered / static html files</td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code># --
+# Folder tree
+# --
+./blog-source@github
+├── archetypes
+├── content
+├── data
+├── layouts
+├── public  # blog-rendered@github (Git submodule)
+|   ├── authors
+|   ├── basics
+|   ├── categories
+|   ├── css
+|   ├── fonts
+|   ├── images
+|   ├── js
+|   ├── logo
+|   ├── mermaid
+|   ├── posts
+|   ├── series
+|   ├── tags
+|   └── webfonts
+├── resources
+├── static
+└── themes
+</code></pre><h3 id="123-step-by-step-deployment">1.2.3 Step-by-step deployment</h3>
+<ol>
+<li>Apply changes to <em>blog-source@github</em>/content</li>
+<li>Build static html
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Execute command on the laptop</span>
+hugo
+</code></pre></div></li>
+<li>Commit changes in public submodule and push commit to <em>blog-rendered@github</em>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#75715e"># Git commit and push</span>
+ git add -A
+ git commit -m <span style="color:#e6db74">&#34;add: &lt;specify cxhange&gt;&#34;</span>
+ git push 
+</code></pre></div></li>
+<li>Wait a minute while build and deployment piplines run. Check if changes were deployed to github pages. <a href="https://gerundium.github.io/">gerundium.github.io</a></li>
+</ol>
 
 
-
-<ul>
-	
-		<li><a href="/tags/home/">home</a></li>
-	
-		<li><a href="/tags/ansible/">Ansible</a></li>
-	
-		<li><a href="/tags/documentation/">documentation</a></li>
-	
-		<li><a href="/tags/homelab-setup/">Homelab Setup</a></li>
-	
-		<li><a href="/tags/introduction/">Introduction</a></li>
-	
-		<li><a href="/tags/vegan/">Vegan</a></li>
-	
-		<li><a href="/tags/hardware/">Hardware</a></li>
-	
-		<li><a href="/tags/high-level-view/">high-level-view</a></li>
-	
-		<li><a href="/tags/infrastructure/">Infrastructure</a></li>
-	
-		<li><a href="/tags/network/">Network</a></li>
-	
-		<li><a href="/tags/proxmox/">Proxmox</a></li>
-	
-		<li><a href="/tags/storage/">Storage</a></li>
-	
-		<li><a href="/tags/virtualization/">Virtualization</a></li>
-	
-</ul>
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -477,8 +538,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -492,6 +551,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -509,6 +571,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -527,6 +590,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -660,8 +726,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/introduction/documentation/" title="1.1 Documentation"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/introduction/" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/homelab_setup/" title="Homelab Setup" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -693,3 +761,4 @@
 
   </body>
 </html>
+
