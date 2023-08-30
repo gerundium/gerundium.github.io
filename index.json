@@ -1,5 +1,33 @@
 [
 {
+	"uri": "https://gerundium.github.io/homelab_setup/highlevel/",
+	"title": "2.1 High level view",
+	"tags": ["Homelab Setup", "high-level-view"],
+	"description": "",
+	"content": "State/Version: 20230829p1\n 2.1 High level view   2.1 High level view   Hardware, that belongs to the \u0026ldquo;Management\u0026rdquo; segment, knows routes into the other network segments and provides internet connectivity. Hardware grouped in IoT (Internet of Things/Trash) segment is considered as untrusted and therefore cannot connect to other network devices. It still can be controled via internet.  "
+},
+{
+	"uri": "https://gerundium.github.io/homelab_setup/hardware/",
+	"title": "2.2 Hardware",
+	"tags": ["Hardware"],
+	"description": "",
+	"content": "State/Version: 20230829p1\n 2.2 Hardware   2.2.0 Baseline  2.2.0.1 Homelab Tier Ratings   2.2.1 Computing node 2.2.2 Managed Switch 2.2.3 Router 2.2.4 Raspberry Pi    2.2 Hardware  2.2.0 Baseline 2.2.0.1 Homelab Tier Ratings  Tier 0:  A completely fault-tolerant hardware with redundancy for every component. Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept.   Tier 1:  Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept.   Tier 2:  Is crucial for the project. No backups Easy to replace   Tier 3:  Is optional to run the project. Hardware runs experimental services Failures have no impact on other components.    2.2.1 Computing node  Kiebel Micro X12  Tier 1 2x Kingston FURY Beast 32GB, DDR4-3200 MHz Intel Core i7-12700, 12x2.1 GHz Kingston 1TB NV2 M.2 SSD PCIe 4.0    2.2.2 Managed Switch  TP-Link TL-SG116E  Tier 2    2.2.3 Router  Mikrotik RB951Ui  Tier 1    2.2.4 Raspberry Pi  Raspberry Pi 4b (4GB RAM)  Tier2    "
+},
+{
+	"uri": "https://gerundium.github.io/homelab_setup/network/",
+	"title": "2.3 Network",
+	"tags": ["Network"],
+	"description": "",
+	"content": "State/Version: 20230829p1\n 2.3 Network topology  2.3.1 Overview    2.3 Network topology 2.3.1 Overview See also: High level view\n   Network CIDR Project Type     192.168.2.0/24 Homelab / compute static   192.168.3.0/24 Homelab / storage static    "
+},
+{
+	"uri": "https://gerundium.github.io/homelab_setup/storage/",
+	"title": "2.4 Storage",
+	"tags": ["Storage"],
+	"description": "",
+	"content": "State/Version: 20230829p1\n 2.4 Storage  2.4.1 Overview    2.4 Storage 2.4.1 Overview  The compute storage is located as local-lvm on the compute node. Backups are located on a NFS-Volume providet by a RaspberryPi.  %%{init: {\"flowchart\": {\"htmlLabels\": false}} }%% flowchart LR subgraph Proxmox-Host subgraph Proxmox-Storageprovider localDisk[\"`_localDisk_: local: (type: Directory) local-lvm: (type: LVM) `\"] RaspberryPi[\"`_RaspberryPi_: nfs-rpi: (type: NFS) `\"] end localDisk -- Backup -- RaspberryPi Container -- OS -- localDisk end  "
+},
+{
 	"uri": "https://gerundium.github.io/",
 	"title": "Welcome",
 	"tags": ["home"],
@@ -12,6 +40,20 @@
 	"tags": ["Introduction"],
 	"description": "",
 	"content": "Topics  Documentation  About the author About this blog    "
+},
+{
+	"uri": "https://gerundium.github.io/homelab_setup/virtualization/",
+	"title": "2.5 Virtualization",
+	"tags": ["Homelab Setup", "Virtualization", "Proxmox", "Infrastructure"],
+	"description": "",
+	"content": "State/Version: 20230829p1\n 2.5 Proxmox   2.5.0 Reference 2.5.1 Setup   2.5.1.1 Installation Process 2.5.1.2 Web Console Overview 2.5.1.3 User Management 2.5.1.4 Backups and Snapshots 2.5.1.5 DNS 2.5.1.6 Provisioning 2.5.1.7 Subscription   2.5.2 Maintenance     2.5 Proxmox   Proxmox Virtual Environment  Compute, network, and storage in a single solution    2.5.0 Reference  Proxmox Full Course  2.5.1 Setup  2.5.1.1 Installation Process  Reference: Proxmox VE Full Course: Class 2 - Installation Process   Create bootable Proxmox USB-Stick Install Proxmox on your Hardware  2.5.1.2 Web Console Overview 2.5.1.3 User Management  The Homelab is currently running with local user accounts. The provisioning process prerequisites root account for container deployments.  2.5.1.4 Backups and Snapshots  Proxmox runs daily backups. The backup destination is a Raspberry Pi running in a separate Storage Network.  2.5.1.5 DNS  This lab runs it\u0026rsquo;s own name servers. They will be installed and configuered via Ansible Semaphore. No manual Changes!  2.5.1.6 Provisioning  How to create container templates  This procedure was used to provision the Kubernetes HA-Cluster.    2.5.1.7 Subscription  I\u0026rsquo;m using the community version of Proxmox. For PVE and Ceph the \u0026ldquo;no-subscription repositories\u0026rdquo; are enabled.   2.5.2 Maintenance   manual patching schedule: weekly-monday  Can be automated easily by switching to Ansible (Semaphore). Triggered manually untill December 2023 to get more experience with it.  "
+},
+{
+	"uri": "https://gerundium.github.io/homelab_setup/configurationmanagement/",
+	"title": "2.6 Configuration Management",
+	"tags": ["Ansible"],
+	"description": "",
+	"content": "State/Version: 20230829p1\n 2.6 Configuration Management  2.6 Configuration Management  My \u0026ldquo;Configuration Management\u0026rdquo; tool of choice is Ansible (Semaphore) The HomeLab uses currently the following playbooks to automate common administration tasks:  private github repo       Playbook Purpose     apt-upgrade Keep the infrastructure containers (Ansible, bind9) up to date.   bind9 Install and manage bind9.   nfs-server Install and manage nfs-server.   pagerduty-alerts Trigger alerts for specific actions (e.g. Server needs reboot\u0026hellip;)   traefik Reverse Proxy and Application Gateway    "
 },
 {
 	"uri": "https://gerundium.github.io/homelab_setup/",
@@ -47,13 +89,6 @@
 	"tags": ["home", "documentation"],
 	"description": "",
 	"content": "State/Version: 20230829p1\nTable of contents  Table of contents  1.1 About the author 1.2 About this blog  1.2.1 Creation process  1.2.1.1 Creation workflow        Skip the \u0026ldquo;Deep Dive\u0026rdquo; sections for a brief fly over.\n 1.1 About the author  Senor Linux system administrator, junior devOps administrator and HomeLab enthusiast Daily business: #devops #kubernetes #openshift #gitops #ansible Current place of residence: Berlin (Germany)  1.2 About this blog  This blog is built with hugo.  1.2.1 Creation process This section describes the ci/cd workflow that creates the gerundium.github.io blog.\n1.2.1.1 Creation workflow  Create content offline (braindump). Commit and push code changes, that are considered source code, to blog-source@github.  That event will not trigger any pipeline.\n Source code changes include manual changes to any directory except \u0026ldquo;/public\u0026rdquo;\n   Commit and push code changes, that are considered public blog, to blog-source@github.  That event will trigger the github actions pipeline.\n Public blog changes contain changes that are made to \u0026ldquo;/public\u0026rdquo; directory by executing \u0026ldquo;hugo\u0026rdquo; command\n    FlowChart flowchart LR 0 --|Push| A A --|Push| B   0) Laptop - private, local clone of blog-source@github A) blog-source@github - private, contains full hugo code B) blog-rendered@github - public, contains static (rendered) hugo html code  "
-},
-{
-	"uri": "https://gerundium.github.io/homelab_setup/configurationmanagement/",
-	"title": "2.6 Configuration Management",
-	"tags": ["Ansible"],
-	"description": "",
-	"content": "State/Version: 20230829p1\n 2.6 Configuration Management  2.6 Configuration Management  My \u0026ldquo;Configuration Management\u0026rdquo; tool of choice is Ansible (Semaphore) The HomeLab uses currently the following playbooks to automate common administration tasks:  private github repo       Playbook Purpose     apt-upgrade Keep the infrastructure containers (Ansible, bind9) up to date.   bind9 Install and manage bind9.   nfs-server Install and manage nfs-server.   pagerduty-alerts Trigger alerts for specific actions (e.g. Server needs reboot\u0026hellip;)   traefik Reverse Proxy and Application Gateway    "
 },
 {
 	"uri": "https://gerundium.github.io/tags/ansible/",
@@ -96,41 +131,6 @@
 	"tags": ["home", "documentation"],
 	"description": "",
 	"content": "State/Version: 20230829p1\n1.2.1.1 Creation workflow - Deep Dive Sequencediagram sequenceDiagram participant A as Laptop@local participant B as blog-source@github participant C as blog-rendered@github A-A: 1. Create content locally A-B: 2. Push code to blog-source@github Note over A, B: Commit action (push) will trigger \"Github Actions\" B-C: 3. Push static html from blog-source@github to blog-rendered@github (Github pages) via a \"Github Actions\"  1.2.2 Github setup    Alias Real world brief description     blog-source@github gerundium/gerundium.github.io-source This repository contains the full monty. Use it to create / render new content for your blog.   blog-rendered@github gerundium/gerundium.github.io This repository is linked as git submodule inside blog-source@github. It contains the rendered / static html files    # -- # Folder tree # -- ./blog-source@github ├── archetypes ├── content ├── data ├── layouts ├── public # blog-rendered@github (Git submodule) | ├── authors | ├── basics | ├── categories | ├── css | ├── fonts | ├── images | ├── js | ├── logo | ├── mermaid | ├── posts | ├── series | ├── tags | └── webfonts ├── resources ├── static └── themes 1.2.3 Step-by-step deployment  Apply changes to blog-source@github/content Build static html # Execute command on the laptop hugo  Commit changes in public submodule and push commit to blog-rendered@github # Git commit and push git add -A git commit -m \u0026#34;add: \u0026lt;specify cxhange\u0026gt;\u0026#34; git push  Wait a minute while build and deployment piplines run. Check if changes were deployed to github pages. gerundium.github.io  "
-},
-{
-	"uri": "https://gerundium.github.io/homelab_setup/highlevel/",
-	"title": "2.1 High level view",
-	"tags": ["Homelab Setup", "high-level-view"],
-	"description": "",
-	"content": "State/Version: 20230829p1\n 2.1 High level view   2.1 High level view   Hardware, that belongs to the \u0026ldquo;Management\u0026rdquo; segment, knows routes into the other network segments and provides internet connectivity. Hardware grouped in IoT (Internet of Things/Trash) segment is considered as untrusted and therefore cannot connect to other network devices. It still can be controled via internet.  "
-},
-{
-	"uri": "https://gerundium.github.io/homelab_setup/hardware/",
-	"title": "2.2 Hardware",
-	"tags": ["Hardware"],
-	"description": "",
-	"content": "State/Version: 20230829p1\n 2.2 Hardware   2.2.0 Baseline  2.2.0.1 Homelab Tier Ratings   2.2.1 Computing node 2.2.2 Managed Switch 2.2.3 Router 2.2.4 Raspberry Pi    2.2 Hardware  2.2.0 Baseline 2.2.0.1 Homelab Tier Ratings  Tier 0:  A completely fault-tolerant hardware with redundancy for every component. Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept.   Tier 1:  Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept.   Tier 2:  Is crucial for the project. No backups Easy to replace   Tier 3:  Is optional to run the project. Hardware runs experimental services Failures have no impact on other components.    2.2.1 Computing node  Kiebel Micro X12  Tier 1 2x Kingston FURY Beast 32GB, DDR4-3200 MHz Intel Core i7-12700, 12x2.1 GHz Kingston 1TB NV2 M.2 SSD PCIe 4.0    2.2.2 Managed Switch  TP-Link TL-SG116E  Tier 2    2.2.3 Router  Mikrotik RB951Ui  Tier 1    2.2.4 Raspberry Pi  Raspberry Pi 4b (4GB RAM)  Tier2    "
-},
-{
-	"uri": "https://gerundium.github.io/homelab_setup/network/",
-	"title": "2.3 Network",
-	"tags": ["Network"],
-	"description": "",
-	"content": "State/Version: 20230829p1\n 2.3 Network topology  2.3.1 Overview    2.3 Network topology 2.3.1 Overview See also: High level view\n   Network CIDR Project Type     192.168.2.0/24 Homelab / compute static   192.168.3.0/24 Homelab / storage static    "
-},
-{
-	"uri": "https://gerundium.github.io/homelab_setup/storage/",
-	"title": "2.4 Storage",
-	"tags": ["Storage"],
-	"description": "",
-	"content": "State/Version: 20230829p1\n 2.4 Storage  2.4.1 Overview    2.4 Storage 2.4.1 Overview  The compute storage is located as local-lvm on the compute node. Backups are located on a NFS-Volume providet by a RaspberryPi.  %%{init: {\"flowchart\": {\"htmlLabels\": false}} }%% flowchart LR subgraph Proxmox-Host subgraph Proxmox-Storageprovider localDisk[\"`_localDisk_: local: (type: Directory) local-lvm: (type: LVM) `\"] RaspberryPi[\"`_RaspberryPi_: nfs-rpi: (type: NFS) `\"] end localDisk -- Backup -- RaspberryPi Container -- OS -- localDisk end  "
-},
-{
-	"uri": "https://gerundium.github.io/homelab_setup/virtualization/",
-	"title": "2.5 Virtualization",
-	"tags": ["Homelab Setup", "Virtualization", "Proxmox", "Infrastructure"],
-	"description": "",
-	"content": "State/Version: 20230829p1\n 2.5 Proxmox   2.5.0 Reference 2.5.1 Setup   2.5.1.1 Installation Process 2.5.1.2 Web Console Overview 2.5.1.3 User Management 2.5.1.4 Backups and Snapshots 2.5.1.5 DNS 2.5.1.6 Provisioning 2.5.1.7 Subscription   2.5.2 Maintenance     2.5 Proxmox   Proxmox Virtual Environment  Compute, network, and storage in a single solution    2.5.0 Reference  Proxmox Full Course  2.5.1 Setup  2.5.1.1 Installation Process  Reference: Proxmox VE Full Course: Class 2 - Installation Process   Create bootable Proxmox USB-Stick Install Proxmox on your Hardware  2.5.1.2 Web Console Overview 2.5.1.3 User Management  The Homelab is currently running with local user accounts. The provisioning process prerequisites root account for container deployments.  2.5.1.4 Backups and Snapshots  Proxmox runs daily backups. The backup destination is a Raspberry Pi running in a separate Storage Network.  2.5.1.5 DNS  This lab runs it\u0026rsquo;s own name servers. They will be installed and configuered via Ansible Semaphore. No manual Changes!  2.5.1.6 Provisioning  How to create container templates  This procedure was used to provision the Kubernetes HA-Cluster.    2.5.1.7 Subscription  I\u0026rsquo;m using the community version of Proxmox. For PVE and Ceph the \u0026ldquo;no-subscription repositories\u0026rdquo; are enabled.   2.5.2 Maintenance   manual patching schedule: weekly-monday  Can be automated easily by switching to Ansible (Semaphore). Triggered manually untill December 2023 to get more experience with it.  "
 },
 {
 	"uri": "https://gerundium.github.io/tags/hardware/",
