@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>K3s-HA-Cluster on Gerundium</title>
-    <link>https://gerundium.github.io/k8s_ha_cluster/</link>
-    <description>Recent content in K3s-HA-Cluster on Gerundium</description>
+    <title>tbi on Gerundium</title>
+    <link>https://gerundium.github.io/tags/tbi/</link>
+    <description>Recent content in tbi on Gerundium</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://gerundium.github.io/k8s_ha_cluster/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://gerundium.github.io/tags/tbi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3.1 Overview</title>
       <link>https://gerundium.github.io/k8s_ha_cluster/overview/</link>
@@ -26,19 +26,6 @@ In addition to expertise, two character traits in particular are required to mas
       <description>State/Version: 20240225
 3.2 Provisioning the k8s nodes 🚚 3.2.1 Development cluster 🚧  The Development Cluster is privisioned with 🏷️ansible. Running as bare-metal variant of 🏷️talos on the 🏷️Virtualbox platform.  The code for the development cluster is documented here: 🌐 homelab repository on github.
 3.2.2 Staging cluster The Staging Cluster runs as a set of virtual machines on a 🏷️Proxmox host. The Terraform source code is also stored currently in a privat github repository and will be published soon in this 🌐 homelab repository on github</description>
-    </item>
-    
-    <item>
-      <title>3.3 Deploy Kubernetes</title>
-      <link>https://gerundium.github.io/k8s_ha_cluster/deployment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gerundium.github.io/k8s_ha_cluster/deployment/</guid>
-      <description>State/Version: 20240225
-3.3 Deploy Kubernetes 🚚 Once the stage is prepared Kubernetes can be deployed.
-3.3.1 Development cluster 🚧 The first iteartion of the Kubernetes homelab was provisioned as described on rechno-tims blog.
- 🌐 Automated build of HA k3s Cluster with kube-vip and MetalLB  Currently I replaced 🏷️k3s with 🏷️talos because it fits better into my automated provisioning and configuration workflow.
-The code is documented here: 🌐 homelab repository on github.</description>
     </item>
     
     <item>

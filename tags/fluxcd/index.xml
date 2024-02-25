@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>gitops on Gerundium</title>
-    <link>https://gerundium.github.io/tags/gitops/</link>
-    <description>Recent content in gitops on Gerundium</description>
+    <title>fluxcd on Gerundium</title>
+    <link>https://gerundium.github.io/tags/fluxcd/</link>
+    <description>Recent content in fluxcd on Gerundium</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://gerundium.github.io/tags/gitops/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://gerundium.github.io/tags/fluxcd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3.4 GitOps: Install and configure FluxCD</title>
       <link>https://gerundium.github.io/k8s_ha_cluster/gitops/</link>

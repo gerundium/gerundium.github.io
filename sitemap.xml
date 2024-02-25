@@ -14,9 +14,9 @@
   </url><url>
     <loc>https://gerundium.github.io/k8s_ha_cluster/deployment/</loc>
   </url><url>
-    <loc>https://gerundium.github.io/k8s_ha_cluster/gitops/</loc>
-  </url><url>
     <loc>https://gerundium.github.io/homelab_setup/storage/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/k8s_ha_cluster/gitops/</loc>
   </url><url>
     <loc>https://gerundium.github.io/homelab_setup/virtualization/</loc>
   </url><url>
@@ -43,6 +43,8 @@
     <loc>https://gerundium.github.io/tags/deployment/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/documentation/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/fluxcd/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/gitops/</loc>
   </url><url>
@@ -73,6 +75,8 @@
     <loc>https://gerundium.github.io/tags/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/tbd/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/tbi/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/vegan/</loc>
   </url><url>
