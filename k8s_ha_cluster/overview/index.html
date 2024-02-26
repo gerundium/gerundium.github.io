@@ -12,22 +12,22 @@
     <title>3.1 Overview :: Gerundium</title>
 
     
-    <link href="/css/nucleus.css?1701034490" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701034490" rel="stylesheet">
-    <link href="/css/hybrid.css?1701034490" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701034490" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701034490" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701034490" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701034490" rel="stylesheet">
-    <link href="/css/theme.css?1701034490" rel="stylesheet">
-    <link href="/css/tabs.css?1701034490" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701034490" rel="stylesheet">
+    <link href="/css/nucleus.css?1708903418" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1708903418" rel="stylesheet">
+    <link href="/css/hybrid.css?1708903418" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1708903418" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1708903418" rel="stylesheet">
+    <link href="/css/auto-complete.css?1708903418" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1708903418" rel="stylesheet">
+    <link href="/css/theme.css?1708903418" rel="stylesheet">
+    <link href="/css/tabs.css?1708903418" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1708903418" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1701034490" rel="stylesheet">
+    <link href="/css/theme-green.css?1708903418" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701034490"></script>
+    <script src="/js/jquery-3.3.1.min.js?1708903418"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701034490"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701034490"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1708903418"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1708903418"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/gerundium.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701034490"></script>
+<script type="text/javascript" src="/js/search.js?1708903418"></script>
 
     
   </div>
@@ -371,9 +371,9 @@
  
   
     
-      <li data-nav-id="/k8s_ha_cluster/provisioning/" title="3.2 Provisioning the Kubernetes nodes" class="dd-item ">
+      <li data-nav-id="/k8s_ha_cluster/provisioning/" title="3.2 Provisioning the k8s nodes" class="dd-item ">
         <a href="/k8s_ha_cluster/provisioning/">
-        3.2 Provisioning the Kubernetes nodes
+        3.2 Provisioning the k8s nodes
         
         </a>
     </li>
@@ -505,11 +505,11 @@
   <ul>
     <li><a href="#31-overview">3.1 Overview</a>
       <ul>
-        <li><a href="#311-a-few-words-before-we-start">3.1.1 A few words before we start</a></li>
-        <li><a href="#312-tech-skills">3.1.2 Tech skills</a></li>
-        <li><a href="#312-state-of-automation">3.1.2 State of automation</a></li>
-        <li><a href="#313-workflow">3.1.3 Workflow</a></li>
-        <li><a href="#314-current-setup">3.1.4 Current Setup</a></li>
+        <li><a href="#311-a-few-words-before-we-start-">3.1.1 A few words before we start 🚀</a></li>
+        <li><a href="#312-tech-skills-">3.1.2 Tech skills 🧑‍💻</a></li>
+        <li><a href="#313-state-of-automation-">3.1.3 State of automation 🏗️</a></li>
+        <li><a href="#314-workflow-">3.1.4 Workflow 🔀</a></li>
+        <li><a href="#315-current-setup">3.1.5 Current Setup</a></li>
       </ul>
     </li>
   </ul>
@@ -529,6 +529,10 @@
 
   <a class="tag-link" href="/tags/overview">Overview</a>
 
+  <a class="tag-link" href="/tags/ansible">Ansible</a>
+
+  <a class="tag-link" href="/tags/tbi">tbi</a>
+
 </div>
 
         </div>
@@ -544,15 +548,13 @@
         
 
 
-<ul>
-<li>State/Version: <em><strong>20231126</strong></em></li>
-</ul>
+<p>State/Version: <em><strong>20240225</strong></em></p>
 <h2 id="31-overview">3.1 Overview</h2>
-<h3 id="311-a-few-words-before-we-start">3.1.1 A few words before we start</h3>
+<h3 id="311-a-few-words-before-we-start-">3.1.1 A few words before we start 🚀</h3>
 <p>Setting up a home lab takes time. The construction or renovation of a house is comparable in scope and complexity. In the end, you not only know where the pipes run, but also what you can do better when building the next one.</p>
 <p>In addition to expertise, two character traits in particular are required to master a project like this.</p>
 <p><strong>Patience</strong> and <strong>Persistence</strong></p>
-<h3 id="312-tech-skills">3.1.2 Tech skills</h3>
+<h3 id="312-tech-skills-">3.1.2 Tech skills 🧑‍💻</h3>
 <p>#<strong>loadbalancer</strong>
 #<strong>metallb</strong>
 #<strong>nat</strong>
@@ -584,7 +586,7 @@
 #<strong>sealed-secrets</strong>
 #<strong>dns</strong>
 #<strong>ipam</strong></p>
-<h3 id="312-state-of-automation">3.1.2 State of automation</h3>
+<h3 id="313-state-of-automation-">3.1.3 State of automation 🏗️</h3>
 <table>
 <thead>
 <tr>
@@ -595,43 +597,43 @@
 <tbody>
 <tr>
 <td>Provisioning - Virtualbox</td>
-<td>Full</td>
+<td>full ✅</td>
 </tr>
 <tr>
 <td>Provisioning - Virtualbox</td>
-<td>Full</td>
+<td>full ✅</td>
 </tr>
 <tr>
 <td>Provisioning - Proxmox</td>
-<td>Full *1 *2</td>
+<td>full ✅</td>
 </tr>
 <tr>
 <td>Provisioning - Docker</td>
-<td>Full</td>
+<td>partially *1 *2 *3 🔥</td>
 </tr>
 <tr>
 <td>K8s Deployment - Virtualbox</td>
-<td>Full</td>
+<td>full ✅</td>
 </tr>
 <tr>
 <td>K8s Deployment - Proxmox</td>
-<td>Full</td>
+<td>full ✅</td>
 </tr>
 <tr>
 <td>K8s Deployment - Docker</td>
-<td>Full</td>
+<td>full ✅</td>
 </tr>
 <tr>
 <td>GitOps Fluxcd - Virtualbox</td>
-<td>Full</td>
+<td>full ✅</td>
 </tr>
 <tr>
 <td>GitOps Fluxcd - Proxmox</td>
-<td>Full</td>
+<td>full ✅</td>
 </tr>
 <tr>
 <td>GitOps Fluxcd - Docker</td>
-<td>Full</td>
+<td>full ✅</td>
 </tr>
 <tr>
 <td><em><strong>Legend</strong></em></td>
@@ -647,28 +649,28 @@
 </tr>
 <tr>
 <td><em>*3</em></td>
-<td>Talos bootstrapping is manuall</td>
+<td>This step is manuall</td>
 </tr>
 </tbody>
 </table>
-<h3 id="313-workflow">3.1.3 Workflow</h3>
+<h3 id="314-workflow-">3.1.4 Workflow 🔀</h3>
 <p>Let&rsquo;s flow through the setup.</p>
 <p><img src="/Workflow.png" alt="Image placeholder"></p>
-<h3 id="314-current-setup">3.1.4 Current Setup</h3>
+<h3 id="315-current-setup">3.1.5 Current Setup</h3>
 <p><em><strong>Development Cluster</strong></em></p>
-<p>The Development Cluster (#<strong>Virtualbox</strong>) is provisioned and bootstraped with #<strong>Ansible</strong></p>
+<p>The Development Cluster (🏷️<strong>Virtualbox</strong>) is provisioned and bootstraped with 🏷️<strong>Ansible</strong></p>
 <ul>
 <li>1x Controlplane(s)</li>
 <li>2x Worker nodes</li>
 </ul>
 <p><em><strong>Staging Cluster</strong></em></p>
-<p>The Staging Cluster (#<strong>Proxmox</strong>) is provisioned with #<strong>Terraform</strong> and bootstraped with #<strong>Ansible</strong>.</p>
+<p>The Staging Cluster (🏷️<strong>Proxmox</strong>) is provisioned with 🏷️<strong>Terraform</strong> and bootstraped with 🏷️<strong>Ansible</strong>.</p>
 <ul>
 <li>3x Controlplane(s)</li>
 <li>2x Worker nodes</li>
 </ul>
 <p><em><strong>Production Cluster</strong></em></p>
-<p>The Production Cluster (#<strong>VPS</strong>) is provisioned manually as virtual machine at contabo and bootstraped with #<strong>Ansible</strong>.</p>
+<p>The Production Cluster (🏷️<strong>VPS</strong>) is provisioned manually as virtual machine at contabo and bootstraped with 🏷️<strong>Ansible</strong>.</p>
 <ul>
 <li>1x Loadbalancer</li>
 <li>1x Controlplane(s)</li>
@@ -982,7 +984,7 @@
 			<a class="nav nav-prev" href="/k8s_ha_cluster/" title="K3s-HA-Cluster"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/k8s_ha_cluster/provisioning/" title="3.2 Provisioning the Kubernetes nodes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/k8s_ha_cluster/provisioning/" title="3.2 Provisioning the k8s nodes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -992,16 +994,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701034490"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701034490"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701034490"></script>
-    <script src="/js/jquery.sticky.js?1701034490"></script>
-    <script src="/js/featherlight.min.js?1701034490"></script>
-    <script src="/js/highlight.pack.js?1701034490"></script>
+    <script src="/js/clipboard.min.js?1708903418"></script>
+    <script src="/js/perfect-scrollbar.min.js?1708903418"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1708903418"></script>
+    <script src="/js/jquery.sticky.js?1708903418"></script>
+    <script src="/js/featherlight.min.js?1708903418"></script>
+    <script src="/js/highlight.pack.js?1708903418"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701034490"></script>
-    <script src="/js/learn.js?1701034490"></script>
-    <script src="/js/hugo-learn.js?1701034490"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1708903418"></script>
+    <script src="/js/learn.js?1708903418"></script>
+    <script src="/js/hugo-learn.js?1708903418"></script>
     
         
             <script src="https://unpkg.com/mermaid@10.3.0/dist/mermaid.min.js"></script>

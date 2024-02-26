@@ -12,22 +12,22 @@
     <title>3.4 GitOps: Install and configure FluxCD :: Gerundium</title>
 
     
-    <link href="/css/nucleus.css?1701034490" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701034490" rel="stylesheet">
-    <link href="/css/hybrid.css?1701034490" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701034490" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701034490" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701034490" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701034490" rel="stylesheet">
-    <link href="/css/theme.css?1701034490" rel="stylesheet">
-    <link href="/css/tabs.css?1701034490" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701034490" rel="stylesheet">
+    <link href="/css/nucleus.css?1708903418" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1708903418" rel="stylesheet">
+    <link href="/css/hybrid.css?1708903418" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1708903418" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1708903418" rel="stylesheet">
+    <link href="/css/auto-complete.css?1708903418" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1708903418" rel="stylesheet">
+    <link href="/css/theme.css?1708903418" rel="stylesheet">
+    <link href="/css/tabs.css?1708903418" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1708903418" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1701034490" rel="stylesheet">
+    <link href="/css/theme-green.css?1708903418" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701034490"></script>
+    <script src="/js/jquery-3.3.1.min.js?1708903418"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701034490"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701034490"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1708903418"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1708903418"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/gerundium.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701034490"></script>
+<script type="text/javascript" src="/js/search.js?1708903418"></script>
 
     
   </div>
@@ -371,9 +371,9 @@
  
   
     
-      <li data-nav-id="/k8s_ha_cluster/provisioning/" title="3.2 Provisioning the Kubernetes nodes" class="dd-item ">
+      <li data-nav-id="/k8s_ha_cluster/provisioning/" title="3.2 Provisioning the k8s nodes" class="dd-item ">
         <a href="/k8s_ha_cluster/provisioning/">
-        3.2 Provisioning the Kubernetes nodes
+        3.2 Provisioning the k8s nodes
         
         </a>
     </li>
@@ -503,8 +503,9 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#34-gitops-install-and-configure-fluxcd">3.4 GitOps: Install and configure FluxCD</a></li>
-    <li><a href="#41-gitops-deploy-apps">4.1 GitOps: Deploy Apps</a></li>
+    <li><a href="#34--gitops-install-and-configure">3.4  GitOps: Install and configure</a></li>
+    <li><a href="#341--gitops-install-and-configure-fluxcd-">3.4.1  GitOps: Install and configure FluxCD 🏗️</a></li>
+    <li><a href="#342-gitops-deploy-resources-to-the-cluster-">3.4.2 GitOps: Deploy resources to the cluster 🏗️</a></li>
   </ul>
 </nav>
     </div>
@@ -522,7 +523,9 @@
 
   <a class="tag-link" href="/tags/gitops">gitops</a>
 
-  <a class="tag-link" href="/tags/tbd">tbd</a>
+  <a class="tag-link" href="/tags/fluxcd">fluxcd</a>
+
+  <a class="tag-link" href="/tags/tbi">tbi</a>
 
 </div>
 
@@ -539,11 +542,10 @@
         
 
 
-<ul>
-<li>State/Version: <em><strong>20231126</strong></em></li>
-</ul>
-<h2 id="34-gitops-install-and-configure-fluxcd">3.4 GitOps: Install and configure FluxCD</h2>
-<p>Installing and Configuring FluxCD is the easiest part ( if you do not mess up your dns setup :] ).</p>
+<p>State/Version: <em><strong>20240225</strong></em></p>
+<h2 id="34--gitops-install-and-configure">3.4  GitOps: Install and configure</h2>
+<h2 id="341--gitops-install-and-configure-fluxcd-">3.4.1  GitOps: Install and configure FluxCD 🏗️</h2>
+<p>Installing and Configuring 🏷️<strong>FluxCD</strong> is the easy part ( if you do not mess up your dns setup :] ).</p>
 <p>This will install Flux into the cluster and connect it to the specified git repository.
 You have to repeat it for every cluster you want to manage.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export GITHUB_TOKEN<span style="color:#f92672">=</span>&lt;PersonalAccessToken&gt;
@@ -556,11 +558,212 @@ flux bootstrap github <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>  --path<span style="color:#f92672">=</span>clusters/&lt;STAGE&gt; <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>  --personal <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>  --branch main
-</code></pre></div><p>Now your Kubernetes cluster knows how and where to pull Kubernetes resources from.</p>
-<h2 id="41-gitops-deploy-apps">4.1 GitOps: Deploy Apps</h2>
-<blockquote>
-<p><strong>#toBeDone</strong></p>
-</blockquote>
+</code></pre></div><p>At this point your fluxcd is authorized and configured to apply changes (pull-based), that are stored in your 🏷️<strong>github-repository</strong>, to the Kubernetes cluster.</p>
+<h2 id="342-gitops-deploy-resources-to-the-cluster-">3.4.2 GitOps: Deploy resources to the cluster 🏗️</h2>
+<p>I am convinced that a everything(possible) as code is an absolut <em>must have</em> in a homelab.</p>
+<ul>
+<li>It enables you to deploy complex setups in a repeatable and fast way.</li>
+<li>Makes possible rollbacks.</li>
+</ul>
+<p>Furthermore using a standarized toolstack makes it possible to share your insights and issues with a wide community.</p>
+<p>This screenshot shows some statistics for the current setup:</p>
+<p><img src="/monokle01.png" alt="monokle01"></p>
+<p>The filestructure looks like this.:</p>
+<pre tabindex="0"><code>.
+├── apps
+│   [...]
+│   ├── base
+│   │   ├── cloudflared
+│   │   │   ├── deployment.yaml
+│   │   │   └── tunnel-credentials-sealed.yaml
+│   │   ├── homer
+│   │   │   ├── helmRepo.yaml
+│   │   │   ├── kustomization.yaml
+│   │   │   └── namespace.yaml
+│   │   ├── mysql-operator
+│   │   │   ├── helmRepo.yaml
+│   │   │   ├── kustomization.yaml
+│   │   │   └── namespace.yaml
+│   │   ├── nginx
+│   │   │   ├── configmap.yaml
+│   │   │   ├── deployment.yaml
+│   │   │   ├── kustomization.yaml
+│   │   │   ├── namespace.yaml
+│   │   │   └── service.yaml
+│   │   └── openproject
+│   │       ├── helmRepo.yaml
+│   │       ├── kustomization.yaml
+│   │       └── namespace.yaml
+│   ├── dev
+│   │   ├── cloudflared-broken
+│   │   │   ├── helmRelease.yaml
+│   │   │   ├── helmRepository.yaml
+│   │   │   └── namespace.yaml
+│   │   ├── homer
+│   │   │   ├── certificate.yaml
+│   │   │   ├── config-secret-sealed.yaml
+│   │   │   ├── config-secret.yaml
+│   │   │   ├── helmRelease.yaml
+│   │   │   ├── ingressroute.yaml
+│   │   │   ├── kustomization.yaml
+│   │   │   ├── pvc.yaml
+│   │   │   └── README.md
+│   │   ├── mysql-innodbcluster
+│   │   │   ├── clusterSecret.yaml
+│   │   │   ├── kustomization.yaml
+│   │   │   └── manifest.yaml
+│   │   ├── mysql-operator
+│   │   │   ├── helmRelease.yaml
+│   │   │   ├── kustomization.yaml
+│   │   │   └── README.md
+│   │   ├── nextcloud
+│   │   │   ├── certificate.yaml
+│   │   │   ├── helmRelease.yaml
+│   │   │   ├── helmRepo.yaml
+│   │   │   ├── ingressroute.yaml
+│   │   │   ├── ingress.yaml.disable
+│   │   │   ├── kustomization.yaml
+│   │   │   ├── namespace.yaml
+│   │   │   ├── nextcloud-config-source.yaml
+│   │   │   └── pvc.yaml
+│   │   ├── nextcloud-aio
+│   │   │   ├── helmRelease.yaml
+│   │   │   ├── helmRepo.yaml
+│   │   │   ├── kustomization.yaml
+│   │   │   ├── namespace.yaml
+│   │   │   ├── nextcloud-config-source.yaml
+│   │   │   └── pvc.yaml
+│   │   ├── nginx
+│   │   │   ├── certificate.yaml
+│   │   │   ├── ingressroute.yaml
+│   │   │   └── kustomization.yaml
+│   │   └── openproject
+│   │       ├── certificate.yaml
+│   │       ├── helmRelease.yaml
+│   │       ├── homer-config-source-sealed.yaml
+│   │       ├── homer-config-source.yaml
+│   │       ├── ingressroute.yaml
+│   │       ├── kustomization.yaml
+│   │       ├── pvc.yaml
+│   │       └── README.md
+│   ├── prod
+│   │   ├── nextcloud
+│   │   │   ├── helmRelease.yaml
+│   │   │   ├── helmRepo.yaml
+│   │   │   ├── kustomization.yaml
+│   │   │   ├── namespace.yaml
+│   │   │   ├── nextcloud-config-source.yaml
+│   │   │   └── pvc.yaml
+│   │   └── nginx
+│   │       ├── flux-patch.yaml
+│   │       └── kustomization.yaml
+│   └── staging
+│       └── nginx
+│           ├── certificate.yaml
+│           ├── flux-patch.yaml
+│           ├── ingressroute.yaml
+│           └── kustomization.yaml
+├── clusters
+│   [...]
+│   ├── dev
+│   │   ├── apps-dev-homer.yaml
+│   │   ├── apps-dev-mysql-innodbcluster.yaml.disable
+│   │   ├── apps-dev-mysql-operator.yaml.disable
+│   │   ├── apps-dev-nextcloud-aio.yaml.disable
+│   │   ├── apps-dev-nextcloud.yaml.disable
+│   │   ├── apps-dev-nginx.yaml
+│   │   ├── apps-dev-openproject.yaml.disable
+│   │   ├── flux-system
+│   │   │   ├── gotk-components.yaml
+│   │   │   ├── gotk-sync.yaml
+│   │   │   └── kustomization.yaml
+│   │   ├── infrastructure-base-controllers.yaml
+│   │   ├── infrastructure-dev-configs-post.yaml
+│   │   ├── infrastructure-dev-configs-pre.yaml
+│   │   ├── infrastructure-dev-controllers.yaml
+│   │   ├── infrastructure-dev-integration.yaml
+│   │   └── infrastructure-dev-secrets.yaml
+│   ├── prod
+│   │   ├── apps-base-cloudflared.yaml
+│   │   ├── apps-prod-nextcloud.yaml
+│   │   ├── apps-prod-nginx.yaml
+│   │   ├── flux-system
+│   │   │   ├── gotk-components.yaml
+│   │   │   ├── gotk-sync.yaml
+│   │   │   └── kustomization.yaml
+│   │   ├── infrastructure-base.yaml
+│   │   └── infrastructure-prod.yaml
+│   └── staging
+│       ├── apps-staging-nginx.yaml
+│       ├── flux-system
+│       │   ├── gotk-components.yaml
+│       │   ├── gotk-sync.yaml
+│       │   └── kustomization.yaml
+│       ├── infrastructure-base.yaml
+│       └── infrastructure-staging.yaml
+├── infrastructure
+│   [...]
+│   ├── base
+│   │   └── controllers
+│   │       ├── cert-manager.yaml
+│   │       ├── kustomization.yaml
+│   │       └── sealed-secrets.yaml
+│   ├── dev
+│   │   ├── configsPost
+│   │   │   ├── certManager
+│   │   │   ├── kustomization.yaml
+│   │   │   └── metallb
+│   │   ├── configsPre
+│   │   │   ├── kustomization.yaml
+│   │   │   ├── nfsProvisioner
+│   │   │   └── traefik
+│   │   ├── controllersPhase1
+│   │   │   ├── kustomization.yaml
+│   │   │   └── metallb
+│   │   ├── controllersPhase2
+│   │   │   ├── kustomization.yaml
+│   │   │   └── traefik.yaml
+│   │   ├── integration
+│   │   │   ├── kustomization.yaml
+│   │   │   └── nfs-provisioner.yaml
+│   │   └── secrets
+│   │       ├── cert-manager
+│   │       ├── kustomization.yaml
+│   │       └── private.key
+│   ├── prod
+│   │   ├── configs
+│   │   │   ├── cert-manager
+│   │   │   └── kustomization.yaml
+│   │   ├── controllers
+│   │   │   └── kustomization.yaml
+│   │   └── secrets
+│   │       ├── cert-manager
+│   │       └── kustomization.yaml
+│   └── staging
+│       ├── configs
+│       │   ├── cert-manager
+│       │   ├── kustomization.yaml
+│       │   ├── metallb-ipaddresspool.yaml
+│       │   └── traefik
+│       ├── controllers
+│       │   ├── kustomization.yaml
+│       │   ├── longhorn.yaml
+│       │   ├── metallb.yaml
+│       │   └── traefik.yaml
+│       └── secrets
+│           ├── cert-manager
+│           ├── kustomization.yaml
+├── public
+│   ├── [...]
+│   │   └── acebox2-pub-sealed-secrets.pem
+│   ├── dev
+│   │   └── dev-pub-sealed-secrets.pem
+│   └── staging
+│       └── staging-pub-sealed-secrets.pem
+├── secrets
+│   └── bootstrap-sealedSecretsMasterKey.yaml
+└── [...]
+</code></pre><p><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*mFHQGCSW2sI09n2r.jpeg" alt="Easy k8s"></p>
 
 
 <footer class="footline">
@@ -882,16 +1085,16 @@ flux bootstrap github <span style="color:#ae81ff">\
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701034490"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701034490"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701034490"></script>
-    <script src="/js/jquery.sticky.js?1701034490"></script>
-    <script src="/js/featherlight.min.js?1701034490"></script>
-    <script src="/js/highlight.pack.js?1701034490"></script>
+    <script src="/js/clipboard.min.js?1708903418"></script>
+    <script src="/js/perfect-scrollbar.min.js?1708903418"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1708903418"></script>
+    <script src="/js/jquery.sticky.js?1708903418"></script>
+    <script src="/js/featherlight.min.js?1708903418"></script>
+    <script src="/js/highlight.pack.js?1708903418"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701034490"></script>
-    <script src="/js/learn.js?1701034490"></script>
-    <script src="/js/hugo-learn.js?1701034490"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1708903418"></script>
+    <script src="/js/learn.js?1708903418"></script>
+    <script src="/js/hugo-learn.js?1708903418"></script>
     
         
             <script src="https://unpkg.com/mermaid@10.3.0/dist/mermaid.min.js"></script>

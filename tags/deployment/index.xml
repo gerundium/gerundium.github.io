@@ -12,9 +12,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/k8s_ha_cluster/deployment/</guid>
-      <description> State/Version: 20231126  3.3 Deploy Kubernetes Once the stage is prepared kubernetes can deployed.
-3.3.1 Development cluster  #toBeDone
- 3.3.2 Staging cluster  Automated build of HA k3s Cluster with kube-vip and MetalLB  3.3.3 Production cluster  K3s Homepage  # Create the k8s cluster k3d cluster create --api-port 6550 -p &amp;#34;8081:80@loadbalancer&amp;#34; --agents 2 </description>
+      <description>State/Version: 20240225
+3.3 Deploy Kubernetes 🚚 Once the stage is prepared Kubernetes can be deployed.
+3.3.1 Development cluster 🚧 The first iteartion of the Kubernetes homelab was provisioned as described on rechno-tims blog.
+ 🌐 Automated build of HA k3s Cluster with kube-vip and MetalLB  Currently I replaced 🏷️k3s with 🏷️talos because it fits better into my automated provisioning and configuration workflow.
+The code is documented here: 🌐 homelab repository on github.</description>
     </item>
     
   </channel>
