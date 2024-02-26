@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on Gerundium</title>
+    <link>https://gerundium.github.io/tags/hardware/</link>
+    <description>Recent content in Hardware on Gerundium</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Jul 2023 22:00:14 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.2 Hardware</title>
+      <link>https://gerundium.github.io/homelab-setup/hardware/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/homelab-setup/hardware/</guid>
+      <description>State/Version: Draft
+ 2.2 Hardware   2.2.1 Computing node 2.2.2 Managed Switch 2.2.3 Router    2.2 Hardware  2.2.1 Computing node  Kiebel Micro X12  2x Kingston FURY Beast 32GB, DDR4-3200 MHz Intel Core i7-12700, 12x2.1 GHz Kingston 1TB NV2 M.2 SSD PCIe 4.0    2.2.2 Managed Switch  TP-Link TL-SG116E  2.2.3 Router  Mikrotik RB951Ui  </description>
+    </item>
+    
+  </channel>
+</rss>

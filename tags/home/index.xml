@@ -14,7 +14,8 @@
       
       <guid>https://gerundium.github.io/</guid>
       <description>Welcome friend Project status  State/Version: Draft  Focus This documentation is about building your own Homelab.
- Type of audience: system administrators (#linux #devops) Type of documentation: technical documentation  High level view  Introduction  Documentation  Author Hugo Github Pages     Homelab Setup  Network Hardware Kubernetes Ansible GitOps    </description>
+ Type of audience: system administrators (#linux #devops) Type of documentation: technical documentation  The HomeLab should meet the following requirements:
+ low efford infrastructure  every tool is easy to maintain by a single person   maximal automation therefore  Everything as Code    High level view  Introduction  Documentation  Author Hugo Github Pages     Homelab Setup  Network Hardware Kubernetes Ansible GitOps    </description>
     </item>
     
     <item>
@@ -25,16 +26,6 @@
       <guid>https://gerundium.github.io/introduction/documentation/</guid>
       <description>State/Version: Draft
 Table of contents  Table of contents  1.1 About the author  1.2 About this blog   1.2.1 CI / CD Pipeline   1.2.1.1 Sequencediagram   1.2.2 Github setup 1.2.3 Step-by-step deployment      1.1 About the author   Senor Linux system administrator and DevOps enthusiast Daily business: #kubernetes #openshift #rancher #gitops #ansible Current place of residence: Berlin (Germany)  1.</description>
-    </item>
-    
-    <item>
-      <title>2.1 Network</title>
-      <link>https://gerundium.github.io/homelab-setup/network/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
-      
-      <guid>https://gerundium.github.io/homelab-setup/network/</guid>
-      <description>State/Version: Draft
- 2.1 High level view   2.1 High level view   Hardware, that belongs to the &amp;ldquo;Management&amp;rdquo; network, knows routes into the other networks and provide internet connectivity. Hardware grouped in IoT (Internet of Things/Trash) segment is considered as untrusted and therefore cannot connect to other network members. It still can be controled via internet.  </description>
     </item>
     
   </channel>
