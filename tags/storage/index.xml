@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storage on Gerundium</title>
+    <link>https://gerundium.github.io/tags/storage/</link>
+    <description>Recent content in Storage on Gerundium</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Jul 2023 22:00:14 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.4 Storage</title>
+      <link>https://gerundium.github.io/homelab_setup/storage/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/homelab_setup/storage/</guid>
+      <description>State/Version: Draft
+ 2.4 Storage  2.4.1 Overview    2.4 Storage 2.4.1 Overview %%{init: {&#34;flowchart&#34;: {&#34;htmlLabels&#34;: false}} }%% flowchart LR subgraph Proxmox-Host subgraph Proxmox-Storageprovider localDisk[&#34;`_localDisk_: local: (type: Directory) local-lvm: (type: LVM) `&#34;] RaspberryPi[&#34;`_RaspberryPi_: nfs-rpi: (type: NFS) `&#34;] end localDisk -- Backup -- RaspberryPi Container -- OS -- localDisk end  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -11,14 +11,14 @@
 	"title": "Welcome",
 	"tags": ["home"],
 	"description": "",
-	"content": "Welcome friend Project status  State/Version: Draft  Focus This documentation is about building your own Homelab.\n Type of audience: system administrators (#linux #devops) Type of documentation: technical documentation  The HomeLab should meet the following requirements:\n low efford infrastructure  every tool is easy to maintain by a single person   maximal automation therefore  Everything as Code    High level view  Introduction  Documentation  Author Hugo Github Pages     Homelab Setup  Network Hardware Kubernetes Ansible GitOps    "
+	"content": "Welcome friend Project status  State/Version: Draft  Focus  Type of audience: system administrators (#linux #devops) Type of documentation: technical documentation  Requirements for my Homelab are:\n Low efford infrastructure  Every tool is easy to maintain by a single person.   Maximal high degree of automation  Everything as Code where possible    High level view  Introduction  Documentation  About the author About this blog     Homelab Setup  High level view Hardware Network Storage Virtualization Configuration Managament GitOps    "
 },
 {
-	"uri": "https://gerundium.github.io/homelab-setup/",
+	"uri": "https://gerundium.github.io/homelab_setup/",
 	"title": "Homelab Setup",
 	"tags": ["Homelab Setup"],
 	"description": "",
-	"content": "Topics Homelab Setup  High level view Hardware Virtualization Ansible DNS DHCP GitOps    "
+	"content": "Topics Homelab Setup  High level view Hardware Network Storage Virtualization Configuration Management GitOps    "
 },
 {
 	"uri": "https://gerundium.github.io/tags/home/",
@@ -53,53 +53,53 @@
 	"title": "1.1 Documentation",
 	"tags": ["home", "documentation"],
 	"description": "",
-	"content": "State/Version: Draft\nTable of contents  Table of contents  1.1 About the author  1.2 About this blog   1.2.1 CI / CD Pipeline   1.2.1.1 Sequencediagram   1.2.2 Github setup 1.2.3 Step-by-step deployment      1.1 About the author   Senor Linux system administrator and DevOps enthusiast Daily business: #kubernetes #openshift #rancher #gitops #ansible Current place of residence: Berlin (Germany)  1.2 About this blog   This blog was built with hugo. The build process (CI) is triggered being through generating static content by github actions. The deployment process (CD) is also done through github actions by deploying static content to github pages.  1.2.1 CI / CD Pipeline   The whole pipeline is fully automated Prerequisites two github repositories and one local working copy flowchart LR 0 --|Push| A A --|Push| B   0) Laptop - private, local clone of blog-source@github A) blog-source@github - private, contains full hugo code B) blog-rendered@github - public, contains static (rendered) hugo html code    1.2.1.1 Sequencediagram sequenceDiagram participant A as Laptop@local participant B as blog-source@github participant C as blog-rendered@github A-A: 1. Create content locally A-B: 2. Push code to blog-source@github Note over A, B: Commit action (push) will trigger \"Github Actions\" B-C: 3. Push static html from blog-source@github to blog-rendered@github (Github pages) via a \"Github Actions\"  1.2.2 Github setup    Alias Real world brief description     blog-source@github gerundium/gerundium.github.io-source This repository contains the full monty. Use it to create / render new content for your blog.   blog-rendered@github gerundium/gerundium.github.io This repository is linked as git submodule inside blog-source@github. It contains the rendered / static html files    # -- # Folder tree # -- ./blog-source@github ├── archetypes ├── content ├── data ├── layouts ├── public # blog-rendered@github (Git submodule) | ├── authors | ├── basics | ├── categories | ├── css | ├── fonts | ├── images | ├── js | ├── logo | ├── mermaid | ├── posts | ├── series | ├── tags | └── webfonts ├── resources ├── static └── themes 1.2.3 Step-by-step deployment  Apply changes to blog-source@github/content Build static html # Execute command on the laptop hugo  Commit changes in public submodule and push commit to blog-rendered@github # Git commit and push git add -A git commit -m \u0026#34;add: \u0026lt;specify cxhange\u0026gt;\u0026#34; git push  Wait a minute while build and deployment piplines run. Check if changes were deployed to github pages. gerundium.github.io  "
+	"content": "State/Version: Draft\nTable of contents  Table of contents  1.1 About the author 1.2 About this blog  1.2.1 Creation process  1.2.1.1 Creation workflow   1.2.2 Github setup 1.2.3 Step-by-step deployment      1.1 About the author  Senor Linux system administrator and DevOps enthusiast Daily business: #kubernetes #openshift #rancher #gitops #ansible Current place of residence: Berlin (Germany)  1.2 About this blog  This blog was built with hugo.  1.2.1 Creation process 1.2.1.1 Creation workflow  Create content offline. Commit and push code changes, that are considered source code, to blog-source@github.  That event will not trigger any pipeline.\n Source code changes include manual changes to any directory except \u0026ldquo;/public\u0026rdquo;\n   Commit and push code changes, that are considered public blog, to blog-source@github.  That event will trigger the github actions pipeline.\n Public blog changes contain changes that are made to \u0026ldquo;/public\u0026rdquo; directory by executing \u0026ldquo;hugo\u0026rdquo; command\n    FlowChart flowchart LR 0 --|Push| A A --|Push| B   0) Laptop - private, local clone of blog-source@github A) blog-source@github - private, contains full hugo code B) blog-rendered@github - public, contains static (rendered) hugo html code  Sequencediagram sequenceDiagram participant A as Laptop@local participant B as blog-source@github participant C as blog-rendered@github A-A: 1. Create content locally A-B: 2. Push code to blog-source@github Note over A, B: Commit action (push) will trigger \"Github Actions\" B-C: 3. Push static html from blog-source@github to blog-rendered@github (Github pages) via a \"Github Actions\"  1.2.2 Github setup    Alias Real world brief description     blog-source@github gerundium/gerundium.github.io-source This repository contains the full monty. Use it to create / render new content for your blog.   blog-rendered@github gerundium/gerundium.github.io This repository is linked as git submodule inside blog-source@github. It contains the rendered / static html files    # -- # Folder tree # -- ./blog-source@github ├── archetypes ├── content ├── data ├── layouts ├── public # blog-rendered@github (Git submodule) | ├── authors | ├── basics | ├── categories | ├── css | ├── fonts | ├── images | ├── js | ├── logo | ├── mermaid | ├── posts | ├── series | ├── tags | └── webfonts ├── resources ├── static └── themes 1.2.3 Step-by-step deployment  Apply changes to blog-source@github/content Build static html # Execute command on the laptop hugo  Commit changes in public submodule and push commit to blog-rendered@github # Git commit and push git add -A git commit -m \u0026#34;add: \u0026lt;specify cxhange\u0026gt;\u0026#34; git push  Wait a minute while build and deployment piplines run. Check if changes were deployed to github pages. gerundium.github.io  "
 },
 {
-	"uri": "https://gerundium.github.io/homelab-setup/highlevel/",
+	"uri": "https://gerundium.github.io/homelab_setup/highlevel/",
 	"title": "2.1 High level view",
-	"tags": ["Homelab Setup"],
+	"tags": ["Homelab Setup", "high-level-view"],
 	"description": "",
 	"content": "State/Version: Draft\n 2.1 High level view   2.1 High level view   Hardware, that belongs to the \u0026ldquo;Management\u0026rdquo; segment, knows routes into the other network segments and provides internet connectivity. Hardware grouped in IoT (Internet of Things/Trash) segment is considered as untrusted and therefore cannot connect to other network devices. It still can be controled via internet.  "
 },
 {
-	"uri": "https://gerundium.github.io/homelab-setup/hardware/",
+	"uri": "https://gerundium.github.io/homelab_setup/hardware/",
 	"title": "2.2 Hardware",
-	"tags": ["Homelab Setup", "Hardware"],
+	"tags": ["Hardware"],
 	"description": "",
-	"content": "State/Version: Draft\n 2.2 Hardware   2.2.1 Computing node 2.2.2 Managed Switch 2.2.3 Router    2.2 Hardware  2.2.1 Computing node  Kiebel Micro X12  2x Kingston FURY Beast 32GB, DDR4-3200 MHz Intel Core i7-12700, 12x2.1 GHz Kingston 1TB NV2 M.2 SSD PCIe 4.0    2.2.2 Managed Switch  TP-Link TL-SG116E  2.2.3 Router  Mikrotik RB951Ui  "
+	"content": "State/Version: Draft\n 2.2 Hardware   2.2.0 Baseline  2.2.0.1 Homelab Tier Ratings   2.2.1 Computing node 2.2.2 Managed Switch 2.2.3 Router 2.2.4 Raspberry Pi    2.2 Hardware  2.2.0 Baseline 2.2.0.1 Homelab Tier Ratings  Tier 0:  A completely fault-tolerant hardware with redundancy for every component. Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept.   Tier 1:  Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept.   Tier 2:  Is crucial for the project. No backups Easy to replace   Tier 3:  Is optional to run the project. Hardware runs experimental services Failures have no impact on other components.    2.2.1 Computing node  Kiebel Micro X12  Tier 1 2x Kingston FURY Beast 32GB, DDR4-3200 MHz Intel Core i7-12700, 12x2.1 GHz Kingston 1TB NV2 M.2 SSD PCIe 4.0    2.2.2 Managed Switch  TP-Link TL-SG116E  Tier 2    2.2.3 Router  Mikrotik RB951Ui  Tier 1    2.2.4 Raspberry Pi  Raspberry Pi 4b (4GB RAM)  Tier2    "
 },
 {
-	"uri": "https://gerundium.github.io/homelab-setup/virtualization/",
-	"title": "2.3 Virtualization",
-	"tags": ["Homelab Setup", "Virtualization", "Proxmox", "Infrastructure"],
+	"uri": "https://gerundium.github.io/homelab_setup/network/",
+	"title": "2.3 Network",
+	"tags": ["Network"],
 	"description": "",
-	"content": "State/Version: Draft\n 2.3 Proxmox   2.3.1 Setup  2.3.2 Maintenance     2.3 Proxmox   Proxmox Virtual Environment  Compute, network, and storage in a single solution    2.3.1 Setup   Current setup uses single proxmox-node  2.3.2 Maintenance   manual patching: weekly-monday  "
+	"content": "State/Version: Draft\n 2.3 Network topology  2.3.1 Overview    2.3 Network topology 2.3.1 Overview See also: High level view\n   Network CIDR Project Type     192.168.2.0/24 Homelab / compute static   192.168.3.0/24 Homelab / storage static    "
 },
 {
-	"uri": "https://gerundium.github.io/homelab-setup/ansible/",
-	"title": "2.4 Ansible",
-	"tags": ["Homelab Setup", "Configuration Management", "Infrastructure"],
+	"uri": "https://gerundium.github.io/homelab_setup/storage/",
+	"title": "2.4 Storage",
+	"tags": ["Storage"],
 	"description": "",
-	"content": "State/Version: Draft\n 2.4 Ansible   2.4.1 Setup 2.4.2 Maintenance    2.4 Ansible  2.4.1 Setup  Ansible Semaphore https://www.turnkeylinux.org/ansible  2.4.2 Maintenance  manual patching: weekly-monday  "
+	"content": "State/Version: Draft\n 2.4 Storage  2.4.1 Overview    2.4 Storage 2.4.1 Overview %%{init: {\"flowchart\": {\"htmlLabels\": false}} }%% flowchart LR subgraph Proxmox-Host subgraph Proxmox-Storageprovider localDisk[\"`_localDisk_: local: (type: Directory) local-lvm: (type: LVM) `\"] RaspberryPi[\"`_RaspberryPi_: nfs-rpi: (type: NFS) `\"] end localDisk -- Backup -- RaspberryPi Container -- OS -- localDisk end  "
 },
 {
-	"uri": "https://gerundium.github.io/homelab-setup/dns/",
-	"title": "2.5 DNS",
-	"tags": ["Homelab Setup", "bind9", "Infrastructure"],
+	"uri": "https://gerundium.github.io/homelab_setup/virtualization/",
+	"title": "2.5 Virtualization",
+	"tags": ["Homelab Setup", "Virtualization", "Proxmox", "Infrastructure", "todo"],
 	"description": "",
-	"content": "State/Version: Draft\n 2.5 DNS   2.5.1 Deploy and configure bind9    2.5 DNS   This lab uses it\u0026rsquo;s own name servers. Provision the containers via Proxmox template. Install and configure bind9 using Ansible playbook.  2.5.1 Deploy and configure bind9 Deploy via Ansible (Semaphore) playbook\n https://github.com/gerundium/ansible/blob/main/bind9.yml  "
+	"content": "State/Version: Draft\n 2.5 Proxmox   2.5.0 Reference 2.5.1 Setup   2.5.1.1 Installation Process 2.5.1.2 Web Console Overview 2.5.1.3 User Management 2.5.1.4 Backups and Snapshots 2.5.1.5 DNS 2.5.1.6 Provisioning 2.5.1.7 Subscription   2.5.2 Maintenance     2.5 Proxmox   Proxmox Virtual Environment  Compute, network, and storage in a single solution    2.5.0 Reference  Proxmox Full Course  2.5.1 Setup  2.5.1.1 Installation Process  Reference: Proxmox VE Full Course: Class 2 - Installation Process   Create bootable Proxmox USB-Stick Install Proxmox on your Hardware  2.5.1.2 Web Console Overview 2.5.1.3 User Management  The Homelab is currently running with local user accounts. The provisioning process prerequisites root account for container deployments.  2.5.1.4 Backups and Snapshots  Proxmox runs daily backups. The backup destination is a Raspberry Pi running in a separate Storage Network.  2.5.1.5 DNS  This lab runs it\u0026rsquo;s own name servers. They will be installed and configuered via Ansible Semaphore. No manual Changes!  2.5.1.6 Provisioning  to do  2.5.1.7 Subscription  I\u0026rsquo;m using the community version of Proxmox. For PVE and Ceph the \u0026ldquo;no-subscription repositories\u0026rdquo; are enabled.   2.5.2 Maintenance   manual patching: weekly-monday  "
 },
 {
-	"uri": "https://gerundium.github.io/tags/bind9/",
-	"title": "bind9",
-	"tags": [],
+	"uri": "https://gerundium.github.io/homelab_setup/configurationmanagement/",
+	"title": "2.6 Configuration Management",
+	"tags": ["Ansible"],
 	"description": "",
-	"content": ""
+	"content": "State/Version: Draft\n 2.6 Configuration Management  2.6 Configuration Management  My \u0026ldquo;Configuration Management\u0026rdquo; tool of choise is Ansible The HomeLab uses currently the following playbooks to automate common administration tasks:     Playbook Purpose     apt-upgrade Keep the infrastructure containers (Ansible, bind9) up to date.   bind9 Install and manage bind9.   nfs-server Install and manage nfs-server.   pagerduty-alerts Trigger alerts for specific actions (e.g. Server needs reboot\u0026hellip;)    "
 },
 {
-	"uri": "https://gerundium.github.io/tags/configuration-management/",
-	"title": "Configuration Management",
+	"uri": "https://gerundium.github.io/tags/ansible/",
+	"title": "Ansible",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -119,6 +119,13 @@
 	"content": ""
 },
 {
+	"uri": "https://gerundium.github.io/tags/high-level-view/",
+	"title": "high-level-view",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://gerundium.github.io/tags/infrastructure/",
 	"title": "Infrastructure",
 	"tags": [],
@@ -126,8 +133,29 @@
 	"content": ""
 },
 {
+	"uri": "https://gerundium.github.io/tags/network/",
+	"title": "Network",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://gerundium.github.io/tags/proxmox/",
 	"title": "Proxmox",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gerundium.github.io/tags/storage/",
+	"title": "Storage",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gerundium.github.io/tags/todo/",
+	"title": "todo",
 	"tags": [],
 	"description": "",
 	"content": ""

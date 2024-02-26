@@ -35,20 +35,11 @@
     </item>
     
     <item>
-      <title>bind9</title>
-      <link>https://gerundium.github.io/tags/bind9/</link>
+      <title>Ansible</title>
+      <link>https://gerundium.github.io/tags/ansible/</link>
       <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
       
-      <guid>https://gerundium.github.io/tags/bind9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Configuration Management</title>
-      <link>https://gerundium.github.io/tags/configuration-management/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
-      
-      <guid>https://gerundium.github.io/tags/configuration-management/</guid>
+      <guid>https://gerundium.github.io/tags/ansible/</guid>
       <description></description>
     </item>
     
@@ -71,6 +62,15 @@
     </item>
     
     <item>
+      <title>high-level-view</title>
+      <link>https://gerundium.github.io/tags/high-level-view/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/high-level-view/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Infrastructure</title>
       <link>https://gerundium.github.io/tags/infrastructure/</link>
       <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
@@ -80,11 +80,38 @@
     </item>
     
     <item>
+      <title>Network</title>
+      <link>https://gerundium.github.io/tags/network/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Proxmox</title>
       <link>https://gerundium.github.io/tags/proxmox/</link>
       <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
       
       <guid>https://gerundium.github.io/tags/proxmox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Storage</title>
+      <link>https://gerundium.github.io/tags/storage/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>todo</title>
+      <link>https://gerundium.github.io/tags/todo/</link>
+      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/todo/</guid>
       <description></description>
     </item>
     

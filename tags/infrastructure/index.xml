@@ -8,34 +8,13 @@
     <language>en</language>
     <lastBuildDate>Thu, 27 Jul 2023 22:00:14 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2.3 Virtualization</title>
-      <link>https://gerundium.github.io/homelab-setup/virtualization/</link>
+      <title>2.5 Virtualization</title>
+      <link>https://gerundium.github.io/homelab_setup/virtualization/</link>
       <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
       
-      <guid>https://gerundium.github.io/homelab-setup/virtualization/</guid>
+      <guid>https://gerundium.github.io/homelab_setup/virtualization/</guid>
       <description>State/Version: Draft
- 2.3 Proxmox   2.3.1 Setup  2.3.2 Maintenance     2.3 Proxmox   Proxmox Virtual Environment  Compute, network, and storage in a single solution    2.3.1 Setup   Current setup uses single proxmox-node  2.3.2 Maintenance   manual patching: weekly-monday  </description>
-    </item>
-    
-    <item>
-      <title>2.4 Ansible</title>
-      <link>https://gerundium.github.io/homelab-setup/ansible/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
-      
-      <guid>https://gerundium.github.io/homelab-setup/ansible/</guid>
-      <description>State/Version: Draft
- 2.4 Ansible   2.4.1 Setup 2.4.2 Maintenance    2.4 Ansible  2.4.1 Setup  Ansible Semaphore https://www.turnkeylinux.org/ansible  2.4.2 Maintenance  manual patching: weekly-monday  </description>
-    </item>
-    
-    <item>
-      <title>2.5 DNS</title>
-      <link>https://gerundium.github.io/homelab-setup/dns/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
-      
-      <guid>https://gerundium.github.io/homelab-setup/dns/</guid>
-      <description>State/Version: Draft
- 2.5 DNS   2.5.1 Deploy and configure bind9    2.5 DNS   This lab uses it&amp;rsquo;s own name servers. Provision the containers via Proxmox template. Install and configure bind9 using Ansible playbook.  2.5.1 Deploy and configure bind9 Deploy via Ansible (Semaphore) playbook
- https://github.com/gerundium/ansible/blob/main/bind9.yml  </description>
+ 2.5 Proxmox   2.5.0 Reference 2.5.1 Setup   2.5.1.1 Installation Process 2.5.1.2 Web Console Overview 2.5.1.3 User Management 2.5.1.4 Backups and Snapshots 2.5.1.5 DNS 2.5.1.6 Provisioning 2.5.1.7 Subscription   2.5.2 Maintenance     2.5 Proxmox   Proxmox Virtual Environment  Compute, network, and storage in a single solution    2.5.0 Reference  Proxmox Full Course  2.5.1 Setup  2.</description>
     </item>
     
   </channel>

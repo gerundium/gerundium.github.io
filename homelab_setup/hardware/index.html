@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Categories :: Gerundium</title>
+    <title>2.2 Hardware :: Gerundium</title>
 
     
     <link href="/css/nucleus.css?1691599365" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/categories/">
+  <body class="" data-url="/homelab_setup/hardware/">
     <nav id="sidebar" class="">
 
 
@@ -143,7 +143,7 @@
   
     
     <li data-nav-id="/homelab_setup/" title="Homelab Setup" class="dd-item
-        
+        parent
         
         
         ">
@@ -190,7 +190,7 @@
  
   
     
-      <li data-nav-id="/homelab_setup/hardware/" title="2.2 Hardware" class="dd-item ">
+      <li data-nav-id="/homelab_setup/hardware/" title="2.2 Hardware" class="dd-item active">
         <a href="/homelab_setup/hardware/">
         2.2 Hardware
         
@@ -331,14 +331,26 @@
                   <span class="links">
                  
                  
-                   Categories
+                   2.2 Hardware
                  
                   </span>
                 </div>
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#22-hardware-a-namehardwarea">2.2 Hardware <!-- raw HTML omitted --><!-- raw HTML omitted --></a>
+      <ul>
+        <li><a href="#220-baseline">2.2.0 Baseline</a></li>
+        <li><a href="#221-computing-node">2.2.1 Computing node</a></li>
+        <li><a href="#222-managed-switch">2.2.2 Managed Switch</a></li>
+        <li><a href="#223-router">2.2.3 Router</a></li>
+        <li><a href="#224-raspberry-pi">2.2.4 Raspberry Pi</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -348,30 +360,113 @@
             
         <div id="head-tags">
         
+<div class="tags">
+
+  <a class="tag-link" href="/tags/hardware">Hardware</a>
+
+</div>
+
         </div>
         
         <div id="body-inner">
           
             <h1>
               
-                category ::
-              
-              Categories
+              2.2 Hardware
             </h1>
           
 
         
 
 
-
-
-
+<p>State/Version: <strong>Draft</strong></p>
 <ul>
-	
+<li><a href="#22-hardware-">2.2 Hardware </a>
+<ul>
+<li><a href="#220-baseline">2.2.0 Baseline</a>
+<ul>
+<li><a href="#2201-homelab-tier-ratings">2.2.0.1 Homelab Tier Ratings</a></li>
+</ul>
+</li>
+<li><a href="#221-computing-node">2.2.1 Computing node</a></li>
+<li><a href="#222-managed-switch">2.2.2 Managed Switch</a></li>
+<li><a href="#223-router">2.2.3 Router</a></li>
+<li><a href="#224-raspberry-pi">2.2.4 Raspberry Pi</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="22-hardware-a-namehardwarea">2.2 Hardware <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<h3 id="220-baseline">2.2.0 Baseline</h3>
+<h4 id="2201-homelab-tier-ratings">2.2.0.1 Homelab Tier Ratings</h4>
+<ul>
+<li><strong>Tier 0</strong>:
+<ul>
+<li>A completely fault-tolerant hardware with redundancy for every component.</li>
+<li>Is crucial for the project.</li>
+<li>IaaC (Infrastructure as a Code) (if capable).</li>
+<li>Is part of the backup conzept.</li>
+</ul>
+</li>
+<li><strong>Tier 1</strong>:
+<ul>
+<li>Is crucial for the project.</li>
+<li>IaaC (Infrastructure as a Code) (if capable).</li>
+<li>Is part of the backup conzept.</li>
+</ul>
+</li>
+<li><strong>Tier 2</strong>:
+<ul>
+<li>Is crucial for the project.</li>
+<li>No backups</li>
+<li>Easy to replace</li>
+</ul>
+</li>
+<li><strong>Tier 3</strong>:
+<ul>
+<li>Is optional to run the project.</li>
+<li>Hardware runs experimental services</li>
+<li>Failures have no impact on other components.</li>
+</ul>
+</li>
+</ul>
+<h3 id="221-computing-node">2.2.1 Computing node</h3>
+<ul>
+<li>Kiebel Micro X12
+<ul>
+<li>Tier 1</li>
+<li>2x Kingston FURY Beast 32GB, DDR4-3200 MHz</li>
+<li>Intel Core i7-12700, 12x2.1 GHz</li>
+<li>Kingston 1TB NV2 M.2 SSD PCIe 4.0</li>
+</ul>
+</li>
+</ul>
+<h3 id="222-managed-switch">2.2.2 Managed Switch</h3>
+<ul>
+<li>TP-Link TL-SG116E
+<ul>
+<li>Tier 2</li>
+</ul>
+</li>
+</ul>
+<h3 id="223-router">2.2.3 Router</h3>
+<ul>
+<li>Mikrotik RB951Ui
+<ul>
+<li>Tier 1</li>
+</ul>
+</li>
+</ul>
+<h3 id="224-raspberry-pi">2.2.4 Raspberry Pi</h3>
+<ul>
+<li>Raspberry Pi 4b (4GB RAM)
+<ul>
+<li>Tier2</li>
+</ul>
+</li>
 </ul>
 
 
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -441,6 +536,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -453,6 +549,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -470,6 +569,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -485,6 +585,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -557,8 +660,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/homelab_setup/highlevel/" title="2.1 High level view"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/introduction/" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/homelab_setup/network/" title="2.3 Network" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -590,3 +695,4 @@
 
   </body>
 </html>
+

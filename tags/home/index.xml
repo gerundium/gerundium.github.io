@@ -13,9 +13,8 @@
       <pubDate>Thu, 27 Jul 2023 22:18:23 +0200</pubDate>
       
       <guid>https://gerundium.github.io/</guid>
-      <description>Welcome friend Project status  State/Version: Draft  Focus This documentation is about building your own Homelab.
- Type of audience: system administrators (#linux #devops) Type of documentation: technical documentation  The HomeLab should meet the following requirements:
- low efford infrastructure  every tool is easy to maintain by a single person   maximal automation therefore  Everything as Code    High level view  Introduction  Documentation  Author Hugo Github Pages     Homelab Setup  Network Hardware Kubernetes Ansible GitOps    </description>
+      <description>Welcome friend Project status  State/Version: Draft  Focus  Type of audience: system administrators (#linux #devops) Type of documentation: technical documentation  Requirements for my Homelab are:
+ Low efford infrastructure  Every tool is easy to maintain by a single person.   Maximal high degree of automation  Everything as Code where possible    High level view  Introduction  Documentation  About the author About this blog     Homelab Setup  High level view Hardware Network Storage Virtualization Configuration Managament GitOps    </description>
     </item>
     
     <item>
@@ -25,7 +24,7 @@
       
       <guid>https://gerundium.github.io/introduction/documentation/</guid>
       <description>State/Version: Draft
-Table of contents  Table of contents  1.1 About the author  1.2 About this blog   1.2.1 CI / CD Pipeline   1.2.1.1 Sequencediagram   1.2.2 Github setup 1.2.3 Step-by-step deployment      1.1 About the author   Senor Linux system administrator and DevOps enthusiast Daily business: #kubernetes #openshift #rancher #gitops #ansible Current place of residence: Berlin (Germany)  1.</description>
+Table of contents  Table of contents  1.1 About the author 1.2 About this blog  1.2.1 Creation process  1.2.1.1 Creation workflow   1.2.2 Github setup 1.2.3 Step-by-step deployment      1.1 About the author  Senor Linux system administrator and DevOps enthusiast Daily business: #kubernetes #openshift #rancher #gitops #ansible Current place of residence: Berlin (Germany)  1.2 About this blog  This blog was built with hugo.</description>
     </item>
     
   </channel>
