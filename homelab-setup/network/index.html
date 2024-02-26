@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Welcome :: Gerundium</title>
+    <title>2.1 Network :: Gerundium</title>
 
     
     <link href="/css/nucleus.css?1690806963" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/homelab-setup/network/">
     <nav id="sidebar" class="">
 
 
@@ -143,7 +143,7 @@
   
     
     <li data-nav-id="/homelab-setup/" title="Homelab Setup" class="dd-item
-        
+        parent
         
         
         ">
@@ -169,7 +169,7 @@
  
   
     
-      <li data-nav-id="/homelab-setup/network/" title="2.1 Network" class="dd-item ">
+      <li data-nav-id="/homelab-setup/network/" title="2.1 Network" class="dd-item active">
         <a href="/homelab-setup/network/">
         2.1 Network
         
@@ -210,11 +210,48 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                   2.1 Network
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#21-high-level-view-a-namediagrama">2.1 High level view <!-- raw HTML omitted --><!-- raw HTML omitted --></a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
 <div class="tags">
 
   <a class="tag-link" href="/tags/home">home</a>
+
+  <a class="tag-link" href="/tags/homelab-setup">homelab-setup</a>
 
 </div>
 
@@ -222,51 +259,31 @@
         
         <div id="body-inner">
           
+            <h1>
+              
+              2.1 Network
+            </h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="welcome-friend">Welcome friend</h1>
-<h3 id="project-status">Project status</h3>
+<p>State/Version: <strong>Draft</strong></p>
 <ul>
-<li>State/Version: <strong>Draft</strong></li>
+<li><a href="#21-high-level-view-">2.1 High level view </a></li>
 </ul>
-<h3 id="focus">Focus</h3>
-<p>This documentation is about building your own Homelab.</p>
+<h2 id="21-high-level-view-a-namediagrama">2.1 High level view <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p><img src="/gerundium-homelab.png" alt="Image placeholder"></p>
 <ul>
-<li>Type of audience: <strong>system administrators</strong> (<strong>#linux</strong> <strong>#devops</strong>)</li>
-<li>Type of documentation: <strong>technical documentation</strong></li>
+<li>Hardware, that belongs to the <strong>&ldquo;Management&rdquo; network</strong>, knows routes into the other networks and provide internet connectivity.</li>
+<li>Hardware grouped in <strong>IoT (Internet of Things/Trash) segment is considered as untrusted</strong> and therefore <strong>cannot connect to other network members</strong>. It still can be controled via internet.</li>
 </ul>
-<h3 id="high-level-view">High level view</h3>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> Introduction
-<ul>
-<li><input checked="" disabled="" type="checkbox"> Documentation
-<ul>
-<li><input checked="" disabled="" type="checkbox"> Author</li>
-<li><input checked="" disabled="" type="checkbox"> Hugo</li>
-<li><input checked="" disabled="" type="checkbox"> Github Pages</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"> Homelab Setup
-<ul>
-<li><input disabled="" type="checkbox"> Network</li>
-<li><input disabled="" type="checkbox"> Hardware</li>
-<li><input disabled="" type="checkbox"> Kubernetes</li>
-<li><input disabled="" type="checkbox"> Ansible</li>
-<li><input disabled="" type="checkbox"> GitOps</li>
-</ul>
-</li>
-</ul>
-<p><img src="/rainbow-pug-s.jpg" alt="Image placeholder"></p>
+
+
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div>
         
@@ -333,6 +350,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -346,6 +364,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -368,6 +387,8 @@
 
 	 
 	 
+		
+			<a class="nav nav-prev" href="/homelab-setup/" title="Homelab Setup"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/introduction/" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>

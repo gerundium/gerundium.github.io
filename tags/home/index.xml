@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome on Gerundium</title>
-    <link>https://gerundium.github.io/</link>
-    <description>Recent content in Welcome on Gerundium</description>
+    <title>home on Gerundium</title>
+    <link>https://gerundium.github.io/tags/home/</link>
+    <description>Recent content in home on Gerundium</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Jul 2023 22:18:23 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Jul 2023 22:18:23 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/home/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome</title>
+      <link>https://gerundium.github.io/</link>
+      <pubDate>Thu, 27 Jul 2023 22:18:23 +0200</pubDate>
+      
+      <guid>https://gerundium.github.io/</guid>
+      <description>Welcome friend Project status  State/Version: Draft  Focus This documentation is about building your own Homelab.
+ Type of audience: system administrators (#linux #devops) Type of documentation: technical documentation  High level view  Introduction  Documentation  Author Hugo Github Pages     Homelab Setup  Network Hardware Kubernetes Ansible GitOps    </description>
+    </item>
+    
     <item>
       <title>1.1 Documentation</title>
       <link>https://gerundium.github.io/introduction/documentation/</link>
