@@ -6,15 +6,15 @@
     <description>Recent content in Ansible on Gerundium</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Jul 2023 22:00:14 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Aug 2023 22:00:14 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2.6 Configuration Management</title>
       <link>https://gerundium.github.io/homelab_setup/configurationmanagement/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      <pubDate>Tue, 29 Aug 2023 22:00:14 +0200</pubDate>
       
       <guid>https://gerundium.github.io/homelab_setup/configurationmanagement/</guid>
-      <description>State/Version: Draft
- 2.6 Configuration Management  2.6 Configuration Management  My &amp;ldquo;Configuration Management&amp;rdquo; tool of choise is Ansible The HomeLab uses currently the following playbooks to automate common administration tasks:     Playbook Purpose     apt-upgrade Keep the infrastructure containers (Ansible, bind9) up to date.   bind9 Install and manage bind9.   nfs-server Install and manage nfs-server.   pagerduty-alerts Trigger alerts for specific actions (e.</description>
+      <description>State/Version: 20230829p1
+ 2.6 Configuration Management  2.6 Configuration Management  My &amp;ldquo;Configuration Management&amp;rdquo; tool of choice is Ansible (Semaphore) The HomeLab uses currently the following playbooks to automate common administration tasks:  private github repo       Playbook Purpose     apt-upgrade Keep the infrastructure containers (Ansible, bind9) up to date.   bind9 Install and manage bind9.   nfs-server Install and manage nfs-server.</description>
     </item>
     
   </channel>

@@ -13,7 +13,7 @@
       <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
       
       <guid>https://gerundium.github.io/homelab_setup/network/</guid>
-      <description>State/Version: Draft
+      <description>State/Version: 20230829p1
  2.3 Network topology  2.3.1 Overview    2.3 Network topology 2.3.1 Overview See also: High level view
    Network CIDR Project Type     192.168.2.0/24 Homelab / compute static   192.168.3.0/24 Homelab / storage static    </description>
     </item>
