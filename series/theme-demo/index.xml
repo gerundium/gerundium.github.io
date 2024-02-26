@@ -13,7 +13,8 @@
       <pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/posts/mermaid/</guid>
-      <description>Bash highlighting  Link to heading   # Print 123 echo &amp;#34;123&amp;#34; Mermaid  Link to heading   If you want to use Mermaid-JS on your website. Provide mermaid as Shortcode in your markdown file.
+      <description>Test  Link to heading   test
+Bash highlighting  Link to heading   # Print 123 echo &amp;#34;123&amp;#34; Mermaid  Link to heading   If you want to use Mermaid-JS on your website. Provide mermaid as Shortcode in your markdown file.
 flowchart LR A -- B B -- C C -- D D -- B  sequenceDiagram participant Alice participant Bob Alice-Bob: Hi Bob Bob-Alice: Hi Alice  Find more example on Mermaid-JS website.</description>
     </item>
     
