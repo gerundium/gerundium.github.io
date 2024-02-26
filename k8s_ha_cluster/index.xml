@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>K3s-HA-Cluster on Gerundium</title>
+    <link>https://gerundium.github.io/k8s_ha_cluster/</link>
+    <description>Recent content in K3s-HA-Cluster on Gerundium</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://gerundium.github.io/k8s_ha_cluster/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3.1 Overview</title>
+      <link>https://gerundium.github.io/k8s_ha_cluster/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/k8s_ha_cluster/overview/</guid>
+      <description>State/Version: 20231126  3.1 Overview 3.1.1 A few words before we start Setting up a home lab takes time. The construction or renovation of a house is comparable in scope and complexity. In the end, you not only know where the pipes run, but also what you can do better when building the next one.
+In addition to expertise, two character traits in particular are required to master a project like this.</description>
+    </item>
+    
+    <item>
+      <title>3.2 Provisioning the Kubernetes nodes</title>
+      <link>https://gerundium.github.io/k8s_ha_cluster/provisioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/k8s_ha_cluster/provisioning/</guid>
+      <description>State/Version: 20231126  3.2 Provisioning the k8s nodes 3.2.1 Development cluster The Development Cluster runs on #Virtualbox. Because I haven&amp;rsquo;t found a solution that fits my prequisites I wrote my own Ansible roles. You can find the Ansible playbook in this repository: https://github.com/gerundium/k8s-homelab.git
+Ansible/roles ├── create_virtualbox_vms ├── delete_virtualbox_vms ├── finalize_provisioning_virtualbox_vms └── post_provisioning_virtualbox_vms 3.2.2 Staging cluster The Staging Cluster runs as a set of virtual machines on a #Proxmox host. The Terraform source code is also stored in this repository https://github.</description>
+    </item>
+    
+    <item>
+      <title>3.3 Deploy Kubernetes</title>
+      <link>https://gerundium.github.io/k8s_ha_cluster/deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/k8s_ha_cluster/deployment/</guid>
+      <description> State/Version: 20231126  3.3 Deploy Kubernetes Once the stage is prepared kubernetes can deployed.
+3.3.1 Development cluster  #toBeDone
+ 3.3.2 Staging cluster  Automated build of HA k3s Cluster with kube-vip and MetalLB  3.3.3 Production cluster  K3s Homepage  # Create the k8s cluster k3d cluster create --api-port 6550 -p &amp;#34;8081:80@loadbalancer&amp;#34; --agents 2 </description>
+    </item>
+    
+    <item>
+      <title>3.4 GitOps: Install and configure FluxCD</title>
+      <link>https://gerundium.github.io/k8s_ha_cluster/gitops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/k8s_ha_cluster/gitops/</guid>
+      <description>State/Version: 20231126  3.4 GitOps: Install and configure FluxCD Installing and Configuring FluxCD is the easiest part ( if you do not mess up your dns setup :] ).
+This will install Flux into the cluster and connect it to the specified git repository. You have to repeat it for every cluster you want to manage.
+export GITHUB_TOKEN=&amp;lt;PersonalAccessToken&amp;gt; export GITHUB_USER=gerundium flux bootstrap github \  --token-auth \  --owner=gerundium \  --repository=flux-k2 \  --path=clusters/&amp;lt;STAGE&amp;gt; \  --personal \  --branch main Now your Kubernetes cluster knows how and where to pull Kubernetes resources from.</description>
+    </item>
+    
+  </channel>
+</rss>

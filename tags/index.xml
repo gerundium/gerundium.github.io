@@ -5,66 +5,47 @@
     <link>https://gerundium.github.io/tags/</link>
     <description>Recent content in Tags on Gerundium</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 29 Aug 2023 22:18:23 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>home</title>
-      <link>https://gerundium.github.io/tags/home/</link>
-      <pubDate>Tue, 29 Aug 2023 22:18:23 +0200</pubDate>
-      
-      <guid>https://gerundium.github.io/tags/home/</guid>
-      <description></description>
-    </item>
-    
+    <language>en</language><atom:link href="https://gerundium.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ansible</title>
       <link>https://gerundium.github.io/tags/ansible/</link>
-      <pubDate>Tue, 29 Aug 2023 22:00:14 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/tags/ansible/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>deployment</title>
+      <link>https://gerundium.github.io/tags/deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>documentation</title>
       <link>https://gerundium.github.io/tags/documentation/</link>
-      <pubDate>Tue, 29 Aug 2023 22:00:14 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/tags/documentation/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Homelab Setup</title>
-      <link>https://gerundium.github.io/tags/homelab-setup/</link>
-      <pubDate>Thu, 27 Jul 2023 22:18:23 +0200</pubDate>
+      <title>gitops</title>
+      <link>https://gerundium.github.io/tags/gitops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gerundium.github.io/tags/homelab-setup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Introduction</title>
-      <link>https://gerundium.github.io/tags/introduction/</link>
-      <pubDate>Thu, 27 Jul 2023 22:18:23 +0200</pubDate>
-      
-      <guid>https://gerundium.github.io/tags/introduction/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vegan</title>
-      <link>https://gerundium.github.io/tags/vegan/</link>
-      <pubDate>Thu, 27 Jul 2023 22:18:23 +0200</pubDate>
-      
-      <guid>https://gerundium.github.io/tags/vegan/</guid>
+      <guid>https://gerundium.github.io/tags/gitops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hardware</title>
       <link>https://gerundium.github.io/tags/hardware/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/tags/hardware/</guid>
       <description></description>
@@ -73,34 +54,88 @@
     <item>
       <title>high-level-view</title>
       <link>https://gerundium.github.io/tags/high-level-view/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/tags/high-level-view/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>home</title>
+      <link>https://gerundium.github.io/tags/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/home/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Homelab Setup</title>
+      <link>https://gerundium.github.io/tags/homelab-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/homelab-setup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Infrastructure</title>
       <link>https://gerundium.github.io/tags/infrastructure/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/tags/infrastructure/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Introduction</title>
+      <link>https://gerundium.github.io/tags/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/introduction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>k8s</title>
+      <link>https://gerundium.github.io/tags/k8s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Network</title>
       <link>https://gerundium.github.io/tags/network/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/tags/network/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Overview</title>
+      <link>https://gerundium.github.io/tags/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/overview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>provisioning</title>
+      <link>https://gerundium.github.io/tags/provisioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/provisioning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Proxmox</title>
       <link>https://gerundium.github.io/tags/proxmox/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/tags/proxmox/</guid>
       <description></description>
@@ -109,16 +144,34 @@
     <item>
       <title>Storage</title>
       <link>https://gerundium.github.io/tags/storage/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/tags/storage/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>tbd</title>
+      <link>https://gerundium.github.io/tags/tbd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/tbd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vegan</title>
+      <link>https://gerundium.github.io/tags/vegan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/vegan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Virtualization</title>
       <link>https://gerundium.github.io/tags/virtualization/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/tags/virtualization/</guid>
       <description></description>

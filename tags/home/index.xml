@@ -5,34 +5,33 @@
     <link>https://gerundium.github.io/tags/home/</link>
     <description>Recent content in home on Gerundium</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 29 Aug 2023 22:18:23 +0200</lastBuildDate><atom:link href="https://gerundium.github.io/tags/home/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://gerundium.github.io/tags/home/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome</title>
       <link>https://gerundium.github.io/</link>
-      <pubDate>Tue, 29 Aug 2023 22:18:23 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/</guid>
-      <description>Welcome friend This blog documents my Homelab environment. I use it to test new products and technologies and to try out devops practices.
-Project status  State/Version: 20230829p1  Focus  Type of audience: system administrators (#linux #devops) Type of documentation: technical documentation  Requirements for my Homelab are:
- Low efford infrastructure  Every tool is easy to maintain by a single person.   Maximal high degree of automation  Everything as Code where possible    High level view  Introduction  Documentation  About the author About this blog     Homelab Setup  High level view Hardware Network Storage Virtualization Configuration Managament Kubernetes Cluster GitOps    </description>
+      <description>Welcome friend This blog is a personal proof of concept into DevOps in a home laboratory environment, covering Kubernetes, GitOps, and Proxmox. All with a focus on full automation.
+Inspiration Let me start with a big THANK YOU! to you guys
+ Techno Tim (@timothystewart6) Marcel Dempers (@marcel-dempers) Christian Lempa (@ChristianLempa)  You made it much easier for me to get started with many topics and for the many &amp;ldquo;Oh, that&amp;rsquo;s how it works!</description>
     </item>
     
     <item>
       <title>1.1 Documentation</title>
       <link>https://gerundium.github.io/introduction/documentation/</link>
-      <pubDate>Tue, 29 Aug 2023 22:00:14 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/introduction/documentation/</guid>
       <description>State/Version: 20230829p1
 Table of contents  Table of contents  1.1 About the author 1.2 About this blog  1.2.1 Creation process  1.2.1.1 Creation workflow        Skip the &amp;ldquo;Deep Dive&amp;rdquo; sections for a brief fly over.
- 1.1 About the author  Senor Linux system administrator, junior devOps administrator and HomeLab enthusiast Daily business: #devops #kubernetes #openshift #gitops #ansible Current place of residence: Berlin (Germany)  1.</description>
+ 1.1 About the author  Senor Linux system administrator, cluster operator (automate provision and configuration of clusters), platform engineer (build continuous delivery for developer teams) and HomeLab enthusiast Daily business: #devops #kubernetes #openshift #gitops #ansible Current place of residence: Berlin (Germany)  1.</description>
     </item>
     
     <item>
       <title>1.2 Deep Dive</title>
       <link>https://gerundium.github.io/introduction/documentationdeepdive/</link>
-      <pubDate>Thu, 27 Jul 2023 22:00:14 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/introduction/documentationdeepdive/</guid>
       <description>State/Version: 20230829p1

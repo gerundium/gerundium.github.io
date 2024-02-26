@@ -3,83 +3,79 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gerundium.github.io/homelab_setup/highlevel/</loc>
-    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
+  </url><url>
+    <loc>https://gerundium.github.io/k8s_ha_cluster/overview/</loc>
   </url><url>
     <loc>https://gerundium.github.io/homelab_setup/hardware/</loc>
-    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
+  </url><url>
+    <loc>https://gerundium.github.io/k8s_ha_cluster/provisioning/</loc>
   </url><url>
     <loc>https://gerundium.github.io/homelab_setup/network/</loc>
-    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
+  </url><url>
+    <loc>https://gerundium.github.io/k8s_ha_cluster/deployment/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/k8s_ha_cluster/gitops/</loc>
   </url><url>
     <loc>https://gerundium.github.io/homelab_setup/storage/</loc>
-    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/</loc>
-    <lastmod>2023-08-29T22:18:23+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/introduction/</loc>
-    <lastmod>2023-07-27T22:18:23+02:00</lastmod>
   </url><url>
     <loc>https://gerundium.github.io/homelab_setup/virtualization/</loc>
-    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
+  </url><url>
+    <loc>https://gerundium.github.io/introduction/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/</loc>
   </url><url>
     <loc>https://gerundium.github.io/homelab_setup/configurationmanagement/</loc>
-    <lastmod>2023-08-29T22:00:14+02:00</lastmod>
   </url><url>
     <loc>https://gerundium.github.io/homelab_setup/</loc>
-    <lastmod>2023-07-27T22:18:23+02:00</lastmod>
+  </url><url>
+    <loc>https://gerundium.github.io/k8s_ha_cluster/</loc>
   </url><url>
     <loc>https://gerundium.github.io/vegan/</loc>
-    <lastmod>2023-07-27T22:18:23+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/home/</loc>
-    <lastmod>2023-08-29T22:18:23+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/</loc>
-    <lastmod>2023-08-29T22:18:23+02:00</lastmod>
   </url><url>
     <loc>https://gerundium.github.io/introduction/documentation/</loc>
-    <lastmod>2023-08-29T22:00:14+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/ansible/</loc>
-    <lastmod>2023-08-29T22:00:14+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/documentation/</loc>
-    <lastmod>2023-08-29T22:00:14+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/homelab-setup/</loc>
-    <lastmod>2023-07-27T22:18:23+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/introduction/</loc>
-    <lastmod>2023-07-27T22:18:23+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/vegan/</loc>
-    <lastmod>2023-07-27T22:18:23+02:00</lastmod>
   </url><url>
     <loc>https://gerundium.github.io/introduction/documentationdeepdive/</loc>
-    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
   </url><url>
-    <loc>https://gerundium.github.io/tags/hardware/</loc>
-    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/high-level-view/</loc>
-    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/infrastructure/</loc>
-    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/network/</loc>
-    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/proxmox/</loc>
-    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/storage/</loc>
-    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
-  </url><url>
-    <loc>https://gerundium.github.io/tags/virtualization/</loc>
-    <lastmod>2023-07-27T22:00:14+02:00</lastmod>
+    <loc>https://gerundium.github.io/tags/ansible/</loc>
   </url><url>
     <loc>https://gerundium.github.io/categories/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/deployment/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/documentation/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/gitops/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/hardware/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/high-level-view/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/home/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/homelab-setup/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/infrastructure/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/introduction/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/k8s/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/network/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/overview/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/provisioning/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/proxmox/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/storage/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/tbd/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/vegan/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/virtualization/</loc>
   </url>
 </urlset>
