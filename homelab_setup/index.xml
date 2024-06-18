@@ -23,7 +23,7 @@
       
       <guid>https://gerundium.github.io/homelab_setup/hardware/</guid>
       <description>State/Version: 20230829p1
- 2.2 Hardware   2.2.0 Baseline  2.2.0.1 Homelab Tier Ratings   2.2.1 Computing node 2.2.2 Managed Switch 2.2.3 Router 2.2.4 Raspberry Pi    2.2 Hardware  2.2.0 Baseline 2.2.0.1 Homelab Tier Ratings  Tier 0:  A completely fault-tolerant hardware with redundancy for every component. Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept.   Tier 1:  Is crucial for the project.</description>
+ 2.2 Hardware   2.2 Baseline  2.2.0 Homelab Tier Ratings   2.2.1 Computing node 2.2.2 Managed Switch 2.2.3 Router 2.2.4 Raspberry Pi    2.2 Hardware  2.2 Baseline 2.2.0 Homelab Tier Ratings  Tier 0:  A completely fault-tolerant hardware with redundancy for every component. Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept.   Tier 1:  Is crucial for the project.</description>
     </item>
     
     <item>

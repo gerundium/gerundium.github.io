@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="description" content="Description">
+<meta name="author" content="db">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>4.2 Setup :: Gerundium</title>
+
+    
+    <link href="/css/nucleus.css?1718711445" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1718711445" rel="stylesheet">
+    <link href="/css/hybrid.css?1718711445" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1718711445" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1718711445" rel="stylesheet">
+    <link href="/css/auto-complete.css?1718711445" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1718711445" rel="stylesheet">
+    <link href="/css/theme.css?1718711445" rel="stylesheet">
+    <link href="/css/tabs.css?1718711445" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1718711445" rel="stylesheet">
+    
+    <link href="/css/theme-green.css?1718711445" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1718711445"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/devbox/setup/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="/logo/404-logo.png" alt="logo" style="height:100px;">
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1718711445"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1718711445"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/gerundium.github.io";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1718711445"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/introduction/" title="Introduction" class="dd-item
+        
+        
+        
+        ">
+      <a href="/introduction/">
+          <b>1. </b>Introduction
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/introduction/documentation/" title="1.1 Documentation" class="dd-item ">
+        <a href="/introduction/documentation/">
+        1.1 Documentation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/introduction/documentationdeepdive/" title="1.2 Deep Dive" class="dd-item ">
+        <a href="/introduction/documentationdeepdive/">
+        1.2 Deep Dive
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/homelab_setup/" title="Homelab Setup" class="dd-item
+        
+        
+        
+        ">
+      <a href="/homelab_setup/">
+          <b>2. </b>Homelab Setup
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/homelab_setup/highlevel/" title="2.1 High level view" class="dd-item ">
+        <a href="/homelab_setup/highlevel/">
+        2.1 High level view
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/homelab_setup/hardware/" title="2.2 Hardware" class="dd-item ">
+        <a href="/homelab_setup/hardware/">
+        2.2 Hardware
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/homelab_setup/network/" title="2.3 Network" class="dd-item ">
+        <a href="/homelab_setup/network/">
+        2.3 Network
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/homelab_setup/storage/" title="2.4 Storage" class="dd-item ">
+        <a href="/homelab_setup/storage/">
+        2.4 Storage
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/homelab_setup/virtualization/" title="2.5 Virtualization" class="dd-item ">
+        <a href="/homelab_setup/virtualization/">
+        2.5 Virtualization
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/homelab_setup/configurationmanagement/" title="2.6 Configuration Management" class="dd-item ">
+        <a href="/homelab_setup/configurationmanagement/">
+        2.6 Configuration Management
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/k8s_ha_cluster/" title="K8s-HA-Cluster" class="dd-item
+        
+        
+        
+        ">
+      <a href="/k8s_ha_cluster/">
+          <b>3. </b>K8s-HA-Cluster
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/k8s_ha_cluster/overview/" title="3.1 Overview" class="dd-item ">
+        <a href="/k8s_ha_cluster/overview/">
+        3.1 Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/k8s_ha_cluster/provisioning/" title="3.2 Provisioning the k8s nodes" class="dd-item ">
+        <a href="/k8s_ha_cluster/provisioning/">
+        3.2 Provisioning the k8s nodes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/k8s_ha_cluster/deployment/" title="3.3 Deploy Kubernetes" class="dd-item ">
+        <a href="/k8s_ha_cluster/deployment/">
+        3.3 Deploy Kubernetes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/k8s_ha_cluster/gitops/" title="3.4 GitOps: Install and configure FluxCD" class="dd-item ">
+        <a href="/k8s_ha_cluster/gitops/">
+        3.4 GitOps: Install and configure FluxCD
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/devbox/" title="Devbox" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/devbox/">
+          <b>4. </b>Devbox
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/devbox/overview/" title="4.1 Overview" class="dd-item ">
+        <a href="/devbox/overview/">
+        4.1 Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/devbox/setup/" title="4.2 Setup" class="dd-item active">
+        <a href="/devbox/setup/">
+        4.2 Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vegan/" title="Go Vegan!" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vegan/">
+          <b>5. </b>Go Vegan!
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                   4.2 Setup
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#42-setup-a-namesetupa">4.2 Setup <!-- raw HTML omitted --><!-- raw HTML omitted --></a>
+      <ul>
+        <li><a href="#421-deploy-devbox-shell-as-pod">4.2.1 Deploy devbox shell as pod</a></li>
+        <li><a href="#422-deploy-devbox-shell-locally">4.2.2 Deploy devbox shell locally</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/setup">setup</a>
+
+  <a class="tag-link" href="/tags/devbox">devbox</a>
+
+  <a class="tag-link" href="/tags/nix">nix</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              4.2 Setup
+            </h1>
+          
+
+        
+
+
+<p>State/Version: <em>20240618</em></p>
+<ul>
+<li><a href="#42-setup-">4.2 Setup </a>
+<ul>
+<li><a href="#421-deploy-devbox-shell-as-pod">4.2.1 Deploy devbox shell as pod</a></li>
+<li><a href="#422-deploy-devbox-shell-locally">4.2.2 Deploy devbox shell locally</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="42-setup-a-namesetupa">4.2 Setup <!-- raw HTML omitted --><!-- raw HTML omitted --></h2>
+<p><img src="/dbcDevPodDemo.gif" alt="DemoVideo"></p>
+<h3 id="421-deploy-devbox-shell-as-pod">4.2.1 Deploy devbox shell as pod</h3>
+<ul>
+<li><a href="https://github.com/gerundium/devbox/tree/main/devpod">Github repository: gerundium/devbox</a></li>
+</ul>
+<h3 id="422-deploy-devbox-shell-locally">4.2.2 Deploy devbox shell locally</h3>
+<ul>
+<li><a href="https://github.com/gerundium/devbox/tree/main/linux-base">Github repository: gerundium/linux-base</a></li>
+</ul>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/devbox/overview/" title="4.1 Overview"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/vegan/" title="Go Vegan!" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1718711445"></script>
+    <script src="/js/perfect-scrollbar.min.js?1718711445"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1718711445"></script>
+    <script src="/js/jquery.sticky.js?1718711445"></script>
+    <script src="/js/featherlight.min.js?1718711445"></script>
+    <script src="/js/highlight.pack.js?1718711445"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1718711445"></script>
+    <script src="/js/learn.js?1718711445"></script>
+    <script src="/js/hugo-learn.js?1718711445"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@10.3.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nix on Gerundium</title>
+    <link>https://gerundium.github.io/tags/nix/</link>
+    <description>Recent content in nix on Gerundium</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://gerundium.github.io/tags/nix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4.1 Overview</title>
+      <link>https://gerundium.github.io/devbox/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/devbox/overview/</guid>
+      <description>State/Version: 20240618
+4.1 Overview What is a devbox and why do I need it? A devbox is an environment that contains your indivisual toolstack and settings. In fact it does not to be only one environment. You can break it down in fine grained, purpose oriented, environments e.g. one for your cloud stack (helm, kubectl, etc.) and another one with focus on python.
+Technically it works similar to a package manager but without conflicting with operating level packages that were managed by tools like apt or dnf.</description>
+    </item>
+    
+    <item>
+      <title>4.2 Setup</title>
+      <link>https://gerundium.github.io/devbox/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/devbox/setup/</guid>
+      <description>State/Version: 20240618
+ 4.2 Setup   4.2.1 Deploy devbox shell as pod 4.2.2 Deploy devbox shell locally    4.2 Setup  4.2.1 Deploy devbox shell as pod  Github repository: gerundium/devbox  4.2.2 Deploy devbox shell locally  Github repository: gerundium/linux-base  </description>
+    </item>
+    
+  </channel>
+</rss>

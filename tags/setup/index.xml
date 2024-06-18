@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>setup on Gerundium</title>
+    <link>https://gerundium.github.io/tags/setup/</link>
+    <description>Recent content in setup on Gerundium</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://gerundium.github.io/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4.2 Setup</title>
+      <link>https://gerundium.github.io/devbox/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/devbox/setup/</guid>
+      <description>State/Version: 20240618
+ 4.2 Setup   4.2.1 Deploy devbox shell as pod 4.2.2 Deploy devbox shell locally    4.2 Setup  4.2.1 Deploy devbox shell as pod  Github repository: gerundium/devbox  4.2.2 Deploy devbox shell locally  Github repository: gerundium/linux-base  </description>
+    </item>
+    
+  </channel>
+</rss>

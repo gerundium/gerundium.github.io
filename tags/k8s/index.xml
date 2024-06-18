@@ -54,7 +54,7 @@ export GITHUB_TOKEN=&amp;lt;PersonalAccessToken&amp;gt; export GITHUB_USER=gerun
     </item>
     
     <item>
-      <title>K3s-HA-Cluster</title>
+      <title>K8s-HA-Cluster</title>
       <link>https://gerundium.github.io/k8s_ha_cluster/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

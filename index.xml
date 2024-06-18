@@ -28,13 +28,24 @@ In addition to expertise, two character traits in particular are required to mas
     </item>
     
     <item>
+      <title>4.1 Overview</title>
+      <link>https://gerundium.github.io/devbox/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/devbox/overview/</guid>
+      <description>State/Version: 20240618
+4.1 Overview What is a devbox and why do I need it? A devbox is an environment that contains your indivisual toolstack and settings. In fact it does not to be only one environment. You can break it down in fine grained, purpose oriented, environments e.g. one for your cloud stack (helm, kubectl, etc.) and another one with focus on python.
+Technically it works similar to a package manager but without conflicting with operating level packages that were managed by tools like apt or dnf.</description>
+    </item>
+    
+    <item>
       <title>2.2 Hardware</title>
       <link>https://gerundium.github.io/homelab_setup/hardware/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/homelab_setup/hardware/</guid>
       <description>State/Version: 20230829p1
- 2.2 Hardware   2.2.0 Baseline  2.2.0.1 Homelab Tier Ratings   2.2.1 Computing node 2.2.2 Managed Switch 2.2.3 Router 2.2.4 Raspberry Pi    2.2 Hardware  2.2.0 Baseline 2.2.0.1 Homelab Tier Ratings  Tier 0:  A completely fault-tolerant hardware with redundancy for every component. Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept.   Tier 1:  Is crucial for the project.</description>
+ 2.2 Hardware   2.2 Baseline  2.2.0 Homelab Tier Ratings   2.2.1 Computing node 2.2.2 Managed Switch 2.2.3 Router 2.2.4 Raspberry Pi    2.2 Hardware  2.2 Baseline 2.2.0 Homelab Tier Ratings  Tier 0:  A completely fault-tolerant hardware with redundancy for every component. Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept.   Tier 1:  Is crucial for the project.</description>
     </item>
     
     <item>
@@ -46,6 +57,16 @@ In addition to expertise, two character traits in particular are required to mas
       <description>State/Version: 20240225
 3.2 Provisioning the k8s nodes 🚚 3.2.1 Development cluster 🚧  The Development Cluster is privisioned with 🏷️ansible. Running as bare-metal variant of 🏷️talos on the 🏷️Virtualbox platform.  The code for the development cluster is documented here: 🌐 homelab repository on github.
 3.2.2 Staging cluster The Staging Cluster runs as a set of virtual machines on a 🏷️Proxmox host. The Terraform source code is also stored currently in a privat github repository and will be published soon in this 🌐 homelab repository on github</description>
+    </item>
+    
+    <item>
+      <title>4.2 Setup</title>
+      <link>https://gerundium.github.io/devbox/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/devbox/setup/</guid>
+      <description>State/Version: 20240618
+ 4.2 Setup   4.2.1 Deploy devbox shell as pod 4.2.2 Deploy devbox shell locally    4.2 Setup  4.2.1 Deploy devbox shell as pod  Github repository: gerundium/devbox  4.2.2 Deploy devbox shell locally  Github repository: gerundium/linux-base  </description>
     </item>
     
     <item>

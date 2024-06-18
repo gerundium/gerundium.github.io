@@ -6,9 +6,13 @@
   </url><url>
     <loc>https://gerundium.github.io/k8s_ha_cluster/overview/</loc>
   </url><url>
+    <loc>https://gerundium.github.io/devbox/overview/</loc>
+  </url><url>
     <loc>https://gerundium.github.io/homelab_setup/hardware/</loc>
   </url><url>
     <loc>https://gerundium.github.io/k8s_ha_cluster/provisioning/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/devbox/setup/</loc>
   </url><url>
     <loc>https://gerundium.github.io/homelab_setup/network/</loc>
   </url><url>
@@ -30,6 +34,8 @@
   </url><url>
     <loc>https://gerundium.github.io/k8s_ha_cluster/</loc>
   </url><url>
+    <loc>https://gerundium.github.io/devbox/</loc>
+  </url><url>
     <loc>https://gerundium.github.io/vegan/</loc>
   </url><url>
     <loc>https://gerundium.github.io/introduction/documentation/</loc>
@@ -41,6 +47,8 @@
     <loc>https://gerundium.github.io/categories/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/deployment/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/devbox/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/documentation/</loc>
   </url><url>
@@ -64,11 +72,15 @@
   </url><url>
     <loc>https://gerundium.github.io/tags/network/</loc>
   </url><url>
+    <loc>https://gerundium.github.io/tags/nix/</loc>
+  </url><url>
     <loc>https://gerundium.github.io/tags/overview/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/provisioning/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/proxmox/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/setup/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/storage/</loc>
   </url><url>
