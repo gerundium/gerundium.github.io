@@ -30,9 +30,9 @@
 {
 	"uri": "https://gerundium.github.io/k8s_ha_cluster/provisioning/",
 	"title": "3.2 Provisioning the k8s nodes",
-	"tags": ["k8s", "provisioning", "proxmox", "tbi"],
+	"tags": ["k8s", "provisioning", "proxmox", "tbi", "talos"],
 	"description": "",
-	"content": "State/Version: 20240225\n3.2 Provisioning the k8s nodes 🚚 3.2.1 Development cluster 🚧  The Development Cluster is privisioned with 🏷️ansible. Running as bare-metal variant of 🏷️talos on the 🏷️Virtualbox platform.  The code for the development cluster is documented here: 🌐 homelab repository on github.\n3.2.2 Staging cluster The Staging Cluster runs as a set of virtual machines on a 🏷️Proxmox host. The Terraform source code is also stored currently in a privat github repository and will be published soon in this 🌐 homelab repository on github\n3.2.3 Production cluster 🚨 The Production Cluster is a set of docker containers orchestrated by k3d manually 🔥. 🏷️tba\n"
+	"content": "State/Version: 20240618\n3.2 Provisioning the k8s nodes 🚚 3.2.1 Development cluster 🚧  The Development Cluster is privisioned with 🏷️ansible. Running as bare-metal variant of 🏷️talos on the 🏷️Virtualbox platform.  The code for the development cluster is documented here: 🌐 homelab repository on github.\n3.2.2 Staging cluster The Staging Cluster runs as a set of virtual machines on a 🏷️Proxmox host. The Terraform source code is also stored currently in a privat github repository and will be published soon in this 🌐 homelab repository on github\nTerraform Provisioning Talos K8s Deployment 3.2.3 Production cluster 🚨 The Production Cluster is a set of docker containers orchestrated by k3d manually 🔥. 🏷️tba\n"
 },
 {
 	"uri": "https://gerundium.github.io/devbox/setup/",
@@ -81,7 +81,7 @@
 	"title": "Introduction",
 	"tags": ["Introduction"],
 	"description": "",
-	"content": "Topics  Documentation  About the author About this blog    ANSIBLE (2)   DEPLOYMENT (1)   DEVBOX (3)   DOCUMENTATION (2)   FLUXCD (1)   GITOPS (1)   HARDWARE (1)   HIGH-LEVEL-VIEW (1)   HOME (3)   HOMELAB SETUP (3)   INFRASTRUCTURE (1)   INTRODUCTION (1)   K8S (5)   NETWORK (1)   NIX (2)   OVERVIEW (1)   PROVISIONING (1)   PROXMOX (2)   SETUP (1)   STORAGE (1)   TBD (1)   TBI (3)   VEGAN (1)   VIRTUALIZATION (1)       "
+	"content": "Topics  Documentation  About the author About this blog    ANSIBLE (2)   DEPLOYMENT (1)   DEVBOX (3)   DOCUMENTATION (2)   FLUXCD (1)   GITOPS (1)   HARDWARE (1)   HIGH-LEVEL-VIEW (1)   HOME (3)   HOMELAB SETUP (3)   INFRASTRUCTURE (1)   INTRODUCTION (1)   K8S (5)   NETWORK (1)   NIX (2)   OVERVIEW (1)   PROVISIONING (1)   PROXMOX (2)   SETUP (1)   STORAGE (1)   TALOS (1)   TBD (1)   TBI (3)   VEGAN (1)   VIRTUALIZATION (1)       "
 },
 {
 	"uri": "https://gerundium.github.io/",
@@ -289,6 +289,13 @@
 {
 	"uri": "https://gerundium.github.io/tags/",
 	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gerundium.github.io/tags/talos/",
+	"title": "talos",
 	"tags": [],
 	"description": "",
 	"content": ""
