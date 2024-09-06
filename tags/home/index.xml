@@ -12,7 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/</guid>
-      <description>Welcome friend This blog is a personal proof of concept into DevOps in a home laboratory environment, covering Kubernetes, GitOps, and Proxmox. All with a focus on full automation.
+      <description>Welcome friend 🗒️ This blog is a personal proof of concept into DevOps in a home laboratory environment, covering Kubernetes, GitOps, and Proxmox. All with a focus on full automation.
+🔖 You can find the source code for the project here: Gitlab: Gerundium
 Inspiration Let me start with a big THANK YOU! to you guys
  Techno Tim (@timothystewart6) Marcel Dempers (@marcel-dempers) Christian Lempa (@ChristianLempa)  You made it much easier for me to get started with many topics and for the many &amp;ldquo;Oh, that&amp;rsquo;s how it works!</description>
     </item>
