@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vertical-pod-autoscaler on Gerundium</title>
+    <link>https://gerundium.github.io/tags/vertical-pod-autoscaler/</link>
+    <description>Recent content in vertical-pod-autoscaler on Gerundium</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://gerundium.github.io/tags/vertical-pod-autoscaler/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>K8s-HA-Cluster</title>
+      <link>https://gerundium.github.io/k8s_ha_cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/k8s_ha_cluster/</guid>
+      <description>Topics K3s-HA-Cluster  Overview 🚀 Provisioning the Kubernetes nodes 🚚 Deploy Kubernetes 🚚 GitOps: Install and configure 🏗️ Rook/Ceph/longhorn etc storage 📦️ Monitoring (Prometheus / Grafana / Metrics Server) 📦️ Taints, Tolerations, limits 📦️ Upgrading  K8s (talos) 📦️   Cluster backup (etcd, etc), disaster recovery (k8up) 📦️  PVCs (Longhorn Backup)      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -11,7 +11,7 @@
 	"title": "3.1 Overview",
 	"tags": ["k8s", "Overview", "Ansible", "tbi"],
 	"description": "",
-	"content": "State/Version: 20240225\n3.1 Overview 3.1.1 A few words before we start 🚀 Setting up a home lab takes time. The construction or renovation of a house is comparable in scope and complexity. In the end, you not only know where the pipes run, but also what you can do better when building the next one.\nIn addition to expertise, two character traits in particular are required to master a project like this.\nPatience and Persistence\n3.1.2 Tech skills 🧑‍💻 #loadbalancer #metallb #nat #proxy-server #vlan #nat #network-bridging #yaml #json #traefik #nginx #etcd #gitops #fluxcd #terraform #ansible #proxmox #virtualbox #kustomize #helm #k3s #k8s #k3d #k9s #cloudflare #certmanager #letsencrypt #longhorn #sealed-secrets #dns #ipam\n3.1.3 State of automation 🏗️    Topic Degree of automation     Provisioning - Virtualbox full ✅   Provisioning - Virtualbox full ✅   Provisioning - Proxmox full ✅   Provisioning - Docker partially *1 *2 *3 🔥   K8s Deployment - Virtualbox full ✅   K8s Deployment - Proxmox full ✅   K8s Deployment - Docker full ✅   GitOps Fluxcd - Virtualbox full ✅   GitOps Fluxcd - Proxmox full ✅   GitOps Fluxcd - Docker full ✅   Legend    *1 Terraform Proxmox Plugin is currently broken   *2 No tech demo (Because of *1)   *3 This step is manuall    3.1.4 Workflow 🔀 Let\u0026rsquo;s flow through the setup.\n3.1.5 Current Setup Development Cluster\nThe Development Cluster (🏷️Virtualbox) is provisioned and bootstraped with 🏷️Ansible\n 1x Controlplane(s) 2x Worker nodes  Staging Cluster\nThe Staging Cluster (🏷️Proxmox) is provisioned with 🏷️Terraform and bootstraped with 🏷️Ansible.\n 3x Controlplane(s) 2x Worker nodes  Production Cluster\nThe Production Cluster (🏷️VPS) is provisioned manually as virtual machine at contabo and bootstraped with 🏷️Ansible.\n 1x Loadbalancer 1x Controlplane(s) 2x Worker nodes  "
+	"content": "State/Version: 20240225\n3.1 Overview 3.1.1 A few words before we start 🚀 Setting up a home lab takes time. The construction or renovation of a house is comparable in scope and complexity. In the end, you not only know where the pipes run, but also what you can do better when building the next one.\nIn addition to expertise, two character traits in particular are required to master a project like this.\nPatience and Persistence\n3.1.2 Tech skills 🧑‍💻 #loadbalancer #metallb #nat #proxy-server #vlan #nat #network-bridging #yaml #json #traefik #nginx #etcd #gitops #fluxcd #terraform #ansible #proxmox #virtualbox #kustomize #helm #k3s #k8s #k3d #k9s #cloudflare #certmanager #letsencrypt #longhorn #sealed-secrets #dns #ipam\n3.1.3 State of automation 🏗️    Topic Degree of automation     Provisioning - Proxmox full ✅   Provisioning - Docker partially *3 🔥   K8s Deployment - Virtualbox full ✅   K8s Deployment - Proxmox full ✅   K8s Deployment - Docker full ✅   GitOps Fluxcd - Virtualbox full ✅   GitOps Fluxcd - Proxmox full ✅   GitOps Fluxcd - Docker full ✅   Legend    *1 Terraform Proxmox Plugin is currently broken   *2 No tech demo (Because of *1)   *3 This step is manuall    3.1.4 Workflow 🔀 Let\u0026rsquo;s flow through the setup.\n3.1.5 Current Setup Development Cluster (dxpsp1)\n The Development Cluster (🏷️Virtualbox) is provisioned and bootstraped with 🏷️Ansible Dell XPS 13 Plus 9320   Development Cluster (vmd95641)\nThe second Development Cluster (🏷️VPS) is provisioned manually as virtual machine at contabo and bootstraped with 🏷️Ansible.\nStaging Cluster (K1)\n The Staging Cluster (🏷️Proxmox) is provisioned with 🏷️Terraform and bootstraped with 🏷️Talos.  Production Cluster (K2)\n The Staging Cluster (🏷️Proxmox) is provisioned with 🏷️Terraform and bootstraped with 🏷️Talos.  "
 },
 {
 	"uri": "https://gerundium.github.io/devbox/overview/",
@@ -32,7 +32,7 @@
 	"title": "3.2 Provisioning the k8s nodes",
 	"tags": ["k8s", "provisioning", "proxmox", "tbi", "talos"],
 	"description": "",
-	"content": "State/Version: 20240618\n3.2 Provisioning the k8s nodes 🚚 3.2.1 Development cluster 🚧  The Development Cluster is privisioned with 🏷️ansible. Running as bare-metal variant of 🏷️talos on the 🏷️Virtualbox platform.  The code for the development cluster is documented here: 🌐 homelab repository on github.\n3.2.2 Staging cluster The Staging Cluster runs as a set of virtual machines on a 🏷️Proxmox host. The Terraform source code is also stored currently in a privat github repository and will be published soon in this 🌐 homelab repository on github\nTerraform Provisioning 💡 This gif will start playing automatically. Talos K8s Deployment 💡 This is an external Video URL. Click to run. \n3.2.3 Production cluster 🚨 The Production Cluster is a set of docker containers orchestrated by k3d manually 🔥. 🏷️tba\n"
+	"content": "State/Version: 20241018\n3.2 Provisioning the k8s nodes 🚚 3.2.1 Development cluster 🚧  The Development Cluster is privisioned with 🏷️ansible. Running as bare-metal variant of 🏷️talos on the 🏷️Virtualbox platform.  The code for the development cluster is documented here: 🌐 homelab repository on github.\n3.2.2 Staging cluster K1 The Staging Cluster runs as a set of virtual machines on a 🏷️Proxmox host. The Terraform source code is also stored currently in a privat github repository and will be published soon in this 🌐 homelab repository on github\nTerraform Provisioning 💡 This gif will start playing automatically. Talos K8s K1 💡 This is an external Video URL. Click to run. Talos K8s deployment   3.2.2 Staging cluster K2 3.3 Upgrading Talos Cluster  Reference to official Talos Upgrade Guide  $ talosctl upgrade --nodes 10.20.30.40 \\  --image ghcr.io/siderolabs/installer:v1.8.0 Upgrade Sequence (automatic)  Cordon and drain node Leave etcd Stop everything Wipe Install new Talos Linux image Reboot  💡 Upgrade one by one\n"
 },
 {
 	"uri": "https://gerundium.github.io/devbox/setup/",
@@ -81,7 +81,7 @@
 	"title": "Introduction",
 	"tags": ["Introduction"],
 	"description": "",
-	"content": "Topics  Documentation  About the author About this blog    ANSIBLE (2)   DEPLOYMENT (1)   DEVBOX (3)   DOCUMENTATION (2)   FLUXCD (1)   GITOPS (1)   HARDWARE (1)   HIGH-LEVEL-VIEW (1)   HOME (3)   HOMELAB SETUP (3)   INFRASTRUCTURE (1)   INTRODUCTION (1)   K8S (5)   NETWORK (1)   NIX (2)   OVERVIEW (1)   PROVISIONING (1)   PROXMOX (2)   SETUP (1)   STORAGE (1)   TALOS (1)   TBD (1)   TBI (3)   VEGAN (1)   VIRTUALIZATION (1)       "
+	"content": "Topics  Documentation  About the author About this blog    ANSIBLE (2)   CERT-MANAGER (1)   DEPLOYMENT (1)   DEVBOX (3)   DOCUMENTATION (2)   FLUXCD (2)   GITOPS (1)   HARDWARE (1)   HIGH-LEVEL-VIEW (1)   HOME (3)   HOMELAB SETUP (3)   INFRASTRUCTURE (1)   INTRODUCTION (1)   K8S (5)   LONGHORN (1)   METALLB (1)   METRICS-SERVER (1)   NETWORK (1)   NIX (2)   OVERVIEW (1)   PROMETHEUS (1)   PROVISIONING (1)   PROXMOX (2)   SEALED-SECRETS (1)   SETUP (1)   STORAGE (1)   TALOS (1)   TBD (1)   TBI (3)   TRAEFIK (1)   VEGAN (1)   VERTICAL-POD-AUTOSCALER (1)   VIRTUALIZATION (1)       "
 },
 {
 	"uri": "https://gerundium.github.io/",
@@ -102,14 +102,14 @@
 	"title": "Homelab Setup",
 	"tags": ["Homelab Setup"],
 	"description": "",
-	"content": "Topics Homelab Setup  High level view Hardware Network Storage Virtualization Configuration Management GitOps    "
+	"content": "Topics Homelab Setup  High level view  Hardware  Network  Storage  Virtualization  Configuration Management  GitOps     "
 },
 {
 	"uri": "https://gerundium.github.io/k8s_ha_cluster/",
 	"title": "K8s-HA-Cluster",
-	"tags": ["k8s"],
+	"tags": ["k8s", "metrics-server", "traefik", "metallb", "fluxcd", "prometheus", "longhorn", "cert-manager", "sealed-secrets", "vertical-pod-autoscaler"],
 	"description": "",
-	"content": "Topics K3s-HA-Cluster  Overview 🚀 Provisioning the Kubernetes nodes 🚚 Deploy Kubernetes 🚚 GitOps: Install and configure 🏗️ Rook/Ceph/longhorn etc storage 📦️ Cloud native databases 📦️ Taints, Tolerations, limits 📦️ Cluster backup (etcd, etc), disaster recovery 📦️    "
+	"content": "Topics K3s-HA-Cluster  Overview 🚀 Provisioning the Kubernetes nodes 🚚 Deploy Kubernetes 🚚 GitOps: Install and configure 🏗️ Rook/Ceph/longhorn etc storage 📦️ Monitoring (Prometheus / Grafana / Metrics Server) 📦️ Taints, Tolerations, limits 📦️ Upgrading  K8s (talos) 📦️   Cluster backup (etcd, etc), disaster recovery (k8up) 📦️  PVCs (Longhorn Backup)      "
 },
 {
 	"uri": "https://gerundium.github.io/devbox/",
@@ -149,6 +149,13 @@
 {
 	"uri": "https://gerundium.github.io/categories/",
 	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gerundium.github.io/tags/cert-manager/",
+	"title": "cert-manager",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -238,6 +245,27 @@
 	"content": ""
 },
 {
+	"uri": "https://gerundium.github.io/tags/longhorn/",
+	"title": "longhorn",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gerundium.github.io/tags/metallb/",
+	"title": "metallb",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gerundium.github.io/tags/metrics-server/",
+	"title": "metrics-server",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://gerundium.github.io/tags/network/",
 	"title": "Network",
 	"tags": [],
@@ -259,6 +287,13 @@
 	"content": ""
 },
 {
+	"uri": "https://gerundium.github.io/tags/prometheus/",
+	"title": "prometheus",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://gerundium.github.io/tags/provisioning/",
 	"title": "provisioning",
 	"tags": [],
@@ -268,6 +303,13 @@
 {
 	"uri": "https://gerundium.github.io/tags/proxmox/",
 	"title": "Proxmox",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gerundium.github.io/tags/sealed-secrets/",
+	"title": "sealed-secrets",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -315,8 +357,22 @@
 	"content": ""
 },
 {
+	"uri": "https://gerundium.github.io/tags/traefik/",
+	"title": "traefik",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://gerundium.github.io/tags/vegan/",
 	"title": "Vegan",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gerundium.github.io/tags/vertical-pod-autoscaler/",
+	"title": "vertical-pod-autoscaler",
 	"tags": [],
 	"description": "",
 	"content": ""

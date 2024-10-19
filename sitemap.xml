@@ -46,6 +46,8 @@
   </url><url>
     <loc>https://gerundium.github.io/categories/</loc>
   </url><url>
+    <loc>https://gerundium.github.io/tags/cert-manager/</loc>
+  </url><url>
     <loc>https://gerundium.github.io/tags/deployment/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/devbox/</loc>
@@ -70,15 +72,25 @@
   </url><url>
     <loc>https://gerundium.github.io/tags/k8s/</loc>
   </url><url>
+    <loc>https://gerundium.github.io/tags/longhorn/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/metallb/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/metrics-server/</loc>
+  </url><url>
     <loc>https://gerundium.github.io/tags/network/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/nix/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/overview/</loc>
   </url><url>
+    <loc>https://gerundium.github.io/tags/prometheus/</loc>
+  </url><url>
     <loc>https://gerundium.github.io/tags/provisioning/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/proxmox/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/sealed-secrets/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/setup/</loc>
   </url><url>
@@ -92,7 +104,11 @@
   </url><url>
     <loc>https://gerundium.github.io/tags/tbi/</loc>
   </url><url>
+    <loc>https://gerundium.github.io/tags/traefik/</loc>
+  </url><url>
     <loc>https://gerundium.github.io/tags/vegan/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/vertical-pod-autoscaler/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/virtualization/</loc>
   </url>

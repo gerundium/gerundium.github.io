@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>cert-manager</title>
+      <link>https://gerundium.github.io/tags/cert-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/cert-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>deployment</title>
       <link>https://gerundium.github.io/tags/deployment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -124,6 +133,33 @@
     </item>
     
     <item>
+      <title>longhorn</title>
+      <link>https://gerundium.github.io/tags/longhorn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/longhorn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metallb</title>
+      <link>https://gerundium.github.io/tags/metallb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/metallb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metrics-server</title>
+      <link>https://gerundium.github.io/tags/metrics-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/metrics-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Network</title>
       <link>https://gerundium.github.io/tags/network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -151,6 +187,15 @@
     </item>
     
     <item>
+      <title>prometheus</title>
+      <link>https://gerundium.github.io/tags/prometheus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/prometheus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>provisioning</title>
       <link>https://gerundium.github.io/tags/provisioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -165,6 +210,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/tags/proxmox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sealed-secrets</title>
+      <link>https://gerundium.github.io/tags/sealed-secrets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/sealed-secrets/</guid>
       <description></description>
     </item>
     
@@ -214,11 +268,29 @@
     </item>
     
     <item>
+      <title>traefik</title>
+      <link>https://gerundium.github.io/tags/traefik/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/traefik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Vegan</title>
       <link>https://gerundium.github.io/tags/vegan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/tags/vegan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vertical-pod-autoscaler</title>
+      <link>https://gerundium.github.io/tags/vertical-pod-autoscaler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/tags/vertical-pod-autoscaler/</guid>
       <description></description>
     </item>
     

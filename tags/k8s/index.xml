@@ -23,9 +23,9 @@ In addition to expertise, two character traits in particular are required to mas
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/k8s_ha_cluster/provisioning/</guid>
-      <description>State/Version: 20240618
+      <description>State/Version: 20241018
 3.2 Provisioning the k8s nodes 🚚 3.2.1 Development cluster 🚧  The Development Cluster is privisioned with 🏷️ansible. Running as bare-metal variant of 🏷️talos on the 🏷️Virtualbox platform.  The code for the development cluster is documented here: 🌐 homelab repository on github.
-3.2.2 Staging cluster The Staging Cluster runs as a set of virtual machines on a 🏷️Proxmox host. The Terraform source code is also stored currently in a privat github repository and will be published soon in this 🌐 homelab repository on github</description>
+3.2.2 Staging cluster K1 The Staging Cluster runs as a set of virtual machines on a 🏷️Proxmox host. The Terraform source code is also stored currently in a privat github repository and will be published soon in this 🌐 homelab repository on github</description>
     </item>
     
     <item>
@@ -59,7 +59,7 @@ export GITHUB_TOKEN=&amp;lt;PersonalAccessToken&amp;gt; export GITHUB_USER=gerun
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gerundium.github.io/k8s_ha_cluster/</guid>
-      <description>Topics K3s-HA-Cluster  Overview 🚀 Provisioning the Kubernetes nodes 🚚 Deploy Kubernetes 🚚 GitOps: Install and configure 🏗️ Rook/Ceph/longhorn etc storage 📦️ Cloud native databases 📦️ Taints, Tolerations, limits 📦️ Cluster backup (etcd, etc), disaster recovery 📦️    </description>
+      <description>Topics K3s-HA-Cluster  Overview 🚀 Provisioning the Kubernetes nodes 🚚 Deploy Kubernetes 🚚 GitOps: Install and configure 🏗️ Rook/Ceph/longhorn etc storage 📦️ Monitoring (Prometheus / Grafana / Metrics Server) 📦️ Taints, Tolerations, limits 📦️ Upgrading  K8s (talos) 📦️   Cluster backup (etcd, etc), disaster recovery (k8up) 📦️  PVCs (Longhorn Backup)      </description>
     </item>
     
   </channel>

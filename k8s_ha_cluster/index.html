@@ -12,22 +12,22 @@
     <title>K8s-HA-Cluster :: Gerundium</title>
 
     
-    <link href="/css/nucleus.css?1725638724" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1725638724" rel="stylesheet">
-    <link href="/css/hybrid.css?1725638724" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1725638724" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1725638724" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725638724" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1725638724" rel="stylesheet">
-    <link href="/css/theme.css?1725638724" rel="stylesheet">
-    <link href="/css/tabs.css?1725638724" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1725638724" rel="stylesheet">
+    <link href="/css/nucleus.css?1729333696" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1729333696" rel="stylesheet">
+    <link href="/css/hybrid.css?1729333696" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1729333696" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1729333696" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729333696" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1729333696" rel="stylesheet">
+    <link href="/css/theme.css?1729333696" rel="stylesheet">
+    <link href="/css/tabs.css?1729333696" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1729333696" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1725638724" rel="stylesheet">
+    <link href="/css/theme-green.css?1729333696" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1725638724"></script>
+    <script src="/js/jquery-3.3.1.min.js?1729333696"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1725638724"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1725638724"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1729333696"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1729333696"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/gerundium.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1725638724"></script>
+<script type="text/javascript" src="/js/search.js?1729333696"></script>
 
     
   </div>
@@ -582,6 +582,24 @@
 
   <a class="tag-link" href="/tags/k8s">k8s</a>
 
+  <a class="tag-link" href="/tags/metrics-server">metrics-server</a>
+
+  <a class="tag-link" href="/tags/traefik">traefik</a>
+
+  <a class="tag-link" href="/tags/metallb">metallb</a>
+
+  <a class="tag-link" href="/tags/fluxcd">fluxcd</a>
+
+  <a class="tag-link" href="/tags/prometheus">prometheus</a>
+
+  <a class="tag-link" href="/tags/longhorn">longhorn</a>
+
+  <a class="tag-link" href="/tags/cert-manager">cert-manager</a>
+
+  <a class="tag-link" href="/tags/sealed-secrets">sealed-secrets</a>
+
+  <a class="tag-link" href="/tags/vertical-pod-autoscaler">vertical-pod-autoscaler</a>
+
 </div>
 
         </div>
@@ -603,10 +621,19 @@
 <li><input checked="" disabled="" type="checkbox"> Provisioning the Kubernetes nodes 🚚</li>
 <li><input checked="" disabled="" type="checkbox"> Deploy Kubernetes 🚚</li>
 <li><input checked="" disabled="" type="checkbox"> GitOps: Install and configure 🏗️</li>
-<li><input disabled="" type="checkbox"> Rook/Ceph/longhorn etc storage 📦️</li>
-<li><input disabled="" type="checkbox"> Cloud native databases 📦️</li>
-<li><input disabled="" type="checkbox"> Taints, Tolerations, limits 📦️</li>
-<li><input disabled="" type="checkbox"> Cluster backup (etcd, etc), disaster recovery 📦️</li>
+<li><input checked="" disabled="" type="checkbox"> Rook/Ceph/longhorn etc storage 📦️</li>
+<li><input checked="" disabled="" type="checkbox"> Monitoring (Prometheus / Grafana / Metrics Server) 📦️</li>
+<li><input checked="" disabled="" type="checkbox"> Taints, Tolerations, limits 📦️</li>
+<li><input checked="" disabled="" type="checkbox"> Upgrading
+<ol>
+<li><input checked="" disabled="" type="checkbox"> K8s (talos) 📦️</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"> Cluster backup (etcd, etc), disaster recovery (k8up) 📦️
+<ol>
+<li><input checked="" disabled="" type="checkbox"> PVCs (Longhorn Backup)</li>
+</ol>
+</li>
 </ol>
 </li>
 </ol>
@@ -980,16 +1007,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1725638724"></script>
-    <script src="/js/perfect-scrollbar.min.js?1725638724"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1725638724"></script>
-    <script src="/js/jquery.sticky.js?1725638724"></script>
-    <script src="/js/featherlight.min.js?1725638724"></script>
-    <script src="/js/highlight.pack.js?1725638724"></script>
+    <script src="/js/clipboard.min.js?1729333696"></script>
+    <script src="/js/perfect-scrollbar.min.js?1729333696"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1729333696"></script>
+    <script src="/js/jquery.sticky.js?1729333696"></script>
+    <script src="/js/featherlight.min.js?1729333696"></script>
+    <script src="/js/highlight.pack.js?1729333696"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1725638724"></script>
-    <script src="/js/learn.js?1725638724"></script>
-    <script src="/js/hugo-learn.js?1725638724"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1729333696"></script>
+    <script src="/js/learn.js?1729333696"></script>
+    <script src="/js/hugo-learn.js?1729333696"></script>
     
         
             <script src="https://unpkg.com/mermaid@10.3.0/dist/mermaid.min.js"></script>

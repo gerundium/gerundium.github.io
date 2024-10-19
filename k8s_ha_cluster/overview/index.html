@@ -12,22 +12,22 @@
     <title>3.1 Overview :: Gerundium</title>
 
     
-    <link href="/css/nucleus.css?1725638724" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1725638724" rel="stylesheet">
-    <link href="/css/hybrid.css?1725638724" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1725638724" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1725638724" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725638724" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1725638724" rel="stylesheet">
-    <link href="/css/theme.css?1725638724" rel="stylesheet">
-    <link href="/css/tabs.css?1725638724" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1725638724" rel="stylesheet">
+    <link href="/css/nucleus.css?1729333696" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1729333696" rel="stylesheet">
+    <link href="/css/hybrid.css?1729333696" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1729333696" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1729333696" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729333696" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1729333696" rel="stylesheet">
+    <link href="/css/theme.css?1729333696" rel="stylesheet">
+    <link href="/css/tabs.css?1729333696" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1729333696" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1725638724" rel="stylesheet">
+    <link href="/css/theme-green.css?1729333696" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1725638724"></script>
+    <script src="/js/jquery-3.3.1.min.js?1729333696"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1725638724"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1725638724"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1729333696"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1729333696"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/gerundium.github.io";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1725638724"></script>
+<script type="text/javascript" src="/js/search.js?1729333696"></script>
 
     
   </div>
@@ -672,20 +672,12 @@
 </thead>
 <tbody>
 <tr>
-<td>Provisioning - Virtualbox</td>
-<td>full ✅</td>
-</tr>
-<tr>
-<td>Provisioning - Virtualbox</td>
-<td>full ✅</td>
-</tr>
-<tr>
 <td>Provisioning - Proxmox</td>
 <td>full ✅</td>
 </tr>
 <tr>
 <td>Provisioning - Docker</td>
-<td>partially *1 *2 *3 🔥</td>
+<td>partially *3 🔥</td>
 </tr>
 <tr>
 <td>K8s Deployment - Virtualbox</td>
@@ -733,25 +725,24 @@
 <p>Let&rsquo;s flow through the setup.</p>
 <p><img src="/Workflow.png" alt="Image placeholder"></p>
 <h3 id="315-current-setup">3.1.5 Current Setup</h3>
-<p><em><strong>Development Cluster</strong></em></p>
-<p>The Development Cluster (🏷️<strong>Virtualbox</strong>) is provisioned and bootstraped with 🏷️<strong>Ansible</strong></p>
+<p><em><strong>Development Cluster (dxpsp1)</strong></em></p>
 <ul>
-<li>1x Controlplane(s)</li>
-<li>2x Worker nodes</li>
+<li>The Development Cluster (🏷️<strong>Virtualbox</strong>) is provisioned and bootstraped with 🏷️<strong>Ansible</strong></li>
+<li>Dell XPS 13 Plus 9320
+<img src="/k8sCluster-dxpsp1.png" alt="Image placeholder"></li>
 </ul>
-<p><em><strong>Staging Cluster</strong></em></p>
-<p>The Staging Cluster (🏷️<strong>Proxmox</strong>) is provisioned with 🏷️<strong>Terraform</strong> and bootstraped with 🏷️<strong>Ansible</strong>.</p>
+<p><em><strong>Development Cluster (vmd95641)</strong></em></p>
+<p>The second Development Cluster (🏷️<strong>VPS</strong>) is provisioned manually as virtual machine at contabo and bootstraped with 🏷️<strong>Ansible</strong>.</p>
+<p><em><strong>Staging Cluster (K1)</strong></em></p>
 <ul>
-<li>3x Controlplane(s)</li>
-<li>2x Worker nodes</li>
+<li>The Staging Cluster (🏷️<strong>Proxmox</strong>) is provisioned with 🏷️<strong>Terraform</strong> and bootstraped with 🏷️<strong>Talos</strong>.</li>
 </ul>
-<p><em><strong>Production Cluster</strong></em></p>
-<p>The Production Cluster (🏷️<strong>VPS</strong>) is provisioned manually as virtual machine at contabo and bootstraped with 🏷️<strong>Ansible</strong>.</p>
+<p><img src="/k8sCluster-k1.png" alt="Image placeholder"></p>
+<p><em><strong>Production Cluster (K2)</strong></em></p>
 <ul>
-<li>1x Loadbalancer</li>
-<li>1x Controlplane(s)</li>
-<li>2x Worker nodes</li>
+<li>The Staging Cluster (🏷️<strong>Proxmox</strong>) is provisioned with 🏷️<strong>Terraform</strong> and bootstraped with 🏷️<strong>Talos</strong>.</li>
 </ul>
+<p><img src="/k8sCluster-k2.png" alt="Image placeholder"></p>
 
 
 <footer class="footline">
@@ -1118,16 +1109,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1725638724"></script>
-    <script src="/js/perfect-scrollbar.min.js?1725638724"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1725638724"></script>
-    <script src="/js/jquery.sticky.js?1725638724"></script>
-    <script src="/js/featherlight.min.js?1725638724"></script>
-    <script src="/js/highlight.pack.js?1725638724"></script>
+    <script src="/js/clipboard.min.js?1729333696"></script>
+    <script src="/js/perfect-scrollbar.min.js?1729333696"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1729333696"></script>
+    <script src="/js/jquery.sticky.js?1729333696"></script>
+    <script src="/js/featherlight.min.js?1729333696"></script>
+    <script src="/js/highlight.pack.js?1729333696"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1725638724"></script>
-    <script src="/js/learn.js?1725638724"></script>
-    <script src="/js/hugo-learn.js?1725638724"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1729333696"></script>
+    <script src="/js/learn.js?1729333696"></script>
+    <script src="/js/hugo-learn.js?1729333696"></script>
     
         
             <script src="https://unpkg.com/mermaid@10.3.0/dist/mermaid.min.js"></script>

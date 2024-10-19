@@ -18,5 +18,14 @@ This will install Flux into the cluster and connect it to the specified git repo
 export GITHUB_TOKEN=&amp;lt;PersonalAccessToken&amp;gt; export GITHUB_USER=gerundium flux bootstrap github \  --token-auth \  --owner=gerundium \  --repository=flux-k2 \  --path=clusters/&amp;lt;STAGE&amp;gt; \  --personal \  --branch main At this point your fluxcd is authorized and configured to apply changes (pull-based), that are stored in your 🏷️github-repository, to the Kubernetes cluster.</description>
     </item>
     
+    <item>
+      <title>K8s-HA-Cluster</title>
+      <link>https://gerundium.github.io/k8s_ha_cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gerundium.github.io/k8s_ha_cluster/</guid>
+      <description>Topics K3s-HA-Cluster  Overview 🚀 Provisioning the Kubernetes nodes 🚚 Deploy Kubernetes 🚚 GitOps: Install and configure 🏗️ Rook/Ceph/longhorn etc storage 📦️ Monitoring (Prometheus / Grafana / Metrics Server) 📦️ Taints, Tolerations, limits 📦️ Upgrading  K8s (talos) 📦️   Cluster backup (etcd, etc), disaster recovery (k8up) 📦️  PVCs (Longhorn Backup)      </description>
+    </item>
+    
   </channel>
 </rss>
