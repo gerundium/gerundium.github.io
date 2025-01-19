@@ -1,66 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>k8s on Gerundium</title>
+    <title>K8s on Gerundium</title>
     <link>https://gerundium.github.io/tags/k8s/</link>
-    <description>Recent content in k8s on Gerundium</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://gerundium.github.io/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in K8s on Gerundium</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://gerundium.github.io/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3.1 Overview</title>
       <link>https://gerundium.github.io/k8s_ha_cluster/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://gerundium.github.io/k8s_ha_cluster/overview/</guid>
-      <description>State/Version: 20240225
-3.1 Overview 3.1.1 A few words before we start 🚀 Setting up a home lab takes time. The construction or renovation of a house is comparable in scope and complexity. In the end, you not only know where the pipes run, but also what you can do better when building the next one.
-In addition to expertise, two character traits in particular are required to master a project like this.</description>
+      <description>&lt;p&gt;State/Version: &lt;em&gt;&lt;strong&gt;20250119&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;31-overview&#34;&gt;3.1 Overview&lt;/h2&gt;&#xA;&lt;h3 id=&#34;311-a-few-words-before-we-start-&#34;&gt;3.1.1 A few words before we start 🚀&lt;/h3&gt;&#xA;&lt;p&gt;Setting up a home lab takes time. The construction or renovation of a house is comparable in scope and complexity. In the end, you not only know where the pipes run, but also what you can do better when building the next one.&lt;/p&gt;&#xA;&lt;p&gt;In addition to expertise, two character traits in particular are required to master a project like this.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>3.2 Provisioning the k8s nodes</title>
       <link>https://gerundium.github.io/k8s_ha_cluster/provisioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://gerundium.github.io/k8s_ha_cluster/provisioning/</guid>
-      <description>State/Version: 20241018
-3.2 Provisioning the k8s nodes 🚚 3.2.1 Development cluster 🚧  The Development Cluster is privisioned with 🏷️ansible. Running as bare-metal variant of 🏷️talos on the 🏷️Virtualbox platform.  The code for the development cluster is documented here: 🌐 homelab repository on github.
-3.2.2 Staging cluster K1 The Staging Cluster runs as a set of virtual machines on a 🏷️Proxmox host. The Terraform source code is also stored currently in a privat github repository and will be published soon in this 🌐 homelab repository on github</description>
+      <description>&lt;p&gt;State/Version: &lt;em&gt;&lt;strong&gt;20250119&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;32-provisioning-the-k8s-nodes-&#34;&gt;3.2 Provisioning the k8s nodes 🚚&lt;/h2&gt;&#xA;&lt;h3 id=&#34;321-development-cluster-&#34;&gt;3.2.1 Development cluster 🚧&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The Development Cluster is privisioned with 🏷️&lt;strong&gt;ansible&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Running as bare-metal variant of 🏷️&lt;strong&gt;talos&lt;/strong&gt; on the 🏷️&lt;strong&gt;Virtualbox&lt;/strong&gt; platform.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The code for the development cluster is documented here: &lt;a href=&#34;https://github.com/gerundium/01-homelab/tree/main/01-Provisioning/01-Ansible&#34;&gt;🌐 &lt;strong&gt;homelab repository on github&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;322-staging-cluster-k1&#34;&gt;3.2.2 Staging cluster K1&lt;/h3&gt;&#xA;&lt;p&gt;The Staging Cluster runs as a set of virtual machines on a 🏷️&lt;strong&gt;Proxmox&lt;/strong&gt; host. The Terraform source code is also stored currently in a privat github repository and will be published soon in this &lt;a href=&#34;https://github.com/gerundium/01-homelab.git&#34;&gt;🌐 &lt;strong&gt;homelab repository on github&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>3.3 Deploy Kubernetes</title>
       <link>https://gerundium.github.io/k8s_ha_cluster/deployment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://gerundium.github.io/k8s_ha_cluster/deployment/</guid>
-      <description>State/Version: 20240225
-3.3 Deploy Kubernetes 🚚 Once the stage is prepared Kubernetes can be deployed.
-3.3.1 Development cluster 🚧 The first iteartion of the Kubernetes homelab was provisioned as described on rechno-tims blog.
- 🌐 Automated build of HA k3s Cluster with kube-vip and MetalLB  Currently I replaced 🏷️k3s with 🏷️talos because it fits better into my automated provisioning and configuration workflow.
-The code is documented here: 🌐 homelab repository on github.</description>
+      <description>&lt;p&gt;State/Version: &lt;em&gt;&lt;strong&gt;20240225&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;33-deploy-kubernetes-&#34;&gt;3.3 Deploy Kubernetes 🚚&lt;/h2&gt;&#xA;&lt;p&gt;Once the stage is prepared Kubernetes can be deployed.&lt;/p&gt;&#xA;&lt;h3 id=&#34;331-development-cluster-&#34;&gt;3.3.1 Development cluster 🚧&lt;/h3&gt;&#xA;&lt;p&gt;The first iteartion of the Kubernetes homelab was provisioned as described on rechno-tims blog.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/techno-tim/k3s-ansible.git&#34;&gt;🌐 Automated build of HA k3s Cluster with kube-vip and MetalLB&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Currently I replaced &lt;strong&gt;🏷️k3s&lt;/strong&gt; with &lt;strong&gt;🏷️talos&lt;/strong&gt; because it fits better into my automated provisioning and configuration workflow.&lt;/p&gt;&#xA;&lt;p&gt;The code is documented here: &lt;a href=&#34;https://github.com/gerundium/01-homelab/tree/main/01-Provisioning/02-Talos&#34;&gt;🌐 &lt;strong&gt;homelab repository on github&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>3.4 GitOps: Install and configure FluxCD</title>
       <link>https://gerundium.github.io/k8s_ha_cluster/gitops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://gerundium.github.io/k8s_ha_cluster/gitops/</guid>
-      <description>State/Version: 20240225
-3.4 GitOps: Install and configure 3.4.1 GitOps: Install and configure FluxCD 🏗️ Installing and Configuring 🏷️FluxCD is the easy part ( if you do not mess up your dns setup :] ).
-This will install Flux into the cluster and connect it to the specified git repository. You have to repeat it for every cluster you want to manage.
-export GITHUB_TOKEN=&amp;lt;PersonalAccessToken&amp;gt; export GITHUB_USER=gerundium flux bootstrap github \  --token-auth \  --owner=gerundium \  --repository=flux-k2 \  --path=clusters/&amp;lt;STAGE&amp;gt; \  --personal \  --branch main At this point your fluxcd is authorized and configured to apply changes (pull-based), that are stored in your 🏷️github-repository, to the Kubernetes cluster.</description>
+      <description>&lt;p&gt;State/Version: &lt;em&gt;&lt;strong&gt;20240225&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;34--gitops-install-and-configure&#34;&gt;3.4  GitOps: Install and configure&lt;/h2&gt;&#xA;&lt;h2 id=&#34;341--gitops-install-and-configure-fluxcd-&#34;&gt;3.4.1  GitOps: Install and configure FluxCD 🏗️&lt;/h2&gt;&#xA;&lt;p&gt;Installing and Configuring 🏷️&lt;strong&gt;FluxCD&lt;/strong&gt; is the easy part ( if you do not mess up your dns setup :] ).&lt;/p&gt;&#xA;&lt;p&gt;This will install Flux into the cluster and connect it to the specified git repository.&#xA;You have to repeat it for every cluster you want to manage.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export GITHUB_TOKEN&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;lt;PersonalAccessToken&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export GITHUB_USER&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;gerundium&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;flux bootstrap github &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --token-auth &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --owner&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;gerundium &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --repository&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;flux-k2 &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --path&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;clusters/&amp;lt;STAGE&amp;gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --personal &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --branch main&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;At this point your fluxcd is authorized and configured to apply changes (pull-based), that are stored in your 🏷️&lt;strong&gt;github-repository&lt;/strong&gt;, to the Kubernetes cluster.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>K8s-HA-Cluster</title>
       <link>https://gerundium.github.io/k8s_ha_cluster/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://gerundium.github.io/k8s_ha_cluster/</guid>
-      <description>Topics K3s-HA-Cluster  Overview 🚀 Provisioning the Kubernetes nodes 🚚 Deploy Kubernetes 🚚 GitOps: Install and configure 🏗️ Rook/Ceph/longhorn etc storage 📦️ Monitoring (Prometheus / Grafana / Metrics Server) 📦️ Taints, Tolerations, limits 📦️ Upgrading  K8s (talos) 📦️   Cluster backup (etcd, etc), disaster recovery (k8up) 📦️  PVCs (Longhorn Backup)      </description>
+      <description>&lt;h1 id=&#34;topics&#34;&gt;Topics&lt;/h1&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;K3s-HA-Cluster&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Overview 🚀&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Provisioning the Kubernetes nodes 🚚&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Deploy Kubernetes 🚚&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; GitOps: Install and configure 🏗️&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Rook/Ceph/longhorn etc storage 📦️&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Monitoring (Prometheus / Grafana / Metrics Server) 📈&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Taints, Tolerations, limits 🔧&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Upgrading&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; K8s (talos) 📦️&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;[~] Cluster backup (etcd, etc), disaster recovery (k8up) 📦️&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; etcd&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; PVCs (Longhorn Backup)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Maintenance (Image/HelmChart updates) 🔧&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Mend Renovate&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
   </channel>
 </rss>

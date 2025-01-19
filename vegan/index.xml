@@ -4,7 +4,8 @@
     <title>Go Vegan! on Gerundium</title>
     <link>https://gerundium.github.io/vegan/</link>
     <description>Recent content in Go Vegan! on Gerundium</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://gerundium.github.io/vegan/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://gerundium.github.io/vegan/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

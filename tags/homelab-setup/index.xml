@@ -4,36 +4,29 @@
     <title>Homelab Setup on Gerundium</title>
     <link>https://gerundium.github.io/tags/homelab-setup/</link>
     <description>Recent content in Homelab Setup on Gerundium</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://gerundium.github.io/tags/homelab-setup/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://gerundium.github.io/tags/homelab-setup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2.1 High level view</title>
       <link>https://gerundium.github.io/homelab_setup/highlevel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://gerundium.github.io/homelab_setup/highlevel/</guid>
-      <description>State/Version: 20230829p1
- 2.1 High level view   2.1 High level view   Hardware, that belongs to the &amp;ldquo;Management&amp;rdquo; segment, knows routes into the other network segments and provides internet connectivity. Hardware grouped in IoT (Internet of Things/Trash) segment is considered as untrusted and therefore cannot connect to other network devices. It still can be controled via internet.  </description>
+      <description>&lt;p&gt;State/Version: &lt;em&gt;20230829p1&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#21-high-level-view&#34;&gt;2.1 High level view&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;21-high-level-view&#34;&gt;2.1 High level view&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://gerundium.github.io/gerundium-homelab.png&#34; alt=&#34;Gerundium Homelab&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hardware, that belongs to the &lt;strong&gt;&amp;ldquo;Management&amp;rdquo; segment&lt;/strong&gt;, knows routes into the other network segments and provides internet connectivity.&lt;/li&gt;&#xA;&lt;li&gt;Hardware grouped in &lt;strong&gt;IoT (Internet of Things/Trash) segment is considered as untrusted&lt;/strong&gt; and therefore &lt;strong&gt;cannot connect to other network devices&lt;/strong&gt;. It still can be controled via internet.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>2.5 Virtualization</title>
       <link>https://gerundium.github.io/homelab_setup/virtualization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://gerundium.github.io/homelab_setup/virtualization/</guid>
-      <description>State/Version: 20230829p1
- 2.5 Proxmox   2.5.0 Reference 2.5.1 Setup   2.5.1.1 Installation Process 2.5.1.2 Web Console Overview 2.5.1.3 User Management 2.5.1.4 Backups and Snapshots 2.5.1.5 DNS 2.5.1.6 Provisioning 2.5.1.7 Subscription   2.5.2 Maintenance     2.5 Proxmox   Proxmox Virtual Environment  Compute, network, and storage in a single solution    2.5.0 Reference  Proxmox Full Course  2.5.1 Setup  2.</description>
+      <description>&lt;p&gt;State/Version: &lt;em&gt;20230829p1&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#25-proxmox&#34;&gt;2.5 Proxmox&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#250-reference&#34;&gt;2.5.0 Reference&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#251-setup&#34;&gt;2.5.1 Setup&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2511-installation-process&#34;&gt;2.5.1.1 Installation Process&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2512-web-console-overview&#34;&gt;2.5.1.2 Web Console Overview&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2513-user-management&#34;&gt;2.5.1.3 User Management&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2514-backups-and-snapshots&#34;&gt;2.5.1.4 Backups and Snapshots&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2515-dns&#34;&gt;2.5.1.5 DNS&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2516-provisioning&#34;&gt;2.5.1.6 Provisioning&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2517-subscription&#34;&gt;2.5.1.7 Subscription&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#252-maintenance&#34;&gt;2.5.2 Maintenance&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;25-proxmox&#34;&gt;2.5 Proxmox&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.proxmox.com/en/proxmox-virtual-environment/overview&#34;&gt;Proxmox Virtual Environment&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Compute, network, and storage in a single solution&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;250-reference&#34;&gt;2.5.0 Reference&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=LCjuiIswXGs&amp;amp;list=PLT98CRl2KxKHnlbYhtABg6cF50bYa8Ulo&#34;&gt;Proxmox Full Course&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;251-setup&#34;&gt;2.5.1 Setup&lt;/h3&gt;&#xA;&lt;h4 id=&#34;2511-installation-process&#34;&gt;2.5.1.1 Installation Process&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reference: &lt;a href=&#34;https://www.youtube.com/watch?v=u8E3-Zy9NvI&amp;amp;list=PLT98CRl2KxKHnlbYhtABg6cF50bYa8Ulo&amp;amp;index=2&#34;&gt;Proxmox VE Full Course: Class 2 - Installation Process&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create bootable Proxmox USB-Stick&lt;/li&gt;&#xA;&lt;li&gt;Install Proxmox on your Hardware&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h4 id=&#34;2512-web-console-overview&#34;&gt;2.5.1.2 Web Console Overview&lt;/h4&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://gerundium.github.io/Proxmox-Dashboard_01.png&#34; alt=&#34;overview1&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Homelab Setup</title>
       <link>https://gerundium.github.io/homelab_setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://gerundium.github.io/homelab_setup/</guid>
-      <description>Topics Homelab Setup  High level view  Hardware  Network  Storage  Virtualization  Configuration Management  GitOps     </description>
+      <description>&lt;h1 id=&#34;topics&#34;&gt;Topics&lt;/h1&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;Homelab Setup&#xA;&lt;ol&gt;&#xA;&lt;li&gt;High level view ✅&lt;/li&gt;&#xA;&lt;li&gt;Hardware ✅&lt;/li&gt;&#xA;&lt;li&gt;Network ✅&lt;/li&gt;&#xA;&lt;li&gt;Storage ✅&lt;/li&gt;&#xA;&lt;li&gt;Virtualization ✅&lt;/li&gt;&#xA;&lt;li&gt;Configuration Management ✅&lt;/li&gt;&#xA;&lt;li&gt;GitOps ✅&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
   </channel>
 </rss>

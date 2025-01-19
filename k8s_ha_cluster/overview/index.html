@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.141.0">
     <meta name="description" content="Description">
 <meta name="author" content="db">
 
@@ -12,22 +12,22 @@
     <title>3.1 Overview :: Gerundium</title>
 
     
-    <link href="/css/nucleus.css?1729333696" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1729333696" rel="stylesheet">
-    <link href="/css/hybrid.css?1729333696" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1729333696" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1729333696" rel="stylesheet">
-    <link href="/css/auto-complete.css?1729333696" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1729333696" rel="stylesheet">
-    <link href="/css/theme.css?1729333696" rel="stylesheet">
-    <link href="/css/tabs.css?1729333696" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1729333696" rel="stylesheet">
+    <link href="/css/nucleus.css?1737283396" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1737283396" rel="stylesheet">
+    <link href="/css/hybrid.css?1737283396" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1737283396" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1737283396" rel="stylesheet">
+    <link href="/css/auto-complete.css?1737283396" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1737283396" rel="stylesheet">
+    <link href="/css/theme.css?1737283396" rel="stylesheet">
+    <link href="/css/tabs.css?1737283396" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1737283396" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1729333696" rel="stylesheet">
+    <link href="/css/theme-green.css?1737283396" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1729333696"></script>
+    <script src="/js/jquery-3.3.1.min.js?1737283396"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1729333696"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1729333696"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1737283396"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1737283396"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/gerundium.github.io";
+        var baseurl = "https:\/\/gerundium.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1729333696"></script>
+<script type="text/javascript" src="/js/search.js?1737283396"></script>
 
     
   </div>
@@ -624,7 +624,7 @@
         
 
 
-<p>State/Version: <em><strong>20240225</strong></em></p>
+<p>State/Version: <em><strong>20250119</strong></em></p>
 <h2 id="31-overview">3.1 Overview</h2>
 <h3 id="311-a-few-words-before-we-start-">3.1.1 A few words before we start 🚀</h3>
 <p>Setting up a home lab takes time. The construction or renovation of a house is comparable in scope and complexity. In the end, you not only know where the pipes run, but also what you can do better when building the next one.</p>
@@ -661,65 +661,68 @@
 #<strong>longhorn</strong>
 #<strong>sealed-secrets</strong>
 #<strong>dns</strong>
-#<strong>ipam</strong></p>
+#<strong>ipam</strong>
+#<strong>renovate</strong>
+#<strong>prometheus</strong>
+#<strong>grafana</strong></p>
 <h3 id="313-state-of-automation-">3.1.3 State of automation 🏗️</h3>
 <table>
-<thead>
-<tr>
-<th>Topic</th>
-<th>Degree of automation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Provisioning - Proxmox</td>
-<td>full ✅</td>
-</tr>
-<tr>
-<td>Provisioning - Docker</td>
-<td>partially *3 🔥</td>
-</tr>
-<tr>
-<td>K8s Deployment - Virtualbox</td>
-<td>full ✅</td>
-</tr>
-<tr>
-<td>K8s Deployment - Proxmox</td>
-<td>full ✅</td>
-</tr>
-<tr>
-<td>K8s Deployment - Docker</td>
-<td>full ✅</td>
-</tr>
-<tr>
-<td>GitOps Fluxcd - Virtualbox</td>
-<td>full ✅</td>
-</tr>
-<tr>
-<td>GitOps Fluxcd - Proxmox</td>
-<td>full ✅</td>
-</tr>
-<tr>
-<td>GitOps Fluxcd - Docker</td>
-<td>full ✅</td>
-</tr>
-<tr>
-<td><em><strong>Legend</strong></em></td>
-<td></td>
-</tr>
-<tr>
-<td><em>*1</em></td>
-<td>Terraform Proxmox Plugin is currently broken</td>
-</tr>
-<tr>
-<td><em>*2</em></td>
-<td>No tech demo (Because of *1)</td>
-</tr>
-<tr>
-<td><em>*3</em></td>
-<td>This step is manuall</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Topic</th>
+          <th>Degree of automation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Provisioning - Proxmox</td>
+          <td>full ✅</td>
+      </tr>
+      <tr>
+          <td>Provisioning - Docker</td>
+          <td>partially *3 🔥</td>
+      </tr>
+      <tr>
+          <td>K8s Deployment - Virtualbox</td>
+          <td>full ✅</td>
+      </tr>
+      <tr>
+          <td>K8s Deployment - Proxmox</td>
+          <td>full ✅</td>
+      </tr>
+      <tr>
+          <td>K8s Deployment - Docker</td>
+          <td>full ✅</td>
+      </tr>
+      <tr>
+          <td>GitOps Fluxcd - Virtualbox</td>
+          <td>full ✅</td>
+      </tr>
+      <tr>
+          <td>GitOps Fluxcd - Proxmox</td>
+          <td>full ✅</td>
+      </tr>
+      <tr>
+          <td>GitOps Fluxcd - Docker</td>
+          <td>full ✅</td>
+      </tr>
+      <tr>
+          <td><em><strong>Legend</strong></em></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><em>*1</em></td>
+          <td>Terraform Proxmox Plugin is currently broken</td>
+      </tr>
+      <tr>
+          <td><em>*2</em></td>
+          <td>No tech demo (Because of *1)</td>
+      </tr>
+      <tr>
+          <td><em>*3</em></td>
+          <td>This step is manuall</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="314-workflow-">3.1.4 Workflow 🔀</h3>
 <p>Let&rsquo;s flow through the setup.</p>
@@ -728,21 +731,67 @@
 <p><em><strong>Development Cluster (dxpsp1)</strong></em></p>
 <ul>
 <li>The Development Cluster (🏷️<strong>Virtualbox</strong>) is provisioned and bootstraped with 🏷️<strong>Ansible</strong></li>
-<li>Dell XPS 13 Plus 9320
-<img src="/k8sCluster-dxpsp1.png" alt="Image placeholder"></li>
+<li>Dell XPS 13 Plus 9320</li>
 </ul>
 <p><em><strong>Development Cluster (vmd95641)</strong></em></p>
 <p>The second Development Cluster (🏷️<strong>VPS</strong>) is provisioned manually as virtual machine at contabo and bootstraped with 🏷️<strong>Ansible</strong>.</p>
-<p><em><strong>Staging Cluster (K1)</strong></em></p>
+<p><em><strong>Staging Cluster (K1)</strong></em> and <em><strong>Production Cluster (K2)</strong></em></p>
 <ul>
 <li>The Staging Cluster (🏷️<strong>Proxmox</strong>) is provisioned with 🏷️<strong>Terraform</strong> and bootstraped with 🏷️<strong>Talos</strong>.</li>
 </ul>
-<p><img src="/k8sCluster-k1.png" alt="Image placeholder"></p>
-<p><em><strong>Production Cluster (K2)</strong></em></p>
-<ul>
-<li>The Staging Cluster (🏷️<strong>Proxmox</strong>) is provisioned with 🏷️<strong>Terraform</strong> and bootstraped with 🏷️<strong>Talos</strong>.</li>
-</ul>
-<p><img src="/k8sCluster-k2.png" alt="Image placeholder"></p>
+
+<div class="mermaid" align="center">
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart TD
+    subgraph K2["`**K2**`"]
+    direction LR
+    K2-Loadbalancer["`_**Loadbalancer**_`"]
+    K2-ControlPlane1["`_**Control Plane 1**_`"]
+    K2-ControlPlane2["`_**Control Plane 2**_`"]
+    K2-ControlPlane3["`_**Control Plane 3**_`"]
+    K2-Worker1["`_**Worker 1**_`"]
+    K2-Worker2["`_**Worker 2**_`"]
+    K2-Worker3["`_**Worker 3**_`"]
+    K2-Loadbalancer --> K2-ControlPlane1
+    K2-Loadbalancer --> K2-ControlPlane2
+    K2-Loadbalancer --> K2-ControlPlane3
+    K2-ControlPlane1 --> K2-Worker1
+    K2-ControlPlane1 --> K2-Worker2
+    K2-ControlPlane1 --> K2-Worker3
+    K2-ControlPlane2 --> K2-Worker1
+    K2-ControlPlane2 --> K2-Worker2
+    K2-ControlPlane2 --> K2-Worker3
+    K2-ControlPlane3 --> K2-Worker1
+    K2-ControlPlane3 --> K2-Worker2
+    K2-ControlPlane3 --> K2-Worker3
+    end
+    style K2 fill:#9CD484,stroke:#00331a,stroke-width:1px
+
+    subgraph K1["`**K1**`"]
+    direction LR
+    K1-Loadbalancer["`_**Loadbalancer**_`"]
+    K1-ControlPlane1["`_**Control Plane 1**_`"]
+    K1-ControlPlane2["`_**Control Plane 2**_`"]
+    K1-ControlPlane3["`_**Control Plane 3**_`"]
+    K1-Worker1["`_**Worker 1**_`"]
+    K1-Worker2["`_**Worker 2**_`"]
+    K1-Worker3["`_**Worker 3**_`"]
+    K1-Loadbalancer --> K1-ControlPlane1
+    K1-Loadbalancer --> K1-ControlPlane2
+    K1-Loadbalancer --> K1-ControlPlane3
+    K1-ControlPlane1 --> K1-Worker1
+    K1-ControlPlane1 --> K1-Worker2
+    K1-ControlPlane1 --> K1-Worker3
+    K1-ControlPlane2 --> K1-Worker1
+    K1-ControlPlane2 --> K1-Worker2
+    K1-ControlPlane2 --> K1-Worker3
+    K1-ControlPlane3 --> K1-Worker1
+    K1-ControlPlane3 --> K1-Worker2
+    K1-ControlPlane3 --> K1-Worker3
+    end
+    style K1 fill:#9CD484,stroke:#00331a,stroke-width:1px
+</div>
+
 
 
 <footer class="footline">
@@ -1109,16 +1158,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1729333696"></script>
-    <script src="/js/perfect-scrollbar.min.js?1729333696"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1729333696"></script>
-    <script src="/js/jquery.sticky.js?1729333696"></script>
-    <script src="/js/featherlight.min.js?1729333696"></script>
-    <script src="/js/highlight.pack.js?1729333696"></script>
+    <script src="/js/clipboard.min.js?1737283396"></script>
+    <script src="/js/perfect-scrollbar.min.js?1737283396"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1737283396"></script>
+    <script src="/js/jquery.sticky.js?1737283396"></script>
+    <script src="/js/featherlight.min.js?1737283396"></script>
+    <script src="/js/highlight.pack.js?1737283396"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1729333696"></script>
-    <script src="/js/learn.js?1729333696"></script>
-    <script src="/js/hugo-learn.js?1729333696"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1737283396"></script>
+    <script src="/js/learn.js?1737283396"></script>
+    <script src="/js/hugo-learn.js?1737283396"></script>
     
         
             <script src="https://unpkg.com/mermaid@10.3.0/dist/mermaid.min.js"></script>

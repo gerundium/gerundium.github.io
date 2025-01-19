@@ -4,140 +4,140 @@
 	"title": "2.1 High level view",
 	"tags": ["Homelab Setup", "high-level-view"],
 	"description": "",
-	"content": "State/Version: 20230829p1\n 2.1 High level view   2.1 High level view   Hardware, that belongs to the \u0026ldquo;Management\u0026rdquo; segment, knows routes into the other network segments and provides internet connectivity. Hardware grouped in IoT (Internet of Things/Trash) segment is considered as untrusted and therefore cannot connect to other network devices. It still can be controled via internet.  "
+	"content": "State/Version: 20230829p1\n2.1 High level view 2.1 High level view Hardware, that belongs to the \u0026ldquo;Management\u0026rdquo; segment, knows routes into the other network segments and provides internet connectivity. Hardware grouped in IoT (Internet of Things/Trash) segment is considered as untrusted and therefore cannot connect to other network devices. It still can be controled via internet. "
 },
 {
 	"uri": "https://gerundium.github.io/k8s_ha_cluster/overview/",
 	"title": "3.1 Overview",
 	"tags": ["k8s", "Overview", "Ansible", "tbi"],
 	"description": "",
-	"content": "State/Version: 20240225\n3.1 Overview 3.1.1 A few words before we start 🚀 Setting up a home lab takes time. The construction or renovation of a house is comparable in scope and complexity. In the end, you not only know where the pipes run, but also what you can do better when building the next one.\nIn addition to expertise, two character traits in particular are required to master a project like this.\nPatience and Persistence\n3.1.2 Tech skills 🧑‍💻 #loadbalancer #metallb #nat #proxy-server #vlan #nat #network-bridging #yaml #json #traefik #nginx #etcd #gitops #fluxcd #terraform #ansible #proxmox #virtualbox #kustomize #helm #k3s #k8s #k3d #k9s #cloudflare #certmanager #letsencrypt #longhorn #sealed-secrets #dns #ipam\n3.1.3 State of automation 🏗️    Topic Degree of automation     Provisioning - Proxmox full ✅   Provisioning - Docker partially *3 🔥   K8s Deployment - Virtualbox full ✅   K8s Deployment - Proxmox full ✅   K8s Deployment - Docker full ✅   GitOps Fluxcd - Virtualbox full ✅   GitOps Fluxcd - Proxmox full ✅   GitOps Fluxcd - Docker full ✅   Legend    *1 Terraform Proxmox Plugin is currently broken   *2 No tech demo (Because of *1)   *3 This step is manuall    3.1.4 Workflow 🔀 Let\u0026rsquo;s flow through the setup.\n3.1.5 Current Setup Development Cluster (dxpsp1)\n The Development Cluster (🏷️Virtualbox) is provisioned and bootstraped with 🏷️Ansible Dell XPS 13 Plus 9320   Development Cluster (vmd95641)\nThe second Development Cluster (🏷️VPS) is provisioned manually as virtual machine at contabo and bootstraped with 🏷️Ansible.\nStaging Cluster (K1)\n The Staging Cluster (🏷️Proxmox) is provisioned with 🏷️Terraform and bootstraped with 🏷️Talos.  Production Cluster (K2)\n The Staging Cluster (🏷️Proxmox) is provisioned with 🏷️Terraform and bootstraped with 🏷️Talos.  "
+	"content": "State/Version: 20250119\n3.1 Overview 3.1.1 A few words before we start 🚀 Setting up a home lab takes time. The construction or renovation of a house is comparable in scope and complexity. In the end, you not only know where the pipes run, but also what you can do better when building the next one.\nIn addition to expertise, two character traits in particular are required to master a project like this.\nPatience and Persistence\n3.1.2 Tech skills 🧑‍💻 #loadbalancer #metallb #nat #proxy-server #vlan #nat #network-bridging #yaml #json #traefik #nginx #etcd #gitops #fluxcd #terraform #ansible #proxmox #virtualbox #kustomize #helm #k3s #k8s #k3d #k9s #cloudflare #certmanager #letsencrypt #longhorn #sealed-secrets #dns #ipam #renovate #prometheus #grafana\n3.1.3 State of automation 🏗️ Topic Degree of automation Provisioning - Proxmox full ✅ Provisioning - Docker partially *3 🔥 K8s Deployment - Virtualbox full ✅ K8s Deployment - Proxmox full ✅ K8s Deployment - Docker full ✅ GitOps Fluxcd - Virtualbox full ✅ GitOps Fluxcd - Proxmox full ✅ GitOps Fluxcd - Docker full ✅ Legend *1 Terraform Proxmox Plugin is currently broken *2 No tech demo (Because of *1) *3 This step is manuall 3.1.4 Workflow 🔀 Let\u0026rsquo;s flow through the setup.\n3.1.5 Current Setup Development Cluster (dxpsp1)\nThe Development Cluster (🏷️Virtualbox) is provisioned and bootstraped with 🏷️Ansible Dell XPS 13 Plus 9320 Development Cluster (vmd95641)\nThe second Development Cluster (🏷️VPS) is provisioned manually as virtual machine at contabo and bootstraped with 🏷️Ansible.\nStaging Cluster (K1) and Production Cluster (K2)\nThe Staging Cluster (🏷️Proxmox) is provisioned with 🏷️Terraform and bootstraped with 🏷️Talos. %%{init: {\"flowchart\": {\"htmlLabels\": false}} }%% flowchart TD subgraph K2[\"`**K2**`\"] direction LR K2-Loadbalancer[\"`_**Loadbalancer**_`\"] K2-ControlPlane1[\"`_**Control Plane 1**_`\"] K2-ControlPlane2[\"`_**Control Plane 2**_`\"] K2-ControlPlane3[\"`_**Control Plane 3**_`\"] K2-Worker1[\"`_**Worker 1**_`\"] K2-Worker2[\"`_**Worker 2**_`\"] K2-Worker3[\"`_**Worker 3**_`\"] K2-Loadbalancer --\u003e K2-ControlPlane1 K2-Loadbalancer --\u003e K2-ControlPlane2 K2-Loadbalancer --\u003e K2-ControlPlane3 K2-ControlPlane1 --\u003e K2-Worker1 K2-ControlPlane1 --\u003e K2-Worker2 K2-ControlPlane1 --\u003e K2-Worker3 K2-ControlPlane2 --\u003e K2-Worker1 K2-ControlPlane2 --\u003e K2-Worker2 K2-ControlPlane2 --\u003e K2-Worker3 K2-ControlPlane3 --\u003e K2-Worker1 K2-ControlPlane3 --\u003e K2-Worker2 K2-ControlPlane3 --\u003e K2-Worker3 end style K2 fill:#9CD484,stroke:#00331a,stroke-width:1px subgraph K1[\"`**K1**`\"] direction LR K1-Loadbalancer[\"`_**Loadbalancer**_`\"] K1-ControlPlane1[\"`_**Control Plane 1**_`\"] K1-ControlPlane2[\"`_**Control Plane 2**_`\"] K1-ControlPlane3[\"`_**Control Plane 3**_`\"] K1-Worker1[\"`_**Worker 1**_`\"] K1-Worker2[\"`_**Worker 2**_`\"] K1-Worker3[\"`_**Worker 3**_`\"] K1-Loadbalancer --\u003e K1-ControlPlane1 K1-Loadbalancer --\u003e K1-ControlPlane2 K1-Loadbalancer --\u003e K1-ControlPlane3 K1-ControlPlane1 --\u003e K1-Worker1 K1-ControlPlane1 --\u003e K1-Worker2 K1-ControlPlane1 --\u003e K1-Worker3 K1-ControlPlane2 --\u003e K1-Worker1 K1-ControlPlane2 --\u003e K1-Worker2 K1-ControlPlane2 --\u003e K1-Worker3 K1-ControlPlane3 --\u003e K1-Worker1 K1-ControlPlane3 --\u003e K1-Worker2 K1-ControlPlane3 --\u003e K1-Worker3 end style K1 fill:#9CD484,stroke:#00331a,stroke-width:1px "
 },
 {
 	"uri": "https://gerundium.github.io/devbox/overview/",
 	"title": "4.1 Overview",
 	"tags": ["devbox", "nix"],
 	"description": "",
-	"content": "State/Version: 20240618\n4.1 Overview What is a devbox and why do I need it? A devbox is an environment that contains your indivisual toolstack and settings. In fact it does not to be only one environment. You can break it down in fine grained, purpose oriented, environments e.g. one for your cloud stack (helm, kubectl, etc.) and another one with focus on python.\nTechnically it works similar to a package manager but without conflicting with operating level packages that were managed by tools like apt or dnf.\n🎉 Pros:\n [✅] Try new tools without polluting your laptop [✅] Devbox can create isolated environments right on your laptop, without an extra-layer of virtualization slowing your file system or every command. [✅] No more conflicting versions [✅] Take your environment with you  🚨 Cons:\n [🔍️] Nix installation requires root to run the daemon (in a multiuser environment) [🔍️] More involved installation (creation of nixbld* users, installing a systemd unit, … [🔍️] Harder to uninstall  "
+	"content": "State/Version: 20240618\n4.1 Overview What is a devbox and why do I need it? A devbox is an environment that contains your indivisual toolstack and settings. In fact it does not to be only one environment. You can break it down in fine grained, purpose oriented, environments e.g. one for your cloud stack (helm, kubectl, etc.) and another one with focus on python.\nTechnically it works similar to a package manager but without conflicting with operating level packages that were managed by tools like apt or dnf.\n🎉 Pros:\n[✅] Try new tools without polluting your laptop [✅] Devbox can create isolated environments right on your laptop, without an extra-layer of virtualization slowing your file system or every command. [✅] No more conflicting versions [✅] Take your environment with you 🚨 Cons:\n[🔍️] Nix installation requires root to run the daemon (in a multiuser environment) [🔍️] More involved installation (creation of nixbld* users, installing a systemd unit, … [🔍️] Harder to uninstall "
 },
 {
 	"uri": "https://gerundium.github.io/homelab_setup/hardware/",
 	"title": "2.2 Hardware",
 	"tags": ["Hardware"],
 	"description": "",
-	"content": "State/Version: 20230829p1\n 2.2 Hardware   2.2 Baseline  2.2.0 Homelab Tier Ratings   2.2.1 Computing node 2.2.2 Managed Switch 2.2.3 Router 2.2.4 Raspberry Pi    2.2 Hardware  2.2 Baseline 2.2.0 Homelab Tier Ratings  Tier 0:  A completely fault-tolerant hardware with redundancy for every component. Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept.   Tier 1:  Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept.   Tier 2:  Is crucial for the project. No backups Easy to replace   Tier 3:  Is optional to run the project. Hardware runs experimental services Failures have no impact on other components.    2.2.1 Computing node  Kiebel Micro X12  Tier 1 2x Kingston FURY Beast 32GB, DDR4-3200 MHz Intel Core i7-12700, 12x2.1 GHz Kingston 1TB NV2 M.2 SSD PCIe 4.0    2.2.2 Managed Switch  TP-Link TL-SG116E  Tier 2    2.2.3 Router  Mikrotik RB951Ui  Tier 1    2.2.4 Raspberry Pi  Raspberry Pi 4b (4GB RAM)  Tier2    "
+	"content": "State/Version: 20230829p1\n2.2 Hardware 2.2 Baseline 2.2.0 Homelab Tier Ratings 2.2.1 Computing node 2.2.2 Managed Switch 2.2.3 Router 2.2.4 Raspberry Pi 2.2 Hardware 2.2 Baseline 2.2.0 Homelab Tier Ratings Tier 0: A completely fault-tolerant hardware with redundancy for every component. Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept. Tier 1: Is crucial for the project. IaaC (Infrastructure as a Code) (if capable). Is part of the backup conzept. Tier 2: Is crucial for the project. No backups Easy to replace Tier 3: Is optional to run the project. Hardware runs experimental services Failures have no impact on other components. 2.2.1 Computing node Kiebel Micro X12 Tier 1 2x Kingston FURY Beast 32GB, DDR4-3200 MHz Intel Core i7-12700, 12x2.1 GHz Kingston 1TB NV2 M.2 SSD PCIe 4.0 2.2.2 Managed Switch TP-Link TL-SG116E Tier 2 2.2.3 Router Mikrotik RB951Ui Tier 1 2.2.4 Raspberry Pi Raspberry Pi 4b (4GB RAM) Tier2 "
 },
 {
 	"uri": "https://gerundium.github.io/k8s_ha_cluster/provisioning/",
 	"title": "3.2 Provisioning the k8s nodes",
 	"tags": ["k8s", "provisioning", "proxmox", "tbi", "talos"],
 	"description": "",
-	"content": "State/Version: 20241018\n3.2 Provisioning the k8s nodes 🚚 3.2.1 Development cluster 🚧  The Development Cluster is privisioned with 🏷️ansible. Running as bare-metal variant of 🏷️talos on the 🏷️Virtualbox platform.  The code for the development cluster is documented here: 🌐 homelab repository on github.\n3.2.2 Staging cluster K1 The Staging Cluster runs as a set of virtual machines on a 🏷️Proxmox host. The Terraform source code is also stored currently in a privat github repository and will be published soon in this 🌐 homelab repository on github\nTerraform Provisioning 💡 This gif will start playing automatically. Talos K8s K1 💡 This is an external Video URL. Click to run. Talos K8s deployment   3.2.2 Staging cluster K2 3.3 Upgrading Talos Cluster  Reference to official Talos Upgrade Guide  $ talosctl upgrade --nodes 10.20.30.40 \\  --image ghcr.io/siderolabs/installer:v1.8.0 Upgrade Sequence (automatic)  Cordon and drain node Leave etcd Stop everything Wipe Install new Talos Linux image Reboot  💡 Upgrade one by one\n"
+	"content": "State/Version: 20250119\n3.2 Provisioning the k8s nodes 🚚 3.2.1 Development cluster 🚧 The Development Cluster is privisioned with 🏷️ansible. Running as bare-metal variant of 🏷️talos on the 🏷️Virtualbox platform. The code for the development cluster is documented here: 🌐 homelab repository on github.\n3.2.2 Staging cluster K1 The Staging Cluster runs as a set of virtual machines on a 🏷️Proxmox host. The Terraform source code is also stored currently in a privat github repository and will be published soon in this 🌐 homelab repository on github\nTerraform Provisioning 💡 This gif will start playing automatically. Talos K8s K1 💡 This is an external Video URL. Click to run. Talos K8s deployment 3.2.2 Production cluster K2 3.3 Upgrading Talos Cluster Reference to official Talos Upgrade Guide $ talosctl upgrade --nodes 10.20.30.40 \\ --image ghcr.io/siderolabs/installer:v1.8.0 Upgrade Sequence (automatic) Cordon and drain node Leave etcd Stop everything Wipe Install new Talos Linux image Reboot 💡 Upgrade one by one\n"
 },
 {
 	"uri": "https://gerundium.github.io/devbox/setup/",
 	"title": "4.2 Setup",
 	"tags": ["setup", "devbox", "nix"],
 	"description": "",
-	"content": "State/Version: 20240618\n 4.2 Setup   4.2.1 Deploy devbox shell as pod 4.2.2 Deploy devbox shell locally    4.2 Setup  4.2.1 Deploy devbox shell as pod  Github repository: gerundium/devbox  4.2.2 Deploy devbox shell locally  Github repository: gerundium/linux-base  "
+	"content": "State/Version: 20240618\n4.2 Setup 4.2.1 Deploy devbox shell as pod 4.2.2 Deploy devbox shell locally 4.2 Setup 4.2.1 Deploy devbox shell as pod Github repository: gerundium/devbox 4.2.2 Deploy devbox shell locally Github repository: gerundium/linux-base "
 },
 {
 	"uri": "https://gerundium.github.io/homelab_setup/network/",
 	"title": "2.3 Network",
 	"tags": ["Network"],
 	"description": "",
-	"content": "State/Version: 20230829p1\n 2.3 Network topology  2.3.1 Overview    2.3 Network topology 2.3.1 Overview See also: High level view\n   Network CIDR Project Type     192.168.2.0/24 Homelab / compute static   192.168.3.0/24 Homelab / storage static    "
+	"content": "State/Version: 20230829p1\n2.3 Network topology 2.3.1 Overview 2.3 Network topology 2.3.1 Overview See also: High level view\nNetwork CIDR Project Type 192.168.2.0/24 Homelab / compute static 192.168.3.0/24 Homelab / storage static "
 },
 {
 	"uri": "https://gerundium.github.io/k8s_ha_cluster/deployment/",
 	"title": "3.3 Deploy Kubernetes",
 	"tags": ["k8s", "deployment", "tbd"],
 	"description": "",
-	"content": "State/Version: 20240225\n3.3 Deploy Kubernetes 🚚 Once the stage is prepared Kubernetes can be deployed.\n3.3.1 Development cluster 🚧 The first iteartion of the Kubernetes homelab was provisioned as described on rechno-tims blog.\n 🌐 Automated build of HA k3s Cluster with kube-vip and MetalLB  Currently I replaced 🏷️k3s with 🏷️talos because it fits better into my automated provisioning and configuration workflow.\nThe code is documented here: 🌐 homelab repository on github.\n3.3.2 Staging cluster ✨ Deploying 🏷️talos to the Staging cluster follows the same procedure as on the Development cluster. The code is documented here: 🌐 homelab repository on github.\n3.3.3 Production cluster 🚨  🌐 K3s Homepage  # Create the k8s cluster k3d cluster create --api-port 6550 -p \u0026#34;8081:80@loadbalancer\u0026#34; --agents 2 "
+	"content": "State/Version: 20240225\n3.3 Deploy Kubernetes 🚚 Once the stage is prepared Kubernetes can be deployed.\n3.3.1 Development cluster 🚧 The first iteartion of the Kubernetes homelab was provisioned as described on rechno-tims blog.\n🌐 Automated build of HA k3s Cluster with kube-vip and MetalLB Currently I replaced 🏷️k3s with 🏷️talos because it fits better into my automated provisioning and configuration workflow.\nThe code is documented here: 🌐 homelab repository on github.\n3.3.2 Staging cluster ✨ Deploying 🏷️talos to the Staging cluster follows the same procedure as on the Development cluster. The code is documented here: 🌐 homelab repository on github.\n3.3.3 Production cluster 🚨 🌐 K3s Homepage # Create the k8s cluster k3d cluster create --api-port 6550 -p \u0026#34;8081:80@loadbalancer\u0026#34; --agents 2 "
 },
 {
 	"uri": "https://gerundium.github.io/homelab_setup/storage/",
 	"title": "2.4 Storage",
 	"tags": ["Storage"],
 	"description": "",
-	"content": "State/Version: 20230829p1\n 2.4 Storage  2.4.1 Overview    2.4 Storage 2.4.1 Overview  The compute storage is located as local-lvm on the compute node. Backups are located on a NFS-Volume providet by a RaspberryPi.  %%{init: {\"flowchart\": {\"htmlLabels\": false}} }%% flowchart LR subgraph Proxmox-Host subgraph Proxmox-Storageprovider localDisk[\"`_localDisk_: local: (type: Directory) local-lvm: (type: LVM) `\"] RaspberryPi[\"`_RaspberryPi_: nfs-rpi: (type: NFS) `\"] end localDisk -- Backup -- RaspberryPi Container -- OS -- localDisk end  "
+	"content": "State/Version: 20230829p1\n2.4 Storage 2.4.1 Overview 2.4 Storage 2.4.1 Overview The compute storage is located as local-lvm on the compute node. Backups are located on a NFS-Volume providet by a RaspberryPi. %%{init: {\"flowchart\": {\"htmlLabels\": false}} }%% flowchart LR subgraph Proxmox-Host subgraph Proxmox-Storageprovider localDisk[\"`_localDisk_: local: (type: Directory) local-lvm: (type: LVM) `\"] RaspberryPi[\"`_RaspberryPi_: nfs-rpi: (type: NFS) `\"] end localDisk -- Backup --\u003e RaspberryPi Container -- OS --\u003e localDisk end "
 },
 {
 	"uri": "https://gerundium.github.io/k8s_ha_cluster/gitops/",
 	"title": "3.4 GitOps: Install and configure FluxCD",
 	"tags": ["k8s", "gitops", "fluxcd", "tbi"],
 	"description": "",
-	"content": "State/Version: 20240225\n3.4 GitOps: Install and configure 3.4.1 GitOps: Install and configure FluxCD 🏗️ Installing and Configuring 🏷️FluxCD is the easy part ( if you do not mess up your dns setup :] ).\nThis will install Flux into the cluster and connect it to the specified git repository. You have to repeat it for every cluster you want to manage.\nexport GITHUB_TOKEN=\u0026lt;PersonalAccessToken\u0026gt; export GITHUB_USER=gerundium flux bootstrap github \\  --token-auth \\  --owner=gerundium \\  --repository=flux-k2 \\  --path=clusters/\u0026lt;STAGE\u0026gt; \\  --personal \\  --branch main At this point your fluxcd is authorized and configured to apply changes (pull-based), that are stored in your 🏷️github-repository, to the Kubernetes cluster.\n3.4.2 GitOps: Deploy resources to the cluster 🏗️ I am convinced that a everything(possible) as code is an absolut must have in a homelab.\n It enables you to deploy complex setups in a repeatable and fast way. Makes possible rollbacks.  Furthermore using a standarized toolstack makes it possible to share your insights and issues with a wide community.\nThis screenshot shows some statistics for the current setup:\nThe filestructure looks like this.:\n. ├── apps │ [...] │ ├── base │ │ ├── cloudflared │ │ │ ├── deployment.yaml │ │ │ └── tunnel-credentials-sealed.yaml │ │ ├── homer │ │ │ ├── helmRepo.yaml │ │ │ ├── kustomization.yaml │ │ │ └── namespace.yaml │ │ ├── mysql-operator │ │ │ ├── helmRepo.yaml │ │ │ ├── kustomization.yaml │ │ │ └── namespace.yaml │ │ ├── nginx │ │ │ ├── configmap.yaml │ │ │ ├── deployment.yaml │ │ │ ├── kustomization.yaml │ │ │ ├── namespace.yaml │ │ │ └── service.yaml │ │ └── openproject │ │ ├── helmRepo.yaml │ │ ├── kustomization.yaml │ │ └── namespace.yaml │ ├── dev │ │ ├── cloudflared-broken │ │ │ ├── helmRelease.yaml │ │ │ ├── helmRepository.yaml │ │ │ └── namespace.yaml │ │ ├── homer │ │ │ ├── certificate.yaml │ │ │ ├── config-secret-sealed.yaml │ │ │ ├── config-secret.yaml │ │ │ ├── helmRelease.yaml │ │ │ ├── ingressroute.yaml │ │ │ ├── kustomization.yaml │ │ │ ├── pvc.yaml │ │ │ └── README.md │ │ ├── mysql-innodbcluster │ │ │ ├── clusterSecret.yaml │ │ │ ├── kustomization.yaml │ │ │ └── manifest.yaml │ │ ├── mysql-operator │ │ │ ├── helmRelease.yaml │ │ │ ├── kustomization.yaml │ │ │ └── README.md │ │ ├── nextcloud │ │ │ ├── certificate.yaml │ │ │ ├── helmRelease.yaml │ │ │ ├── helmRepo.yaml │ │ │ ├── ingressroute.yaml │ │ │ ├── ingress.yaml.disable │ │ │ ├── kustomization.yaml │ │ │ ├── namespace.yaml │ │ │ ├── nextcloud-config-source.yaml │ │ │ └── pvc.yaml │ │ ├── nextcloud-aio │ │ │ ├── helmRelease.yaml │ │ │ ├── helmRepo.yaml │ │ │ ├── kustomization.yaml │ │ │ ├── namespace.yaml │ │ │ ├── nextcloud-config-source.yaml │ │ │ └── pvc.yaml │ │ ├── nginx │ │ │ ├── certificate.yaml │ │ │ ├── ingressroute.yaml │ │ │ └── kustomization.yaml │ │ └── openproject │ │ ├── certificate.yaml │ │ ├── helmRelease.yaml │ │ ├── homer-config-source-sealed.yaml │ │ ├── homer-config-source.yaml │ │ ├── ingressroute.yaml │ │ ├── kustomization.yaml │ │ ├── pvc.yaml │ │ └── README.md │ ├── prod │ │ ├── nextcloud │ │ │ ├── helmRelease.yaml │ │ │ ├── helmRepo.yaml │ │ │ ├── kustomization.yaml │ │ │ ├── namespace.yaml │ │ │ ├── nextcloud-config-source.yaml │ │ │ └── pvc.yaml │ │ └── nginx │ │ ├── flux-patch.yaml │ │ └── kustomization.yaml │ └── staging │ └── nginx │ ├── certificate.yaml │ ├── flux-patch.yaml │ ├── ingressroute.yaml │ └── kustomization.yaml ├── clusters │ [...] │ ├── dev │ │ ├── apps-dev-homer.yaml │ │ ├── apps-dev-mysql-innodbcluster.yaml.disable │ │ ├── apps-dev-mysql-operator.yaml.disable │ │ ├── apps-dev-nextcloud-aio.yaml.disable │ │ ├── apps-dev-nextcloud.yaml.disable │ │ ├── apps-dev-nginx.yaml │ │ ├── apps-dev-openproject.yaml.disable │ │ ├── flux-system │ │ │ ├── gotk-components.yaml │ │ │ ├── gotk-sync.yaml │ │ │ └── kustomization.yaml │ │ ├── infrastructure-base-controllers.yaml │ │ ├── infrastructure-dev-configs-post.yaml │ │ ├── infrastructure-dev-configs-pre.yaml │ │ ├── infrastructure-dev-controllers.yaml │ │ ├── infrastructure-dev-integration.yaml │ │ └── infrastructure-dev-secrets.yaml │ ├── prod │ │ ├── apps-base-cloudflared.yaml │ │ ├── apps-prod-nextcloud.yaml │ │ ├── apps-prod-nginx.yaml │ │ ├── flux-system │ │ │ ├── gotk-components.yaml │ │ │ ├── gotk-sync.yaml │ │ │ └── kustomization.yaml │ │ ├── infrastructure-base.yaml │ │ └── infrastructure-prod.yaml │ └── staging │ ├── apps-staging-nginx.yaml │ ├── flux-system │ │ ├── gotk-components.yaml │ │ ├── gotk-sync.yaml │ │ └── kustomization.yaml │ ├── infrastructure-base.yaml │ └── infrastructure-staging.yaml ├── infrastructure │ [...] │ ├── base │ │ └── controllers │ │ ├── cert-manager.yaml │ │ ├── kustomization.yaml │ │ └── sealed-secrets.yaml │ ├── dev │ │ ├── configsPost │ │ │ ├── certManager │ │ │ ├── kustomization.yaml │ │ │ └── metallb │ │ ├── configsPre │ │ │ ├── kustomization.yaml │ │ │ ├── nfsProvisioner │ │ │ └── traefik │ │ ├── controllersPhase1 │ │ │ ├── kustomization.yaml │ │ │ └── metallb │ │ ├── controllersPhase2 │ │ │ ├── kustomization.yaml │ │ │ └── traefik.yaml │ │ ├── integration │ │ │ ├── kustomization.yaml │ │ │ └── nfs-provisioner.yaml │ │ └── secrets │ │ ├── cert-manager │ │ ├── kustomization.yaml │ │ └── private.key │ ├── prod │ │ ├── configs │ │ │ ├── cert-manager │ │ │ └── kustomization.yaml │ │ ├── controllers │ │ │ └── kustomization.yaml │ │ └── secrets │ │ ├── cert-manager │ │ └── kustomization.yaml │ └── staging │ ├── configs │ │ ├── cert-manager │ │ ├── kustomization.yaml │ │ ├── metallb-ipaddresspool.yaml │ │ └── traefik │ ├── controllers │ │ ├── kustomization.yaml │ │ ├── longhorn.yaml │ │ ├── metallb.yaml │ │ └── traefik.yaml │ └── secrets │ ├── cert-manager │ ├── kustomization.yaml ├── public │ ├── [...] │ │ └── acebox2-pub-sealed-secrets.pem │ ├── dev │ │ └── dev-pub-sealed-secrets.pem │ └── staging │ └── staging-pub-sealed-secrets.pem ├── secrets │ └── bootstrap-sealedSecretsMasterKey.yaml └── [...] "
+	"content": "State/Version: 20240225\n3.4 GitOps: Install and configure 3.4.1 GitOps: Install and configure FluxCD 🏗️ Installing and Configuring 🏷️FluxCD is the easy part ( if you do not mess up your dns setup :] ).\nThis will install Flux into the cluster and connect it to the specified git repository. You have to repeat it for every cluster you want to manage.\nexport GITHUB_TOKEN=\u0026lt;PersonalAccessToken\u0026gt; export GITHUB_USER=gerundium flux bootstrap github \\ --token-auth \\ --owner=gerundium \\ --repository=flux-k2 \\ --path=clusters/\u0026lt;STAGE\u0026gt; \\ --personal \\ --branch main At this point your fluxcd is authorized and configured to apply changes (pull-based), that are stored in your 🏷️github-repository, to the Kubernetes cluster.\n3.4.2 GitOps: Deploy resources to the cluster 🏗️ I am convinced that a everything(possible) as code is an absolut must have in a homelab.\nIt enables you to deploy complex setups in a repeatable and fast way. Makes possible rollbacks. Furthermore using a standarized toolstack makes it possible to share your insights and issues with a wide community.\nThis screenshot shows some statistics for the current setup:\nThe filestructure looks like this.:\n. ├── apps │ [...] │ ├── base │ │ ├── cloudflared │ │ │ ├── deployment.yaml │ │ │ └── tunnel-credentials-sealed.yaml │ │ ├── homer │ │ │ ├── helmRepo.yaml │ │ │ ├── kustomization.yaml │ │ │ └── namespace.yaml │ │ ├── mysql-operator │ │ │ ├── helmRepo.yaml │ │ │ ├── kustomization.yaml │ │ │ └── namespace.yaml │ │ ├── nginx │ │ │ ├── configmap.yaml │ │ │ ├── deployment.yaml │ │ │ ├── kustomization.yaml │ │ │ ├── namespace.yaml │ │ │ └── service.yaml │ │ └── openproject │ │ ├── helmRepo.yaml │ │ ├── kustomization.yaml │ │ └── namespace.yaml │ ├── dev │ │ ├── cloudflared-broken │ │ │ ├── helmRelease.yaml │ │ │ ├── helmRepository.yaml │ │ │ └── namespace.yaml │ │ ├── homer │ │ │ ├── certificate.yaml │ │ │ ├── config-secret-sealed.yaml │ │ │ ├── config-secret.yaml │ │ │ ├── helmRelease.yaml │ │ │ ├── ingressroute.yaml │ │ │ ├── kustomization.yaml │ │ │ ├── pvc.yaml │ │ │ └── README.md │ │ ├── mysql-innodbcluster │ │ │ ├── clusterSecret.yaml │ │ │ ├── kustomization.yaml │ │ │ └── manifest.yaml │ │ ├── mysql-operator │ │ │ ├── helmRelease.yaml │ │ │ ├── kustomization.yaml │ │ │ └── README.md │ │ ├── nextcloud │ │ │ ├── certificate.yaml │ │ │ ├── helmRelease.yaml │ │ │ ├── helmRepo.yaml │ │ │ ├── ingressroute.yaml │ │ │ ├── ingress.yaml.disable │ │ │ ├── kustomization.yaml │ │ │ ├── namespace.yaml │ │ │ ├── nextcloud-config-source.yaml │ │ │ └── pvc.yaml │ │ ├── nextcloud-aio │ │ │ ├── helmRelease.yaml │ │ │ ├── helmRepo.yaml │ │ │ ├── kustomization.yaml │ │ │ ├── namespace.yaml │ │ │ ├── nextcloud-config-source.yaml │ │ │ └── pvc.yaml │ │ ├── nginx │ │ │ ├── certificate.yaml │ │ │ ├── ingressroute.yaml │ │ │ └── kustomization.yaml │ │ └── openproject │ │ ├── certificate.yaml │ │ ├── helmRelease.yaml │ │ ├── homer-config-source-sealed.yaml │ │ ├── homer-config-source.yaml │ │ ├── ingressroute.yaml │ │ ├── kustomization.yaml │ │ ├── pvc.yaml │ │ └── README.md │ ├── prod │ │ ├── nextcloud │ │ │ ├── helmRelease.yaml │ │ │ ├── helmRepo.yaml │ │ │ ├── kustomization.yaml │ │ │ ├── namespace.yaml │ │ │ ├── nextcloud-config-source.yaml │ │ │ └── pvc.yaml │ │ └── nginx │ │ ├── flux-patch.yaml │ │ └── kustomization.yaml │ └── staging │ └── nginx │ ├── certificate.yaml │ ├── flux-patch.yaml │ ├── ingressroute.yaml │ └── kustomization.yaml ├── clusters │ [...] │ ├── dev │ │ ├── apps-dev-homer.yaml │ │ ├── apps-dev-mysql-innodbcluster.yaml.disable │ │ ├── apps-dev-mysql-operator.yaml.disable │ │ ├── apps-dev-nextcloud-aio.yaml.disable │ │ ├── apps-dev-nextcloud.yaml.disable │ │ ├── apps-dev-nginx.yaml │ │ ├── apps-dev-openproject.yaml.disable │ │ ├── flux-system │ │ │ ├── gotk-components.yaml │ │ │ ├── gotk-sync.yaml │ │ │ └── kustomization.yaml │ │ ├── infrastructure-base-controllers.yaml │ │ ├── infrastructure-dev-configs-post.yaml │ │ ├── infrastructure-dev-configs-pre.yaml │ │ ├── infrastructure-dev-controllers.yaml │ │ ├── infrastructure-dev-integration.yaml │ │ └── infrastructure-dev-secrets.yaml │ ├── prod │ │ ├── apps-base-cloudflared.yaml │ │ ├── apps-prod-nextcloud.yaml │ │ ├── apps-prod-nginx.yaml │ │ ├── flux-system │ │ │ ├── gotk-components.yaml │ │ │ ├── gotk-sync.yaml │ │ │ └── kustomization.yaml │ │ ├── infrastructure-base.yaml │ │ └── infrastructure-prod.yaml │ └── staging │ ├── apps-staging-nginx.yaml │ ├── flux-system │ │ ├── gotk-components.yaml │ │ ├── gotk-sync.yaml │ │ └── kustomization.yaml │ ├── infrastructure-base.yaml │ └── infrastructure-staging.yaml ├── infrastructure │ [...] │ ├── base │ │ └── controllers │ │ ├── cert-manager.yaml │ │ ├── kustomization.yaml │ │ └── sealed-secrets.yaml │ ├── dev │ │ ├── configsPost │ │ │ ├── certManager │ │ │ ├── kustomization.yaml │ │ │ └── metallb │ │ ├── configsPre │ │ │ ├── kustomization.yaml │ │ │ ├── nfsProvisioner │ │ │ └── traefik │ │ ├── controllersPhase1 │ │ │ ├── kustomization.yaml │ │ │ └── metallb │ │ ├── controllersPhase2 │ │ │ ├── kustomization.yaml │ │ │ └── traefik.yaml │ │ ├── integration │ │ │ ├── kustomization.yaml │ │ │ └── nfs-provisioner.yaml │ │ └── secrets │ │ ├── cert-manager │ │ ├── kustomization.yaml │ │ └── private.key │ ├── prod │ │ ├── configs │ │ │ ├── cert-manager │ │ │ └── kustomization.yaml │ │ ├── controllers │ │ │ └── kustomization.yaml │ │ └── secrets │ │ ├── cert-manager │ │ └── kustomization.yaml │ └── staging │ ├── configs │ │ ├── cert-manager │ │ ├── kustomization.yaml │ │ ├── metallb-ipaddresspool.yaml │ │ └── traefik │ ├── controllers │ │ ├── kustomization.yaml │ │ ├── longhorn.yaml │ │ ├── metallb.yaml │ │ └── traefik.yaml │ └── secrets │ ├── cert-manager │ ├── kustomization.yaml ├── public │ ├── [...] │ │ └── acebox2-pub-sealed-secrets.pem │ ├── dev │ │ └── dev-pub-sealed-secrets.pem │ └── staging │ └── staging-pub-sealed-secrets.pem ├── secrets │ └── bootstrap-sealedSecretsMasterKey.yaml └── [...] "
 },
 {
 	"uri": "https://gerundium.github.io/homelab_setup/virtualization/",
 	"title": "2.5 Virtualization",
 	"tags": ["Homelab Setup", "Virtualization", "Proxmox", "Infrastructure"],
 	"description": "",
-	"content": "State/Version: 20230829p1\n 2.5 Proxmox   2.5.0 Reference 2.5.1 Setup   2.5.1.1 Installation Process 2.5.1.2 Web Console Overview 2.5.1.3 User Management 2.5.1.4 Backups and Snapshots 2.5.1.5 DNS 2.5.1.6 Provisioning 2.5.1.7 Subscription   2.5.2 Maintenance     2.5 Proxmox   Proxmox Virtual Environment  Compute, network, and storage in a single solution    2.5.0 Reference  Proxmox Full Course  2.5.1 Setup  2.5.1.1 Installation Process  Reference: Proxmox VE Full Course: Class 2 - Installation Process   Create bootable Proxmox USB-Stick Install Proxmox on your Hardware  2.5.1.2 Web Console Overview 2.5.1.3 User Management  The Homelab is currently running with local user accounts. The provisioning process prerequisites root account for container deployments.  2.5.1.4 Backups and Snapshots  Proxmox runs daily backups. The backup destination is a Raspberry Pi running in a separate Storage Network.  2.5.1.5 DNS  This lab runs it\u0026rsquo;s own name servers. They will be installed and configuered via Ansible Semaphore. No manual Changes!  2.5.1.6 Provisioning  How to create container templates  This procedure was used to provision the Kubernetes HA-Cluster.    2.5.1.7 Subscription  I\u0026rsquo;m using the community version of Proxmox. For PVE and Ceph the \u0026ldquo;no-subscription repositories\u0026rdquo; are enabled.   2.5.2 Maintenance   manual patching schedule: weekly-monday  Can be automated easily by switching to Ansible (Semaphore). Triggered manually untill December 2023 to get more experience with it.  "
+	"content": "State/Version: 20230829p1\n2.5 Proxmox 2.5.0 Reference 2.5.1 Setup 2.5.1.1 Installation Process 2.5.1.2 Web Console Overview 2.5.1.3 User Management 2.5.1.4 Backups and Snapshots 2.5.1.5 DNS 2.5.1.6 Provisioning 2.5.1.7 Subscription 2.5.2 Maintenance 2.5 Proxmox Proxmox Virtual Environment Compute, network, and storage in a single solution 2.5.0 Reference Proxmox Full Course 2.5.1 Setup 2.5.1.1 Installation Process Reference: Proxmox VE Full Course: Class 2 - Installation Process Create bootable Proxmox USB-Stick Install Proxmox on your Hardware 2.5.1.2 Web Console Overview 2.5.1.3 User Management The Homelab is currently running with local user accounts. The provisioning process prerequisites root account for container deployments. 2.5.1.4 Backups and Snapshots Proxmox runs daily backups. The backup destination is a Raspberry Pi running in a separate Storage Network. 2.5.1.5 DNS This lab runs it\u0026rsquo;s own name servers. They will be installed and configuered via Ansible Semaphore. No manual Changes! 2.5.1.6 Provisioning How to create container templates This procedure was used to provision the Kubernetes HA-Cluster. 2.5.1.7 Subscription I\u0026rsquo;m using the community version of Proxmox. For PVE and Ceph the \u0026ldquo;no-subscription repositories\u0026rdquo; are enabled. 2.5.2 Maintenance manual patching schedule: weekly-monday Can be automated easily by switching to Ansible (Semaphore). Triggered manually untill December 2023 to get more experience with it. "
 },
 {
 	"uri": "https://gerundium.github.io/introduction/",
 	"title": "Introduction",
 	"tags": ["Introduction"],
 	"description": "",
-	"content": "Topics  Documentation  About the author About this blog    ANSIBLE (2)   CERT-MANAGER (1)   DEPLOYMENT (1)   DEVBOX (3)   DOCUMENTATION (2)   FLUXCD (2)   GITOPS (1)   HARDWARE (1)   HIGH-LEVEL-VIEW (1)   HOME (3)   HOMELAB SETUP (3)   INFRASTRUCTURE (1)   INTRODUCTION (1)   K8S (5)   LONGHORN (1)   METALLB (1)   METRICS-SERVER (1)   NETWORK (1)   NIX (2)   OVERVIEW (1)   PROMETHEUS (1)   PROVISIONING (1)   PROXMOX (2)   SEALED-SECRETS (1)   SETUP (1)   STORAGE (1)   TALOS (1)   TBD (1)   TBI (3)   TRAEFIK (1)   VEGAN (1)   VERTICAL-POD-AUTOSCALER (1)   VIRTUALIZATION (1)       "
+	"content": "Topics Documentation About the author About this blog ANSIBLE (2) CERT-MANAGER (1) DEPLOYMENT (1) DEVBOX (3) DOCUMENTATION (2) FLUXCD (2) GITOPS (1) HARDWARE (1) HIGH-LEVEL-VIEW (1) HOME (3) HOMELAB SETUP (3) INFRASTRUCTURE (1) INTRODUCTION (1) K8S (5) LONGHORN (1) METALLB (1) METRICS-SERVER (1) NETWORK (1) NIX (2) OVERVIEW (1) PROMETHEUS (1) PROVISIONING (1) PROXMOX (2) SEALED-SECRETS (1) SETUP (1) STORAGE (1) TALOS (1) TBD (1) TBI (3) TRAEFIK (1) VEGAN (1) VERTICAL-POD-AUTOSCALER (1) VIRTUALIZATION (1) "
 },
 {
 	"uri": "https://gerundium.github.io/",
 	"title": "Welcome",
 	"tags": ["home"],
 	"description": "",
-	"content": "Welcome friend 🗒️ This blog is a personal proof of concept into DevOps in a home laboratory environment, covering Kubernetes, GitOps, and Proxmox. All with a focus on full automation.\n🔖 You can find the source code for the project here: Gitlab: Gerundium\nInspiration Let me start with a big THANK YOU! to you guys\n Techno Tim (@timothystewart6) Marcel Dempers (@marcel-dempers) Christian Lempa (@ChristianLempa)  You made it much easier for me to get started with many topics and for the many \u0026ldquo;Oh, that\u0026rsquo;s how it works!\u0026rdquo; moments I am very grateful for.\nProject status State/Version: 20240620\nFocus  Type of audience: system administrators, devops engineers (#linux #devops #fluxcd #gitops #ansible #proxmox #terraform) Type of documentation: technical documentation  Requirements for my Homelab are:\n ⚡️ Low efford infrastructure  Every tool is easy to maintain by a single person.   ⚡️ Maximal high degree of automation  Everything as Code where possible    High level view  Introduction  Documentation  About the author About this blog     Homelab Setup  High level view Hardware Network Storage Virtualization Configuration Managament Kubernetes Cluster GitOps    "
+	"content": "Welcome friend 🗒️ This blog is a personal proof of concept into DevOps in a home laboratory environment, covering Kubernetes, GitOps, and Proxmox. All with a focus on full automation.\n🔖 You can find the source code for the project here: Gitlab: Gerundium\nTL;DR; Shortcuts\nHomeLab: High level view Hardware Network Kubernetes HA Cluster: Provisioning the Kubernetes nodes GitOps Inspiration Let me start with a big THANK YOU! to you guys\nTechno Tim (@timothystewart6) Marcel Dempers (@marcel-dempers) Christian Lempa (@ChristianLempa) You made it much easier for me to get started with many topics and for the many \u0026ldquo;Oh, that\u0026rsquo;s how it works!\u0026rdquo; moments I am very grateful for.\nAdditional Information Updated: 20250119 Type of audience: System Administrators, Devops Engineers (#linux #devops #fluxcd #gitops #ansible #proxmox #terraform) Requirements ⚡️ Low efford infrastructure Every tool is easy to maintain by a single person. ⚡️ Maximal high degree of automation Everything as Code where possible High level view Introduction Documentation About the author About this blog Homelab Setup High level view Hardware Network Storage Virtualization Configuration Managament Kubernetes Cluster GitOps "
 },
 {
 	"uri": "https://gerundium.github.io/homelab_setup/configurationmanagement/",
 	"title": "2.6 Configuration Management",
 	"tags": ["Ansible"],
 	"description": "",
-	"content": "State/Version: 20230829p1\n 2.6 Configuration Management  2.6 Configuration Management  My \u0026ldquo;Configuration Management\u0026rdquo; tool of choice is Ansible (Semaphore) The HomeLab uses currently the following playbooks to automate common administration tasks:  private github repo       Playbook Purpose     apt-upgrade Keep the infrastructure containers (Ansible, bind9) up to date.   bind9 Install and manage bind9.   nfs-server Install and manage nfs-server.   pagerduty-alerts Trigger alerts for specific actions (e.g. Server needs reboot\u0026hellip;)   traefik Reverse Proxy and Application Gateway    "
+	"content": "State/Version: 20230829p1\n2.6 Configuration Management 2.6 Configuration Management My \u0026ldquo;Configuration Management\u0026rdquo; tool of choice is Ansible (Semaphore) The HomeLab uses currently the following playbooks to automate common administration tasks: private github repo Playbook Purpose apt-upgrade Keep the infrastructure containers (Ansible, bind9) up to date. bind9 Install and manage bind9. nfs-server Install and manage nfs-server. pagerduty-alerts Trigger alerts for specific actions (e.g. Server needs reboot\u0026hellip;) traefik Reverse Proxy and Application Gateway "
 },
 {
 	"uri": "https://gerundium.github.io/homelab_setup/",
 	"title": "Homelab Setup",
 	"tags": ["Homelab Setup"],
 	"description": "",
-	"content": "Topics Homelab Setup  High level view  Hardware  Network  Storage  Virtualization  Configuration Management  GitOps     "
+	"content": "Topics Homelab Setup High level view ✅ Hardware ✅ Network ✅ Storage ✅ Virtualization ✅ Configuration Management ✅ GitOps ✅ "
 },
 {
 	"uri": "https://gerundium.github.io/k8s_ha_cluster/",
 	"title": "K8s-HA-Cluster",
 	"tags": ["k8s", "metrics-server", "traefik", "metallb", "fluxcd", "prometheus", "longhorn", "cert-manager", "sealed-secrets", "vertical-pod-autoscaler"],
 	"description": "",
-	"content": "Topics K3s-HA-Cluster  Overview 🚀 Provisioning the Kubernetes nodes 🚚 Deploy Kubernetes 🚚 GitOps: Install and configure 🏗️ Rook/Ceph/longhorn etc storage 📦️ Monitoring (Prometheus / Grafana / Metrics Server) 📦️ Taints, Tolerations, limits 📦️ Upgrading  K8s (talos) 📦️   Cluster backup (etcd, etc), disaster recovery (k8up) 📦️  PVCs (Longhorn Backup)      "
+	"content": "Topics K3s-HA-Cluster Overview 🚀 Provisioning the Kubernetes nodes 🚚 Deploy Kubernetes 🚚 GitOps: Install and configure 🏗️ Rook/Ceph/longhorn etc storage 📦️ Monitoring (Prometheus / Grafana / Metrics Server) 📈 Taints, Tolerations, limits 🔧 Upgrading K8s (talos) 📦️ [~] Cluster backup (etcd, etc), disaster recovery (k8up) 📦️ etcd PVCs (Longhorn Backup) Maintenance (Image/HelmChart updates) 🔧 Mend Renovate "
 },
 {
 	"uri": "https://gerundium.github.io/devbox/",
 	"title": "Devbox",
 	"tags": ["devbox"],
 	"description": "",
-	"content": "\u0026ldquo;Portable, Isolated Dev Environments on any Machine\u0026rdquo; Source: jetify-devbox\nTopics K3s-HA-Cluster  Overview 🚀 Setup 🚚    "
+	"content": "\u0026ldquo;Portable, Isolated Dev Environments on any Machine\u0026rdquo; Source: jetify-devbox\nTopics K3s-HA-Cluster Overview 🚀 Setup 🚚 "
 },
 {
 	"uri": "https://gerundium.github.io/vegan/",
 	"title": "Go Vegan!",
 	"tags": ["Vegan"],
 	"description": "",
-	"content": "Puh - that was a lot of information. Maybe it\u0026rsquo;s Time for a short brake. In case you are visiting Berlin you should try this locations https://www.veggievisa.com/vegan-food-guide-berlin/\nWhat? Why? How?  🌱 What is Veganism? 🌱 Go vegan - why? how? 🌱 Vegan Bingo 🌱 Vegan facts 🌱 Nutrition facts 🌱 Watch Dominion  "
+	"content": "Puh - that was a lot of information. Maybe it\u0026rsquo;s Time for a short brake. In case you are visiting Berlin you should try this locations https://www.veggievisa.com/vegan-food-guide-berlin/\nWhat? Why? How? 🌱 What is Veganism? 🌱 Go vegan - why? how? 🌱 Vegan Bingo 🌱 Vegan facts 🌱 Nutrition facts 🌱 Watch Dominion "
 },
 {
 	"uri": "https://gerundium.github.io/introduction/documentation/",
 	"title": "1.1 Documentation",
 	"tags": ["home", "documentation"],
 	"description": "",
-	"content": "State/Version: 20230829p1\nTable of contents  Table of contents  1.1 About the author 1.2 About this blog  1.2.1 Creation process  1.2.1.1 Creation workflow        Skip the \u0026ldquo;Deep Dive\u0026rdquo; sections for a brief fly over.\n 1.1 About the author  Senor Linux system administrator, cluster operator (automate provision and configuration of clusters), platform engineer (build continuous delivery for developer teams) and HomeLab enthusiast Daily business: #devops #kubernetes #openshift #gitops #ansible Current place of residence: Berlin (Germany)  1.2 About this blog  This blog is built with hugo.  1.2.1 Creation process This section describes the ci/cd workflow that creates the gerundium.github.io blog.\n1.2.1.1 Creation workflow  Create content offline (braindump). Commit and push code changes, that are considered source code, to blog-source@github.  That event will not trigger any pipeline.\n Source code changes include manual changes to any directory except \u0026ldquo;/public\u0026rdquo;\n   Commit and push code changes, that are considered public blog, to blog-source@github.  That event will trigger the github actions pipeline.\n Public blog changes contain changes that are made to \u0026ldquo;/public\u0026rdquo; directory by executing \u0026ldquo;hugo\u0026rdquo; command\n    FlowChart flowchart LR 0 --|Push| A A --|Push| B   0) Laptop - private, local clone of blog-source@github A) blog-source@github - private, contains full hugo code B) blog-rendered@github - public, contains static (rendered) hugo html code  "
+	"content": "State/Version: 20230829p1\nTable of contents Table of contents 1.1 About the author 1.2 About this blog 1.2.1 Creation process 1.2.1.1 Creation workflow Skip the \u0026ldquo;Deep Dive\u0026rdquo; sections for a brief fly over.\n1.1 About the author Senor Linux System Administrator, Cluster Operator (automate provision and configuration of clusters), Platform Engineer (build continuous delivery for developer teams) and HomeLab enthusiast Daily business: #devops #kubernetes #openshift #gitops #ansible Current place of residence: Berlin (Germany) 1.2 About this blog This blog is built with hugo. 1.2.1 Creation process This section describes the ci/cd workflow that creates the gerundium.github.io blog.\n1.2.1.1 Creation workflow Create content offline (braindump). Commit and push code changes, that are considered source code, to blog-source@github. That event will not trigger any pipeline.\nSource code changes include manual changes to any directory except \u0026ldquo;/public\u0026rdquo;\nCommit and push code changes, that are considered public blog, to blog-source@github. That event will trigger the github actions pipeline.\nPublic blog changes contain changes that are made to \u0026ldquo;/public\u0026rdquo; directory by executing \u0026ldquo;hugo\u0026rdquo; command\nFlowChart flowchart LR 0 --\u003e|Push| A A --\u003e|Push| B 0) Laptop - private, local clone of blog-source@github A) blog-source@github - private, contains full hugo code B) blog-rendered@github - public, contains static (rendered) hugo html code "
 },
 {
 	"uri": "https://gerundium.github.io/introduction/documentationdeepdive/",
 	"title": "1.2 Deep Dive",
 	"tags": ["home", "documentation"],
 	"description": "",
-	"content": "State/Version: 20230829p1\n1.2.1.1 Creation workflow - Deep Dive Sequencediagram sequenceDiagram participant A as Laptop@local participant B as blog-source@github participant C as blog-rendered@github A-A: 1. Create content locally A-B: 2. Push code to blog-source@github Note over A, B: Commit action (push) will trigger \"Github Actions\" B-C: 3. Push static html from blog-source@github to blog-rendered@github (Github pages) via a \"Github Actions\"  1.2.2 Github setup    Alias Real world brief description     blog-source@github gerundium/gerundium.github.io-source This repository contains the full monty. Use it to create / render new content for your blog.   blog-rendered@github gerundium/gerundium.github.io This repository is linked as git submodule inside blog-source@github. It contains the rendered / static html files    # -- # Folder tree # -- ./blog-source@github ├── archetypes ├── content ├── data ├── layouts ├── public # blog-rendered@github (Git submodule) | ├── authors | ├── basics | ├── categories | ├── css | ├── fonts | ├── images | ├── js | ├── logo | ├── mermaid | ├── posts | ├── series | ├── tags | └── webfonts ├── resources ├── static └── themes 1.2.3 Step-by-step deployment  Apply changes to blog-source@github/content Build static html # Execute command on the laptop hugo  Commit changes in public submodule and push commit to blog-rendered@github # Git commit and push git add -A git commit -m \u0026#34;add: \u0026lt;specify cxhange\u0026gt;\u0026#34; git push  Wait a minute while build and deployment piplines run. Check if changes were deployed to github pages. gerundium.github.io  "
+	"content": "State/Version: 20230829p1\n1.2.1.1 Creation workflow - Deep Dive Sequencediagram sequenceDiagram participant A as Laptop@local participant B as blog-source@github participant C as blog-rendered@github A-\u003e\u003eA: 1. Create content locally A-\u003e\u003eB: 2. Push code to blog-source@github Note over A, B: Commit action (push) will trigger \"Github Actions\" B-\u003e\u003eC: 3. Push static html from blog-source@github to blog-rendered@github (Github pages) via a \"Github Actions\" 1.2.2 Github setup Alias Real world brief description blog-source@github gerundium/gerundium.github.io-source This repository contains the full monty. Use it to create / render new content for your blog. blog-rendered@github gerundium/gerundium.github.io This repository is linked as git submodule inside blog-source@github. It contains the rendered / static html files # -- # Folder tree # -- ./blog-source@github ├── archetypes ├── content ├── data ├── layouts ├── public # blog-rendered@github (Git submodule) | ├── authors | ├── basics | ├── categories | ├── css | ├── fonts | ├── images | ├── js | ├── logo | ├── mermaid | ├── posts | ├── series | ├── tags | └── webfonts ├── resources ├── static └── themes 1.2.3 Step-by-step deployment Apply changes to blog-source@github/content Build static html # Execute command on the laptop hugo Commit changes in public submodule and push commit to blog-rendered@github # Git commit and push git add -A git commit -m \u0026#34;add: \u0026lt;specify cxhange\u0026gt;\u0026#34; git push Wait a minute while build and deployment piplines run. Check if changes were deployed to github pages. gerundium.github.io "
 },
 {
 	"uri": "https://gerundium.github.io/tags/ansible/",
@@ -155,42 +155,42 @@
 },
 {
 	"uri": "https://gerundium.github.io/tags/cert-manager/",
-	"title": "cert-manager",
+	"title": "Cert-Manager",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/deployment/",
-	"title": "deployment",
+	"title": "Deployment",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/devbox/",
-	"title": "devbox",
+	"title": "Devbox",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/documentation/",
-	"title": "documentation",
+	"title": "Documentation",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/fluxcd/",
-	"title": "fluxcd",
+	"title": "Fluxcd",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/gitops/",
-	"title": "gitops",
+	"title": "Gitops",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -204,14 +204,14 @@
 },
 {
 	"uri": "https://gerundium.github.io/tags/high-level-view/",
-	"title": "high-level-view",
+	"title": "High-Level-View",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/home/",
-	"title": "home",
+	"title": "Home",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -239,28 +239,28 @@
 },
 {
 	"uri": "https://gerundium.github.io/tags/k8s/",
-	"title": "k8s",
+	"title": "K8s",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/longhorn/",
-	"title": "longhorn",
+	"title": "Longhorn",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/metallb/",
-	"title": "metallb",
+	"title": "Metallb",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/metrics-server/",
-	"title": "metrics-server",
+	"title": "Metrics-Server",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -274,7 +274,7 @@
 },
 {
 	"uri": "https://gerundium.github.io/tags/nix/",
-	"title": "nix",
+	"title": "Nix",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -288,14 +288,14 @@
 },
 {
 	"uri": "https://gerundium.github.io/tags/prometheus/",
-	"title": "prometheus",
+	"title": "Prometheus",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/provisioning/",
-	"title": "provisioning",
+	"title": "Provisioning",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -309,14 +309,14 @@
 },
 {
 	"uri": "https://gerundium.github.io/tags/sealed-secrets/",
-	"title": "sealed-secrets",
+	"title": "Sealed-Secrets",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/setup/",
-	"title": "setup",
+	"title": "Setup",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -337,28 +337,28 @@
 },
 {
 	"uri": "https://gerundium.github.io/tags/talos/",
-	"title": "talos",
+	"title": "Talos",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/tbd/",
-	"title": "tbd",
+	"title": "Tbd",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/tbi/",
-	"title": "tbi",
+	"title": "Tbi",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "https://gerundium.github.io/tags/traefik/",
-	"title": "traefik",
+	"title": "Traefik",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -372,7 +372,7 @@
 },
 {
 	"uri": "https://gerundium.github.io/tags/vertical-pod-autoscaler/",
-	"title": "vertical-pod-autoscaler",
+	"title": "Vertical-Pod-Autoscaler",
 	"tags": [],
 	"description": "",
 	"content": ""

@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>high-level-view on Gerundium</title>
+    <title>High-Level-View on Gerundium</title>
     <link>https://gerundium.github.io/tags/high-level-view/</link>
-    <description>Recent content in high-level-view on Gerundium</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://gerundium.github.io/tags/high-level-view/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in High-Level-View on Gerundium</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://gerundium.github.io/tags/high-level-view/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2.1 High level view</title>
       <link>https://gerundium.github.io/homelab_setup/highlevel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://gerundium.github.io/homelab_setup/highlevel/</guid>
-      <description>State/Version: 20230829p1
- 2.1 High level view   2.1 High level view   Hardware, that belongs to the &amp;ldquo;Management&amp;rdquo; segment, knows routes into the other network segments and provides internet connectivity. Hardware grouped in IoT (Internet of Things/Trash) segment is considered as untrusted and therefore cannot connect to other network devices. It still can be controled via internet.  </description>
+      <description>&lt;p&gt;State/Version: &lt;em&gt;20230829p1&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#21-high-level-view&#34;&gt;2.1 High level view&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;21-high-level-view&#34;&gt;2.1 High level view&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://gerundium.github.io/gerundium-homelab.png&#34; alt=&#34;Gerundium Homelab&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hardware, that belongs to the &lt;strong&gt;&amp;ldquo;Management&amp;rdquo; segment&lt;/strong&gt;, knows routes into the other network segments and provides internet connectivity.&lt;/li&gt;&#xA;&lt;li&gt;Hardware grouped in &lt;strong&gt;IoT (Internet of Things/Trash) segment is considered as untrusted&lt;/strong&gt; and therefore &lt;strong&gt;cannot connect to other network devices&lt;/strong&gt;. It still can be controled via internet.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
   </channel>
 </rss>

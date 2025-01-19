@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>gitops on Gerundium</title>
+    <title>Gitops on Gerundium</title>
     <link>https://gerundium.github.io/tags/gitops/</link>
-    <description>Recent content in gitops on Gerundium</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://gerundium.github.io/tags/gitops/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Gitops on Gerundium</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://gerundium.github.io/tags/gitops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3.4 GitOps: Install and configure FluxCD</title>
       <link>https://gerundium.github.io/k8s_ha_cluster/gitops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://gerundium.github.io/k8s_ha_cluster/gitops/</guid>
-      <description>State/Version: 20240225
-3.4 GitOps: Install and configure 3.4.1 GitOps: Install and configure FluxCD 🏗️ Installing and Configuring 🏷️FluxCD is the easy part ( if you do not mess up your dns setup :] ).
-This will install Flux into the cluster and connect it to the specified git repository. You have to repeat it for every cluster you want to manage.
-export GITHUB_TOKEN=&amp;lt;PersonalAccessToken&amp;gt; export GITHUB_USER=gerundium flux bootstrap github \  --token-auth \  --owner=gerundium \  --repository=flux-k2 \  --path=clusters/&amp;lt;STAGE&amp;gt; \  --personal \  --branch main At this point your fluxcd is authorized and configured to apply changes (pull-based), that are stored in your 🏷️github-repository, to the Kubernetes cluster.</description>
+      <description>&lt;p&gt;State/Version: &lt;em&gt;&lt;strong&gt;20240225&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;34--gitops-install-and-configure&#34;&gt;3.4  GitOps: Install and configure&lt;/h2&gt;&#xA;&lt;h2 id=&#34;341--gitops-install-and-configure-fluxcd-&#34;&gt;3.4.1  GitOps: Install and configure FluxCD 🏗️&lt;/h2&gt;&#xA;&lt;p&gt;Installing and Configuring 🏷️&lt;strong&gt;FluxCD&lt;/strong&gt; is the easy part ( if you do not mess up your dns setup :] ).&lt;/p&gt;&#xA;&lt;p&gt;This will install Flux into the cluster and connect it to the specified git repository.&#xA;You have to repeat it for every cluster you want to manage.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export GITHUB_TOKEN&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&amp;lt;PersonalAccessToken&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export GITHUB_USER&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;gerundium&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;flux bootstrap github &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --token-auth &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --owner&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;gerundium &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --repository&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;flux-k2 &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --path&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;clusters/&amp;lt;STAGE&amp;gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --personal &lt;span style=&#34;color:#ae81ff&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --branch main&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;At this point your fluxcd is authorized and configured to apply changes (pull-based), that are stored in your 🏷️&lt;strong&gt;github-repository&lt;/strong&gt;, to the Kubernetes cluster.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

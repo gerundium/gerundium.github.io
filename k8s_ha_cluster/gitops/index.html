@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.141.0">
     <meta name="description" content="Description">
 <meta name="author" content="db">
 
@@ -12,22 +12,22 @@
     <title>3.4 GitOps: Install and configure FluxCD :: Gerundium</title>
 
     
-    <link href="/css/nucleus.css?1729333696" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1729333696" rel="stylesheet">
-    <link href="/css/hybrid.css?1729333696" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1729333696" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1729333696" rel="stylesheet">
-    <link href="/css/auto-complete.css?1729333696" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1729333696" rel="stylesheet">
-    <link href="/css/theme.css?1729333696" rel="stylesheet">
-    <link href="/css/tabs.css?1729333696" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1729333696" rel="stylesheet">
+    <link href="/css/nucleus.css?1737283396" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1737283396" rel="stylesheet">
+    <link href="/css/hybrid.css?1737283396" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1737283396" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1737283396" rel="stylesheet">
+    <link href="/css/auto-complete.css?1737283396" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1737283396" rel="stylesheet">
+    <link href="/css/theme.css?1737283396" rel="stylesheet">
+    <link href="/css/tabs.css?1737283396" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1737283396" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1729333696" rel="stylesheet">
+    <link href="/css/theme-green.css?1737283396" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1729333696"></script>
+    <script src="/js/jquery-3.3.1.min.js?1737283396"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1729333696"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1729333696"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1737283396"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1737283396"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/gerundium.github.io";
+        var baseurl = "https:\/\/gerundium.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1729333696"></script>
+<script type="text/javascript" src="/js/search.js?1737283396"></script>
 
     
   </div>
@@ -624,17 +624,17 @@
 <p>Installing and Configuring 🏷️<strong>FluxCD</strong> is the easy part ( if you do not mess up your dns setup :] ).</p>
 <p>This will install Flux into the cluster and connect it to the specified git repository.
 You have to repeat it for every cluster you want to manage.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export GITHUB_TOKEN<span style="color:#f92672">=</span>&lt;PersonalAccessToken&gt;
-export GITHUB_USER<span style="color:#f92672">=</span>gerundium
-
-flux bootstrap github <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --token-auth <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --owner<span style="color:#f92672">=</span>gerundium <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --repository<span style="color:#f92672">=</span>flux-k2 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --path<span style="color:#f92672">=</span>clusters/&lt;STAGE&gt; <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --personal <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  --branch main
-</code></pre></div><p>At this point your fluxcd is authorized and configured to apply changes (pull-based), that are stored in your 🏷️<strong>github-repository</strong>, to the Kubernetes cluster.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export GITHUB_TOKEN<span style="color:#f92672">=</span>&lt;PersonalAccessToken&gt;
+</span></span><span style="display:flex;"><span>export GITHUB_USER<span style="color:#f92672">=</span>gerundium
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>flux bootstrap github <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --token-auth <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --owner<span style="color:#f92672">=</span>gerundium <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --repository<span style="color:#f92672">=</span>flux-k2 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --path<span style="color:#f92672">=</span>clusters/&lt;STAGE&gt; <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --personal <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --branch main
+</span></span></code></pre></div><p>At this point your fluxcd is authorized and configured to apply changes (pull-based), that are stored in your 🏷️<strong>github-repository</strong>, to the Kubernetes cluster.</p>
 <h2 id="342-gitops-deploy-resources-to-the-cluster-">3.4.2 GitOps: Deploy resources to the cluster 🏗️</h2>
 <p>I am convinced that a everything(possible) as code is an absolut <em>must have</em> in a homelab.</p>
 <ul>
@@ -1209,16 +1209,16 @@ flux bootstrap github <span style="color:#ae81ff">\
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1729333696"></script>
-    <script src="/js/perfect-scrollbar.min.js?1729333696"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1729333696"></script>
-    <script src="/js/jquery.sticky.js?1729333696"></script>
-    <script src="/js/featherlight.min.js?1729333696"></script>
-    <script src="/js/highlight.pack.js?1729333696"></script>
+    <script src="/js/clipboard.min.js?1737283396"></script>
+    <script src="/js/perfect-scrollbar.min.js?1737283396"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1737283396"></script>
+    <script src="/js/jquery.sticky.js?1737283396"></script>
+    <script src="/js/featherlight.min.js?1737283396"></script>
+    <script src="/js/highlight.pack.js?1737283396"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1729333696"></script>
-    <script src="/js/learn.js?1729333696"></script>
-    <script src="/js/hugo-learn.js?1729333696"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1737283396"></script>
+    <script src="/js/learn.js?1737283396"></script>
+    <script src="/js/hugo-learn.js?1737283396"></script>
     
         
             <script src="https://unpkg.com/mermaid@10.3.0/dist/mermaid.min.js"></script>

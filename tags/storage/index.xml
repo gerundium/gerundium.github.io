@@ -4,17 +4,15 @@
     <title>Storage on Gerundium</title>
     <link>https://gerundium.github.io/tags/storage/</link>
     <description>Recent content in Storage on Gerundium</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://gerundium.github.io/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://gerundium.github.io/tags/storage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2.4 Storage</title>
       <link>https://gerundium.github.io/homelab_setup/storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://gerundium.github.io/homelab_setup/storage/</guid>
-      <description>State/Version: 20230829p1
- 2.4 Storage  2.4.1 Overview    2.4 Storage 2.4.1 Overview  The compute storage is located as local-lvm on the compute node. Backups are located on a NFS-Volume providet by a RaspberryPi.  %%{init: {&#34;flowchart&#34;: {&#34;htmlLabels&#34;: false}} }%% flowchart LR subgraph Proxmox-Host subgraph Proxmox-Storageprovider localDisk[&#34;`_localDisk_: local: (type: Directory) local-lvm: (type: LVM) `&#34;] RaspberryPi[&#34;`_RaspberryPi_: nfs-rpi: (type: NFS) `&#34;] end localDisk -- Backup -- RaspberryPi Container -- OS -- localDisk end  </description>
+      <description>&lt;p&gt;State/Version: &lt;em&gt;20230829p1&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#24-storage&#34;&gt;2.4 Storage&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#241-overview&#34;&gt;2.4.1 Overview&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;24-storage&#34;&gt;2.4 Storage&lt;/h2&gt;&#xA;&lt;h3 id=&#34;241-overview&#34;&gt;2.4.1 Overview&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The compute storage is located as local-lvm on the compute node.&lt;/li&gt;&#xA;&lt;li&gt;Backups are located on a NFS-Volume providet by a RaspberryPi.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;div class=&#34;mermaid&#34; align=&#34;center&#34;&gt;&#xA;%%{init: {&#34;flowchart&#34;: {&#34;htmlLabels&#34;: false}} }%%&#xA;flowchart LR&#xA;    subgraph Proxmox-Host&#xA;    subgraph Proxmox-Storageprovider&#xA;    localDisk[&#34;`_localDisk_:&#xA;    local: (type: Directory)&#xA;    local-lvm: (type: LVM)&#xA;    `&#34;]&#xA;    RaspberryPi[&#34;`_RaspberryPi_:&#xA;    nfs-rpi: (type: NFS)&#xA;    `&#34;]&#xA;    end&#xA;    localDisk -- Backup --&gt; RaspberryPi&#xA;    Container -- OS --&gt; localDisk&#xA;    end&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;&lt;img src=&#34;https://gerundium.github.io/2023-08-09_09-42.png&#34; alt=&#34;Storage1&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

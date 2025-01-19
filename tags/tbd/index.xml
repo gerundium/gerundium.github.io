@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tbd on Gerundium</title>
+    <title>Tbd on Gerundium</title>
     <link>https://gerundium.github.io/tags/tbd/</link>
-    <description>Recent content in tbd on Gerundium</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://gerundium.github.io/tags/tbd/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Tbd on Gerundium</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://gerundium.github.io/tags/tbd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3.3 Deploy Kubernetes</title>
       <link>https://gerundium.github.io/k8s_ha_cluster/deployment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://gerundium.github.io/k8s_ha_cluster/deployment/</guid>
-      <description>State/Version: 20240225
-3.3 Deploy Kubernetes 🚚 Once the stage is prepared Kubernetes can be deployed.
-3.3.1 Development cluster 🚧 The first iteartion of the Kubernetes homelab was provisioned as described on rechno-tims blog.
- 🌐 Automated build of HA k3s Cluster with kube-vip and MetalLB  Currently I replaced 🏷️k3s with 🏷️talos because it fits better into my automated provisioning and configuration workflow.
-The code is documented here: 🌐 homelab repository on github.</description>
+      <description>&lt;p&gt;State/Version: &lt;em&gt;&lt;strong&gt;20240225&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;33-deploy-kubernetes-&#34;&gt;3.3 Deploy Kubernetes 🚚&lt;/h2&gt;&#xA;&lt;p&gt;Once the stage is prepared Kubernetes can be deployed.&lt;/p&gt;&#xA;&lt;h3 id=&#34;331-development-cluster-&#34;&gt;3.3.1 Development cluster 🚧&lt;/h3&gt;&#xA;&lt;p&gt;The first iteartion of the Kubernetes homelab was provisioned as described on rechno-tims blog.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/techno-tim/k3s-ansible.git&#34;&gt;🌐 Automated build of HA k3s Cluster with kube-vip and MetalLB&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Currently I replaced &lt;strong&gt;🏷️k3s&lt;/strong&gt; with &lt;strong&gt;🏷️talos&lt;/strong&gt; because it fits better into my automated provisioning and configuration workflow.&lt;/p&gt;&#xA;&lt;p&gt;The code is documented here: &lt;a href=&#34;https://github.com/gerundium/01-homelab/tree/main/01-Provisioning/02-Talos&#34;&gt;🌐 &lt;strong&gt;homelab repository on github&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
