@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="https://gerundium.github.io/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>3.5 Monitoring for Kubernetes Cluster</title>
+      <link>https://gerundium.github.io/k8s_ha_cluster/monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://gerundium.github.io/k8s_ha_cluster/monitoring/</guid>
+      <description>&lt;p&gt;State/Version: &lt;em&gt;&lt;strong&gt;20250223&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;35-prometheus-monitoring-for-kubernetes-cluster&#34;&gt;3.5 Prometheus Monitoring for Kubernetes Cluster&lt;/h2&gt;&#xA;&lt;h2 id=&#34;351-kube-prometheus-stack&#34;&gt;3.5.1 Kube Prometheus Stack&lt;/h2&gt;&#xA;&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Deployment via FluxCD&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;hot-dashboards&#34;&gt;Hot Dashboards&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Kubernetes / Compute Resources / Cluster&lt;/strong&gt;&#xA;&lt;img src=&#34;https://gerundium.github.io/kube-prometheus-stack-001.png&#34; alt=&#34;Kubernetes / Compute Resources / Cluster&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Node Exporter / Node&lt;/strong&gt;&#xA;&lt;img src=&#34;https://gerundium.github.io/kube-prometheus-stack-002.png&#34; alt=&#34;Node Exporter / Node&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Kubernetes / Networking / Namespace (Pods)&lt;/strong&gt;&#xA;&lt;img src=&#34;https://gerundium.github.io/kube-prometheus-stack-003.png&#34; alt=&#34;Kubernetes / Networking / Namespace (Pods)&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;352-alert-manager-&#34;&gt;3.5.2 Alert Manager 🏗️&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Trigger Alerts via PagerDuty (to be done)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
       <title>K8s-HA-Cluster</title>
       <link>https://gerundium.github.io/k8s_ha_cluster/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

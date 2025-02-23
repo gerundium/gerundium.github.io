@@ -24,6 +24,8 @@
   </url><url>
     <loc>https://gerundium.github.io/homelab_setup/virtualization/</loc>
   </url><url>
+    <loc>https://gerundium.github.io/k8s_ha_cluster/monitoring/</loc>
+  </url><url>
     <loc>https://gerundium.github.io/introduction/</loc>
   </url><url>
     <loc>https://gerundium.github.io/</loc>
@@ -77,6 +79,8 @@
     <loc>https://gerundium.github.io/tags/metallb/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/metrics-server/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/monitoring/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/network/</loc>
   </url><url>

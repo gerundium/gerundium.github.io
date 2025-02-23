@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Virtualization :: Gerundium</title>
+    <title>3.5 Monitoring for Kubernetes Cluster :: Gerundium</title>
 
     
     <link href="/css/nucleus.css?1740314446" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/tags/virtualization/">
+  <body class="" data-url="/k8s_ha_cluster/monitoring/">
     <nav id="sidebar" class="">
 
 
@@ -324,7 +324,7 @@
   
     
     <li data-nav-id="/k8s_ha_cluster/" title="K8s-HA-Cluster" class="dd-item
-        
+        parent
         
         
         ">
@@ -434,7 +434,7 @@
  
   
     
-      <li data-nav-id="/k8s_ha_cluster/monitoring/" title="3.5 Monitoring for Kubernetes Cluster" class="dd-item ">
+      <li data-nav-id="/k8s_ha_cluster/monitoring/" title="3.5 Monitoring for Kubernetes Cluster" class="dd-item active">
         <a href="/k8s_ha_cluster/monitoring/">
         3.5 Monitoring for Kubernetes Cluster
         
@@ -591,14 +591,25 @@
                   <span class="links">
                  
                  
-                   Virtualization
+                   3.5 Monitoring for Kubernetes Cluster
                  
                   </span>
                 </div>
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#35-prometheus-monitoring-for-kubernetes-cluster">3.5 Prometheus Monitoring for Kubernetes Cluster</a></li>
+    <li><a href="#351-kube-prometheus-stack">3.5.1 Kube Prometheus Stack</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#hot-dashboards">Hot Dashboards</a></li>
+      </ul>
+    </li>
+    <li><a href="#352-alert-manager-">3.5.2 Alert Manager 🏗️</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -608,32 +619,50 @@
             
         <div id="head-tags">
         
+<div class="tags">
+
+  <a class="tag-link" href="/tags/k8s">k8s</a>
+
+  <a class="tag-link" href="/tags/prometheus">prometheus</a>
+
+  <a class="tag-link" href="/tags/monitoring">monitoring</a>
+
+</div>
+
         </div>
         
         <div id="body-inner">
           
             <h1>
               
-                tag ::
-              
-              Virtualization
+              3.5 Monitoring for Kubernetes Cluster
             </h1>
           
 
         
 
 
-
-
-
+<p>State/Version: <em><strong>20250223</strong></em></p>
+<h2 id="35-prometheus-monitoring-for-kubernetes-cluster">3.5 Prometheus Monitoring for Kubernetes Cluster</h2>
+<h2 id="351-kube-prometheus-stack">3.5.1 Kube Prometheus Stack</h2>
+<h3 id="installation">Installation</h3>
 <ul>
-	
-		<li><a href="/homelab_setup/virtualization/">2.5 Virtualization</a></li>
-	
+<li>Deployment via FluxCD</li>
+</ul>
+<h3 id="hot-dashboards">Hot Dashboards</h3>
+<p><strong>Kubernetes / Compute Resources / Cluster</strong>
+<img src="/kube-prometheus-stack-001.png" alt="Kubernetes / Compute Resources / Cluster"></p>
+<p><strong>Node Exporter / Node</strong>
+<img src="/kube-prometheus-stack-002.png" alt="Node Exporter / Node"></p>
+<p><strong>Kubernetes / Networking / Namespace (Pods)</strong>
+<img src="/kube-prometheus-stack-003.png" alt="Kubernetes / Networking / Namespace (Pods)"></p>
+<h2 id="352-alert-manager-">3.5.2 Alert Manager 🏗️</h2>
+<ul>
+<li>Trigger Alerts via PagerDuty (to be done)</li>
 </ul>
 
 
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -831,6 +860,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -843,6 +873,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -908,6 +941,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -926,6 +960,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -995,8 +1032,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/k8s_ha_cluster/gitops/" title="3.4 GitOps: Install and configure FluxCD"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/introduction/" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/devbox/" title="Devbox" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1028,3 +1067,4 @@
 
   </body>
 </html>
+

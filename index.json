@@ -77,18 +77,25 @@
 	"content": "State/Version: 20230829p1\n2.5 Proxmox 2.5.0 Reference 2.5.1 Setup 2.5.1.1 Installation Process 2.5.1.2 Web Console Overview 2.5.1.3 User Management 2.5.1.4 Backups and Snapshots 2.5.1.5 DNS 2.5.1.6 Provisioning 2.5.1.7 Subscription 2.5.2 Maintenance 2.5 Proxmox Proxmox Virtual Environment Compute, network, and storage in a single solution 2.5.0 Reference Proxmox Full Course 2.5.1 Setup 2.5.1.1 Installation Process Reference: Proxmox VE Full Course: Class 2 - Installation Process Create bootable Proxmox USB-Stick Install Proxmox on your Hardware 2.5.1.2 Web Console Overview 2.5.1.3 User Management The Homelab is currently running with local user accounts. The provisioning process prerequisites root account for container deployments. 2.5.1.4 Backups and Snapshots Proxmox runs daily backups. The backup destination is a Raspberry Pi running in a separate Storage Network. 2.5.1.5 DNS This lab runs it\u0026rsquo;s own name servers. They will be installed and configuered via Ansible Semaphore. No manual Changes! 2.5.1.6 Provisioning How to create container templates This procedure was used to provision the Kubernetes HA-Cluster. 2.5.1.7 Subscription I\u0026rsquo;m using the community version of Proxmox. For PVE and Ceph the \u0026ldquo;no-subscription repositories\u0026rdquo; are enabled. 2.5.2 Maintenance manual patching schedule: weekly-monday Can be automated easily by switching to Ansible (Semaphore). Triggered manually untill December 2023 to get more experience with it. "
 },
 {
+	"uri": "https://gerundium.github.io/k8s_ha_cluster/monitoring/",
+	"title": "3.5 Monitoring for Kubernetes Cluster",
+	"tags": ["k8s", "prometheus", "monitoring"],
+	"description": "",
+	"content": "State/Version: 20250223\n3.5 Prometheus Monitoring for Kubernetes Cluster 3.5.1 Kube Prometheus Stack Installation Deployment via FluxCD Hot Dashboards Kubernetes / Compute Resources / Cluster Node Exporter / Node Kubernetes / Networking / Namespace (Pods) 3.5.2 Alert Manager 🏗️ Trigger Alerts via PagerDuty (to be done) "
+},
+{
 	"uri": "https://gerundium.github.io/introduction/",
 	"title": "Introduction",
 	"tags": ["Introduction"],
 	"description": "",
-	"content": "Topics Documentation About the author About this blog ANSIBLE (2) CERT-MANAGER (1) DEPLOYMENT (1) DEVBOX (3) DOCUMENTATION (2) FLUXCD (2) GITOPS (1) HARDWARE (1) HIGH-LEVEL-VIEW (1) HOME (3) HOMELAB SETUP (3) INFRASTRUCTURE (1) INTRODUCTION (1) K8S (5) LONGHORN (1) METALLB (1) METRICS-SERVER (1) NETWORK (1) NIX (2) OVERVIEW (1) PROMETHEUS (1) PROVISIONING (1) PROXMOX (2) SEALED-SECRETS (1) SETUP (1) STORAGE (1) TALOS (1) TBD (1) TBI (3) TRAEFIK (1) VEGAN (1) VERTICAL-POD-AUTOSCALER (1) VIRTUALIZATION (1) "
+	"content": "Topics Documentation About the author About this blog ANSIBLE (2) CERT-MANAGER (1) DEPLOYMENT (1) DEVBOX (3) DOCUMENTATION (2) FLUXCD (2) GITOPS (1) HARDWARE (1) HIGH-LEVEL-VIEW (1) HOME (3) HOMELAB SETUP (3) INFRASTRUCTURE (1) INTRODUCTION (1) K8S (6) LONGHORN (1) METALLB (1) METRICS-SERVER (1) MONITORING (1) NETWORK (1) NIX (2) OVERVIEW (1) PROMETHEUS (2) PROVISIONING (1) PROXMOX (2) SEALED-SECRETS (1) SETUP (1) STORAGE (1) TALOS (1) TBD (1) TBI (3) TRAEFIK (1) VEGAN (1) VERTICAL-POD-AUTOSCALER (1) VIRTUALIZATION (1) "
 },
 {
 	"uri": "https://gerundium.github.io/",
 	"title": "Welcome",
 	"tags": ["home"],
 	"description": "",
-	"content": "Welcome friend 🗒️ This blog is a personal proof of concept into DevOps in a home laboratory environment, covering Kubernetes, GitOps, and Proxmox. All with a focus on full automation.\n🔖 You can find the source code for the project here: Gitlab: Gerundium\nTL;DR; Shortcuts\nHomeLab: High level view Hardware Network Kubernetes HA Cluster: Provisioning the Kubernetes nodes GitOps Inspiration Let me start with a big THANK YOU! to you guys\nTechno Tim (@timothystewart6) Marcel Dempers (@marcel-dempers) Christian Lempa (@ChristianLempa) You made it much easier for me to get started with many topics and for the many \u0026ldquo;Oh, that\u0026rsquo;s how it works!\u0026rdquo; moments I am very grateful for.\nAdditional Information Updated: 20250119 Type of audience: System Administrators, Devops Engineers (#linux #devops #fluxcd #gitops #ansible #proxmox #terraform) Requirements ⚡️ Low efford infrastructure Every tool is easy to maintain by a single person. ⚡️ Maximal high degree of automation Everything as Code where possible High level view Introduction Documentation About the author About this blog Homelab Setup High level view Hardware Network Storage Virtualization Configuration Managament Kubernetes Cluster GitOps "
+	"content": "Welcome friend 🗒️ This blog is a personal proof of concept into DevOps in a home laboratory environment, covering Kubernetes, GitOps, and Proxmox. All with a focus on full automation.\nTL;DR; Shortcuts\nHomeLab: High level view Hardware Network Kubernetes HA Cluster: Provisioning the Kubernetes nodes GitOps Inspiration Let me start with a big THANK YOU! to you guys\nTechno Tim (@timothystewart6) Marcel Dempers (@marcel-dempers) Christian Lempa (@ChristianLempa) You made it much easier for me to get started with many topics and for the many \u0026ldquo;Oh, that\u0026rsquo;s how it works!\u0026rdquo; moments I am very grateful for.\nAdditional Information Updated: 20250225 Type of audience: System Administrators, Devops Engineers Tags: #linux #devops #fluxcd #gitops #ansible #proxmox #terraform Requirements ⚡️ Low efford infrastructure Every tool is easy to maintain by a single person. ⚡️ Maximal high degree of automation Everything as Code where possible High level view Introduction Documentation About the author About this blog Homelab Setup High level view Hardware Monitoring Network Storage Virtualization Configuration Managament Kubernetes Cluster GitOps "
 },
 {
 	"uri": "https://gerundium.github.io/homelab_setup/configurationmanagement/",
@@ -261,6 +268,13 @@
 {
 	"uri": "https://gerundium.github.io/tags/metrics-server/",
 	"title": "Metrics-Server",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gerundium.github.io/tags/monitoring/",
+	"title": "Monitoring",
 	"tags": [],
 	"description": "",
 	"content": ""
