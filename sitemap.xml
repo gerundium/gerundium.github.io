@@ -38,27 +38,39 @@
   </url><url>
     <loc>https://gerundium.github.io/devbox/</loc>
   </url><url>
-    <loc>https://gerundium.github.io/vegan/</loc>
-  </url><url>
     <loc>https://gerundium.github.io/introduction/documentation/</loc>
   </url><url>
     <loc>https://gerundium.github.io/introduction/documentationdeepdive/</loc>
   </url><url>
+    <loc>https://gerundium.github.io/devops/overview/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/devops/argoevents/</loc>
+  </url><url>
     <loc>https://gerundium.github.io/tags/ansible/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/argo/</loc>
   </url><url>
     <loc>https://gerundium.github.io/categories/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/cert-manager/</loc>
   </url><url>
+    <loc>https://gerundium.github.io/tags/ci-cd/</loc>
+  </url><url>
     <loc>https://gerundium.github.io/tags/deployment/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/devbox/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/tags/devops/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/devops/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/documentation/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/fluxcd/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/gitops/</loc>
+  </url><url>
+    <loc>https://gerundium.github.io/vegan/</loc>
   </url><url>
     <loc>https://gerundium.github.io/tags/hardware/</loc>
   </url><url>

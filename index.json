@@ -11,7 +11,7 @@
 	"title": "3.1 Overview",
 	"tags": ["k8s", "Overview", "Ansible", "tbi"],
 	"description": "",
-	"content": "State/Version: 20250119\n3.1 Overview 3.1.1 A few words before we start 🚀 Setting up a home lab takes time. The construction or renovation of a house is comparable in scope and complexity. In the end, you not only know where the pipes run, but also what you can do better when building the next one.\nIn addition to expertise, two character traits in particular are required to master a project like this.\nPatience and Persistence\n3.1.2 Tech skills 🧑‍💻 #loadbalancer #metallb #nat #proxy-server #vlan #nat #network-bridging #yaml #json #traefik #nginx #etcd #gitops #fluxcd #terraform #ansible #proxmox #virtualbox #kustomize #helm #k3s #k8s #k3d #k9s #cloudflare #certmanager #letsencrypt #longhorn #sealed-secrets #dns #ipam #renovate #prometheus #grafana\n3.1.3 State of automation 🏗️ Topic Degree of automation Provisioning - Proxmox full ✅ Provisioning - Docker partially *3 🔥 K8s Deployment - Virtualbox full ✅ K8s Deployment - Proxmox full ✅ K8s Deployment - Docker full ✅ GitOps Fluxcd - Virtualbox full ✅ GitOps Fluxcd - Proxmox full ✅ GitOps Fluxcd - Docker full ✅ Legend *1 Terraform Proxmox Plugin is currently broken *2 No tech demo (Because of *1) *3 This step is manuall 3.1.4 Workflow 🔀 Let\u0026rsquo;s flow through the setup.\n3.1.5 Current Setup Development Cluster (dxpsp1)\nThe Development Cluster (🏷️Virtualbox) is provisioned and bootstraped with 🏷️Ansible Dell XPS 13 Plus 9320 Development Cluster (vmd95641)\nThe second Development Cluster (🏷️VPS) is provisioned manually as virtual machine at contabo and bootstraped with 🏷️Ansible.\nStaging Cluster (K1) and Production Cluster (K2)\nThe Staging Cluster (🏷️Proxmox) is provisioned with 🏷️Terraform and bootstraped with 🏷️Talos. %%{init: {\"flowchart\": {\"htmlLabels\": false}} }%% flowchart TD subgraph K2[\"`**K2**`\"] direction LR K2-Loadbalancer[\"`_**Loadbalancer**_`\"] K2-ControlPlane1[\"`_**Control Plane 1**_`\"] K2-ControlPlane2[\"`_**Control Plane 2**_`\"] K2-ControlPlane3[\"`_**Control Plane 3**_`\"] K2-Worker1[\"`_**Worker 1**_`\"] K2-Worker2[\"`_**Worker 2**_`\"] K2-Worker3[\"`_**Worker 3**_`\"] K2-Loadbalancer --\u003e K2-ControlPlane1 K2-Loadbalancer --\u003e K2-ControlPlane2 K2-Loadbalancer --\u003e K2-ControlPlane3 K2-ControlPlane1 --\u003e K2-Worker1 K2-ControlPlane1 --\u003e K2-Worker2 K2-ControlPlane1 --\u003e K2-Worker3 K2-ControlPlane2 --\u003e K2-Worker1 K2-ControlPlane2 --\u003e K2-Worker2 K2-ControlPlane2 --\u003e K2-Worker3 K2-ControlPlane3 --\u003e K2-Worker1 K2-ControlPlane3 --\u003e K2-Worker2 K2-ControlPlane3 --\u003e K2-Worker3 end style K2 fill:#9CD484,stroke:#00331a,stroke-width:1px subgraph K1[\"`**K1**`\"] direction LR K1-Loadbalancer[\"`_**Loadbalancer**_`\"] K1-ControlPlane1[\"`_**Control Plane 1**_`\"] K1-ControlPlane2[\"`_**Control Plane 2**_`\"] K1-ControlPlane3[\"`_**Control Plane 3**_`\"] K1-Worker1[\"`_**Worker 1**_`\"] K1-Worker2[\"`_**Worker 2**_`\"] K1-Worker3[\"`_**Worker 3**_`\"] K1-Loadbalancer --\u003e K1-ControlPlane1 K1-Loadbalancer --\u003e K1-ControlPlane2 K1-Loadbalancer --\u003e K1-ControlPlane3 K1-ControlPlane1 --\u003e K1-Worker1 K1-ControlPlane1 --\u003e K1-Worker2 K1-ControlPlane1 --\u003e K1-Worker3 K1-ControlPlane2 --\u003e K1-Worker1 K1-ControlPlane2 --\u003e K1-Worker2 K1-ControlPlane2 --\u003e K1-Worker3 K1-ControlPlane3 --\u003e K1-Worker1 K1-ControlPlane3 --\u003e K1-Worker2 K1-ControlPlane3 --\u003e K1-Worker3 end style K1 fill:#9CD484,stroke:#00331a,stroke-width:1px "
+	"content": "State/Version: 20250405\n3.1 Overview 3.1.1 A few words before we start 🚀 Setting up a home lab takes time. The construction or renovation of a house is comparable in scope and complexity. In the end, you not only know where the pipes run, but also what you can do better when building the next one.\nIn addition to expertise, two character traits in particular are required to master a project like this.\nPatience and Persistence\n3.1.2 Tech skills 🧑‍💻 #loadbalancer #metallb #nat #proxy-server #vlan #nat #network-bridging #yaml #json #traefik #nginx #etcd #gitops #fluxcd #terraform #ansible #proxmox #virtualbox #kustomize #helm #k3s #k8s #k3d #k9s #cloudflare #certmanager #letsencrypt #longhorn #sealed-secrets #dns #ipam #renovate #prometheus #grafana\n3.1.3 State of automation 🏗️ Topic Degree of automation Provisioning - Proxmox full ✅ Provisioning - Docker partially *3 🔥 K8s Deployment - Virtualbox full ✅ K8s Deployment - Proxmox full ✅ K8s Deployment - Docker full ✅ GitOps Fluxcd - Virtualbox full ✅ GitOps Fluxcd - Proxmox full ✅ GitOps Fluxcd - Docker full ✅ Legend *1 Terraform Proxmox Plugin is currently broken *2 No tech demo (Because of *1) *3 This step is manuall 3.1.4 Workflow 🔀 Let\u0026rsquo;s flow through the setup.\n3.1.5 Current Setup Development Cluster (dxpsp1)\nThe Development Cluster (🏷️Virtualbox) is provisioned and bootstraped with 🏷️Ansible Dell XPS 13 Plus 9320 Development Cluster (vmd95641)\nThe second Development Cluster (🏷️VPS) is provisioned manually as virtual machine at contabo and bootstraped with 🏷️Ansible.\nStaging Cluster (K1) and Production Cluster (K2)\nBoth Kubernetes clusters are provisioned with 🏷️Terraform on 🏷️Proxmox and bootstraped with 🏷️Talos. %%{init: {\"flowchart\": {\"htmlLabels\": false}} }%% flowchart TD subgraph K2[\"`**K2**`\"] direction LR K2-Loadbalancer[\"`_**Loadbalancer**_`\"] K2-ControlPlane1[\"`_**Control Plane 1**_`\"] K2-ControlPlane2[\"`_**Control Plane 2**_`\"] K2-ControlPlane3[\"`_**Control Plane 3**_`\"] K2-Worker1[\"`_**Worker 1**_`\"] K2-Worker2[\"`_**Worker 2**_`\"] K2-Worker3[\"`_**Worker 3**_`\"] K2-Loadbalancer --\u003e K2-ControlPlane1 K2-Loadbalancer --\u003e K2-ControlPlane2 K2-Loadbalancer --\u003e K2-ControlPlane3 K2-ControlPlane1 --\u003e K2-Worker1 K2-ControlPlane1 --\u003e K2-Worker2 K2-ControlPlane1 --\u003e K2-Worker3 K2-ControlPlane2 --\u003e K2-Worker1 K2-ControlPlane2 --\u003e K2-Worker2 K2-ControlPlane2 --\u003e K2-Worker3 K2-ControlPlane3 --\u003e K2-Worker1 K2-ControlPlane3 --\u003e K2-Worker2 K2-ControlPlane3 --\u003e K2-Worker3 end style K2 fill:#9CD484,stroke:#00331a,stroke-width:1px subgraph K1[\"`**K1**`\"] direction LR K1-Loadbalancer[\"`_**Loadbalancer**_`\"] K1-ControlPlane1[\"`_**Control Plane 1**_`\"] K1-ControlPlane2[\"`_**Control Plane 2**_`\"] K1-ControlPlane3[\"`_**Control Plane 3**_`\"] K1-Worker1[\"`_**Worker 1**_`\"] K1-Worker2[\"`_**Worker 2**_`\"] K1-Worker3[\"`_**Worker 3**_`\"] K1-Loadbalancer --\u003e K1-ControlPlane1 K1-Loadbalancer --\u003e K1-ControlPlane2 K1-Loadbalancer --\u003e K1-ControlPlane3 K1-ControlPlane1 --\u003e K1-Worker1 K1-ControlPlane1 --\u003e K1-Worker2 K1-ControlPlane1 --\u003e K1-Worker3 K1-ControlPlane2 --\u003e K1-Worker1 K1-ControlPlane2 --\u003e K1-Worker2 K1-ControlPlane2 --\u003e K1-Worker3 K1-ControlPlane3 --\u003e K1-Worker1 K1-ControlPlane3 --\u003e K1-Worker2 K1-ControlPlane3 --\u003e K1-Worker3 end style K1 fill:#9CD484,stroke:#00331a,stroke-width:1px "
 },
 {
 	"uri": "https://gerundium.github.io/devbox/overview/",
@@ -88,7 +88,7 @@
 	"title": "Introduction",
 	"tags": ["Introduction"],
 	"description": "",
-	"content": "Topics Documentation About the author About this blog ANSIBLE (2) CERT-MANAGER (1) DEPLOYMENT (1) DEVBOX (3) DOCUMENTATION (2) FLUXCD (2) GITOPS (1) HARDWARE (1) HIGH-LEVEL-VIEW (1) HOME (3) HOMELAB SETUP (3) INFRASTRUCTURE (1) INTRODUCTION (1) K8S (6) LONGHORN (1) METALLB (1) METRICS-SERVER (1) MONITORING (1) NETWORK (1) NIX (2) OVERVIEW (1) PROMETHEUS (2) PROVISIONING (1) PROXMOX (2) SEALED-SECRETS (1) SETUP (1) STORAGE (1) TALOS (1) TBD (1) TBI (3) TRAEFIK (1) VEGAN (1) VERTICAL-POD-AUTOSCALER (1) VIRTUALIZATION (1) "
+	"content": "Topics Documentation About the author About this blog ANSIBLE (2) ARGO (3) CERT-MANAGER (1) CI-CD (3) DEPLOYMENT (1) DEVBOX (3) DEVOPS (3) DOCUMENTATION (2) FLUXCD (2) GITOPS (1) HARDWARE (1) HIGH-LEVEL-VIEW (1) HOME (3) HOMELAB SETUP (3) INFRASTRUCTURE (1) INTRODUCTION (1) K8S (9) LONGHORN (1) METALLB (1) METRICS-SERVER (1) MONITORING (1) NETWORK (1) NIX (2) OVERVIEW (3) PROMETHEUS (2) PROVISIONING (1) PROXMOX (2) SEALED-SECRETS (1) SETUP (1) STORAGE (1) TALOS (1) TBD (1) TBI (3) TRAEFIK (1) VEGAN (1) VERTICAL-POD-AUTOSCALER (1) VIRTUALIZATION (1) "
 },
 {
 	"uri": "https://gerundium.github.io/",
@@ -126,13 +126,6 @@
 	"content": "\u0026ldquo;Portable, Isolated Dev Environments on any Machine\u0026rdquo; Source: jetify-devbox\nTopics K3s-HA-Cluster Overview 🚀 Setup 🚚 "
 },
 {
-	"uri": "https://gerundium.github.io/vegan/",
-	"title": "Go Vegan!",
-	"tags": ["Vegan"],
-	"description": "",
-	"content": "Puh - that was a lot of information. Maybe it\u0026rsquo;s Time for a short brake. In case you are visiting Berlin you should try this locations https://www.veggievisa.com/vegan-food-guide-berlin/\nWhat? Why? How? 🌱 What is Veganism? 🌱 Go vegan - why? how? 🌱 Vegan Bingo 🌱 Vegan facts 🌱 Nutrition facts 🌱 Watch Dominion "
-},
-{
 	"uri": "https://gerundium.github.io/introduction/documentation/",
 	"title": "1.1 Documentation",
 	"tags": ["home", "documentation"],
@@ -147,8 +140,29 @@
 	"content": "State/Version: 20230829p1\n1.2.1.1 Creation workflow - Deep Dive Sequencediagram sequenceDiagram participant A as Laptop@local participant B as blog-source@github participant C as blog-rendered@github A-\u003e\u003eA: 1. Create content locally A-\u003e\u003eB: 2. Push code to blog-source@github Note over A, B: Commit action (push) will trigger \"Github Actions\" B-\u003e\u003eC: 3. Push static html from blog-source@github to blog-rendered@github (Github pages) via a \"Github Actions\" 1.2.2 Github setup Alias Real world brief description blog-source@github gerundium/gerundium.github.io-source This repository contains the full monty. Use it to create / render new content for your blog. blog-rendered@github gerundium/gerundium.github.io This repository is linked as git submodule inside blog-source@github. It contains the rendered / static html files # -- # Folder tree # -- ./blog-source@github ├── archetypes ├── content ├── data ├── layouts ├── public # blog-rendered@github (Git submodule) | ├── authors | ├── basics | ├── categories | ├── css | ├── fonts | ├── images | ├── js | ├── logo | ├── mermaid | ├── posts | ├── series | ├── tags | └── webfonts ├── resources ├── static └── themes 1.2.3 Step-by-step deployment Apply changes to blog-source@github/content Build static html # Execute command on the laptop hugo Commit changes in public submodule and push commit to blog-rendered@github # Git commit and push git add -A git commit -m \u0026#34;add: \u0026lt;specify cxhange\u0026gt;\u0026#34; git push Wait a minute while build and deployment piplines run. Check if changes were deployed to github pages. gerundium.github.io "
 },
 {
+	"uri": "https://gerundium.github.io/devops/overview/",
+	"title": "5.1 Overview",
+	"tags": ["k8s", "argo", "devops", "ci-cd", "Overview"],
+	"description": "",
+	"content": "State/Version: 20250405\n5.1 Overview 💡 DevOps in the context of Kubernetes, along with tools like Flux and ArgoCD, can be described as a modern approach to managing infrastructure and application deployments that emphasizes automation, collaboration, and continuous delivery.\n💬 Imagine you\u0026rsquo;re managing a Kubernetes cluster for a large organization. You decide to adopt GitOps to streamline your deployments, and you start with FluxCD. Flux is great—it monitors your Git repository, detects changes in your Kubernetes manifests, and applies them automatically to your cluster. It ensures that your cluster\u0026rsquo;s state always matches the desired state defined in Git. You feel confident because everything is automated and version-controlled.\n💬 However, as your organization grows, your deployments become more complex. You need better visibility into the state of your applications, more advanced features like health monitoring, and an intuitive interface for your team to collaborate on deployments. This is where ArgoCD comes into play.\n💬 ArgoCD complements Flux by providing a user-friendly web interface and additional features like application health checks, rollback capabilities, and detailed synchronization status. While Flux focuses on simplicity and automation, ArgoCD adds a layer of observability and control, making it easier to manage complex deployments.\n💬 In essence, Flux and ArgoCD share the same GitOps philosophy but cater to slightly different needs. Flux excels in lightweight automation, while ArgoCD shines in managing and visualizing complex application states. Some teams even use them together. Flux for its simplicity in syncing changes and ArgoCD for its advanced monitoring and management capabilities.\nKey Concepts Kubernetes ⚡️ Kubernetes is a container orchestration platform that automates the deployment, scaling, and management of containerized applications. It provides a declarative approach to infrastructure, where you define the desired state of your applications and Kubernetes ensures that state is maintained.\nGitOps ⚡️ GitOps is a DevOps practice where Git repositories serve as the single source of truth for both application code and infrastructure configurations. Tools like Flux and ArgoCD implement GitOps principles by continuously syncing the desired state from Git to the Kubernetes cluster.\nFlux ⚡️ Flux is a GitOps tool that automates the deployment of Kubernetes manifests stored in Git. It monitors Git repositories for changes and applies them to the cluster, ensuring that the cluster state matches the repository.\nArgoCD ⚡️ ArgoCD is another GitOps tool that provides a user-friendly interface for managing Kubernetes deployments. It offers features like application health monitoring, rollback capabilities, and synchronization status, making it easier to manage complex deployments.\nBenefits for a Linux Sysadmin: ➕ Automation: Tools like Flux and ArgoCD automate repetitive tasks, such as applying Kubernetes manifests, reducing manual intervention.\n➕ Version Control: All changes to infrastructure and applications are tracked in Git, providing an audit trail and enabling easy rollbacks.\n➕ Consistency: GitOps ensures that the state of the cluster is always consistent with the desired state defined in Git.\n➕ Collaboration: By using Git as the source of truth, developers and sysadmins can collaborate more effectively, as changes are reviewed and approved through pull requests.\n➕ Scalability: Kubernetes and GitOps tools simplify managing large-scale, distributed systems by abstracting complexity and providing declarative configurations.\n💥 In summary, DevOps with Kubernetes, Flux, and ArgoCD empowers sysadmins to manage infrastructure and applications more efficiently, leveraging automation, version control, and collaboration to achieve reliable and scalable deployments.\n"
+},
+{
+	"uri": "https://gerundium.github.io/devops/argoevents/",
+	"title": "5.2.3 Argo Events",
+	"tags": ["k8s", "argo", "devops", "ci-cd", "Overview"],
+	"description": "",
+	"content": "State/Version: 20250405\n5.2.3 Argo Events 💡 Argo Events is an event-driven automation framework designed for Kubernetes. It enables triggering workflows or actions in response to specific events, such as changes in Git repositories, messages in a queue, or HTTP requests.\nKey Features ➕ Event Sources: Supports a wide range of event sources like webhooks, S3 events, Kafka, and more.\n➕ Event Processing: Uses sensors to process events and trigger actions, such as starting Argo Workflows or updating Kubernetes resources.\n➕ Declarative Configuration: Events and triggers are defined declaratively using Kubernetes manifests.\n➕ Scalability: Designed to handle large-scale, distributed event-driven systems. Use Case for Sysadmins: Argo Events can automate tasks like triggering CI/CD pipelines, scaling applications, or responding to infrastructure changes, making it a powerful tool for managing Kubernetes environments efficiently.\n"
+},
+{
 	"uri": "https://gerundium.github.io/tags/ansible/",
 	"title": "Ansible",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gerundium.github.io/tags/argo/",
+	"title": "Argo",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -168,6 +182,13 @@
 	"content": ""
 },
 {
+	"uri": "https://gerundium.github.io/tags/ci-cd/",
+	"title": "Ci-Cd",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://gerundium.github.io/tags/deployment/",
 	"title": "Deployment",
 	"tags": [],
@@ -180,6 +201,20 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "https://gerundium.github.io/tags/devops/",
+	"title": "Devops",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://gerundium.github.io/devops/",
+	"title": "DevOps",
+	"tags": ["k8s", "argo", "devops", "ci-cd"],
+	"description": "",
+	"content": "Topics DevOps Overview 🚀 Argo Argo CD Argo Workflows Argo Events "
 },
 {
 	"uri": "https://gerundium.github.io/tags/documentation/",
@@ -201,6 +236,13 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "https://gerundium.github.io/vegan/",
+	"title": "Go Vegan!",
+	"tags": ["Vegan"],
+	"description": "",
+	"content": "Puh - that was a lot of information. Maybe it\u0026rsquo;s Time for a short brake. In case you are visiting Berlin you should try this locations https://www.veggievisa.com/vegan-food-guide-berlin/\nWhat? Why? How? 🌱 What is Veganism? 🌱 Go vegan - why? how? 🌱 Vegan Bingo 🌱 Vegan facts 🌱 Nutrition facts 🌱 Watch Dominion "
 },
 {
 	"uri": "https://gerundium.github.io/tags/hardware/",

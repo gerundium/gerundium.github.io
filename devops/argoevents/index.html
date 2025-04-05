@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.141.0">
+    <meta name="description" content="Description">
+<meta name="author" content="db">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>5.2.3 Argo Events :: Gerundium</title>
+
+    
+    <link href="/css/nucleus.css?1743881937" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1743881937" rel="stylesheet">
+    <link href="/css/hybrid.css?1743881937" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1743881937" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1743881937" rel="stylesheet">
+    <link href="/css/auto-complete.css?1743881937" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1743881937" rel="stylesheet">
+    <link href="/css/theme.css?1743881937" rel="stylesheet">
+    <link href="/css/tabs.css?1743881937" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1743881937" rel="stylesheet">
+    
+    <link href="/css/theme-green.css?1743881937" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1743881937"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/devops/argoevents/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="/logo/404-logo.png" alt="logo" style="height:100px;">
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1743881937"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1743881937"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/gerundium.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1743881937"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/introduction/" title="Introduction" class="dd-item
+        
+        
+        
+        ">
+      <a href="/introduction/">
+          <b>1. </b>Introduction
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/introduction/documentation/" title="1.1 Documentation" class="dd-item ">
+        <a href="/introduction/documentation/">
+        1.1 Documentation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/introduction/documentationdeepdive/" title="1.2 Deep Dive" class="dd-item ">
+        <a href="/introduction/documentationdeepdive/">
+        1.2 Deep Dive
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/homelab_setup/" title="Homelab Setup" class="dd-item
+        
+        
+        
+        ">
+      <a href="/homelab_setup/">
+          <b>2. </b>Homelab Setup
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/homelab_setup/highlevel/" title="2.1 High level view" class="dd-item ">
+        <a href="/homelab_setup/highlevel/">
+        2.1 High level view
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/homelab_setup/hardware/" title="2.2 Hardware" class="dd-item ">
+        <a href="/homelab_setup/hardware/">
+        2.2 Hardware
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/homelab_setup/network/" title="2.3 Network" class="dd-item ">
+        <a href="/homelab_setup/network/">
+        2.3 Network
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/homelab_setup/storage/" title="2.4 Storage" class="dd-item ">
+        <a href="/homelab_setup/storage/">
+        2.4 Storage
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/homelab_setup/virtualization/" title="2.5 Virtualization" class="dd-item ">
+        <a href="/homelab_setup/virtualization/">
+        2.5 Virtualization
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/homelab_setup/configurationmanagement/" title="2.6 Configuration Management" class="dd-item ">
+        <a href="/homelab_setup/configurationmanagement/">
+        2.6 Configuration Management
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/k8s_ha_cluster/" title="K8s-HA-Cluster" class="dd-item
+        
+        
+        
+        ">
+      <a href="/k8s_ha_cluster/">
+          <b>3. </b>K8s-HA-Cluster
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/k8s_ha_cluster/overview/" title="3.1 Overview" class="dd-item ">
+        <a href="/k8s_ha_cluster/overview/">
+        3.1 Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/k8s_ha_cluster/provisioning/" title="3.2 Provisioning the k8s nodes" class="dd-item ">
+        <a href="/k8s_ha_cluster/provisioning/">
+        3.2 Provisioning the k8s nodes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/k8s_ha_cluster/deployment/" title="3.3 Deploy Kubernetes" class="dd-item ">
+        <a href="/k8s_ha_cluster/deployment/">
+        3.3 Deploy Kubernetes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/k8s_ha_cluster/gitops/" title="3.4 GitOps: Install and configure FluxCD" class="dd-item ">
+        <a href="/k8s_ha_cluster/gitops/">
+        3.4 GitOps: Install and configure FluxCD
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/k8s_ha_cluster/monitoring/" title="3.5 Monitoring for Kubernetes Cluster" class="dd-item ">
+        <a href="/k8s_ha_cluster/monitoring/">
+        3.5 Monitoring for Kubernetes Cluster
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/devbox/" title="Devbox" class="dd-item
+        
+        
+        
+        ">
+      <a href="/devbox/">
+          <b>4. </b>Devbox
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/devbox/overview/" title="4.1 Overview" class="dd-item ">
+        <a href="/devbox/overview/">
+        4.1 Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/devbox/setup/" title="4.2 Setup" class="dd-item ">
+        <a href="/devbox/setup/">
+        4.2 Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/devops/" title="DevOps" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/devops/">
+          <b>5. </b>DevOps
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/devops/overview/" title="5.1 Overview" class="dd-item ">
+        <a href="/devops/overview/">
+        5.1 Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/devops/argoevents/" title="5.2.3 Argo Events" class="dd-item active">
+        <a href="/devops/argoevents/">
+        5.2.3 Argo Events
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vegan/" title="Go Vegan!" class="dd-item
+        
+        
+        
+        ">
+      <a href="/vegan/">
+          <b>6. </b>Go Vegan!
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                   5.2.3 Argo Events
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#523-argo-events-">5.2.3 Argo Events 💡</a>
+      <ul>
+        <li><a href="#key-features">Key Features</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/k8s">k8s</a>
+
+  <a class="tag-link" href="/tags/argo">argo</a>
+
+  <a class="tag-link" href="/tags/devops">devops</a>
+
+  <a class="tag-link" href="/tags/ci-cd">ci-cd</a>
+
+  <a class="tag-link" href="/tags/overview">Overview</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              5.2.3 Argo Events
+            </h1>
+          
+
+        
+
+
+<p>State/Version: <em><strong>20250405</strong></em></p>
+<h2 id="523-argo-events-">5.2.3 Argo Events 💡</h2>
+<p>Argo Events is an event-driven automation framework designed for Kubernetes. It enables triggering workflows or actions in response to specific events, such as changes in Git repositories, messages in a queue, or HTTP requests.</p>
+<h3 id="key-features">Key Features</h3>
+<p>➕ <strong>Event Sources</strong>: Supports a wide range of event sources like webhooks, S3 events, Kafka, and more.</p>
+<p>➕ <strong>Event Processing</strong>: Uses sensors to process events and trigger actions, such as starting Argo Workflows or updating Kubernetes resources.</p>
+<p>➕ <strong>Declarative Configuration</strong>: Events and triggers are defined declaratively using Kubernetes manifests.</p>
+<p>➕ <strong>Scalability</strong>: Designed to handle large-scale, distributed event-driven systems.
+Use Case for Sysadmins:
+Argo Events can automate tasks like triggering CI/CD pipelines, scaling applications, or responding to infrastructure changes, making it a powerful tool for managing Kubernetes environments efficiently.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/devops/overview/" title="5.1 Overview"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/vegan/" title="Go Vegan!" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1743881937"></script>
+    <script src="/js/perfect-scrollbar.min.js?1743881937"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1743881937"></script>
+    <script src="/js/jquery.sticky.js?1743881937"></script>
+    <script src="/js/featherlight.min.js?1743881937"></script>
+    <script src="/js/highlight.pack.js?1743881937"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1743881937"></script>
+    <script src="/js/learn.js?1743881937"></script>
+    <script src="/js/hugo-learn.js?1743881937"></script>
+    
+        
+            <script src="https://unpkg.com/mermaid@10.3.0/dist/mermaid.min.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+
